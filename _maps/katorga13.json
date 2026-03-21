@@ -15,15 +15,15 @@
 	"traits": [
 		{
 			"Baseturf": "/turf/open/misc/asteroid/basalt/airless",
-			"Linkage": "Cross"
+			"Linkage": null
 		},
 		{
 			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Cross"
+			"Linkage": null
 		},
 		{
 			"Baseturf": "/turf/open/space/openspace",
-			"Linkage": "Cross"
+			"Linkage": null
 		}
 	],
 	"job_changes": {
