@@ -179,7 +179,7 @@
 	fax_name = "Chief Engineer's Office"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -1187,10 +1187,6 @@
 	ambience_index = "ruins";
 	name = "K13 Medbay Storage"
 	})
-"aCa" = (
-/obj/structure/fence/cut/medium,
-/turf/open/misc/asteroid/basalt,
-/area/station/asteroid)
 "aCr" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter6"
@@ -1362,7 +1358,7 @@
 	})
 "aIF" = (
 /obj/structure/girder/reinforced,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -1825,7 +1821,7 @@
 	})
 "aTd" = (
 /obj/structure/door_assembly/door_assembly_eng,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -1881,7 +1877,7 @@
 	})
 "aUr" = (
 /obj/effect/decal/cleanable/vomit/old/black_bile,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -2011,7 +2007,7 @@
 	id = "cewinssssprivacy"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -2191,7 +2187,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -3564,7 +3560,7 @@
 "bOY" = (
 /obj/item/stack/rods,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -3668,7 +3664,7 @@
 	name = "K13 Engineering"
 	})
 "bRm" = (
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -3813,7 +3809,7 @@
 "bTL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/west,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -4261,7 +4257,7 @@
 "cdL" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -4509,7 +4505,7 @@
 	dir = 8;
 	filter_type = list(/datum/gas/nitrogen)
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -5511,7 +5507,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -5853,7 +5849,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -5954,7 +5950,7 @@
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -6371,7 +6367,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -6517,7 +6513,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/space_heater,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -6618,7 +6614,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -7200,7 +7196,7 @@
 /obj/item/stamp/head/ce,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/flashlight,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -7230,7 +7226,7 @@
 "dzB" = (
 /obj/structure/girder/reinforced,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -7499,7 +7495,7 @@
 "dGr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -7917,7 +7913,7 @@
 	},
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -7971,7 +7967,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -8649,7 +8645,7 @@
 /obj/item/stack/rods,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -8802,7 +8798,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter6"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -8948,7 +8944,7 @@
 "eld" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/item/stack/sheet/plasteel,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -9214,6 +9210,7 @@
 	name = "Output to Waste";
 	dir = 4
 	},
+/obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/engine/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
@@ -9369,7 +9366,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin,
 /obj/machinery/camera/autoname/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -10315,7 +10312,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -10488,7 +10485,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -11003,7 +11000,7 @@
 "fiL" = (
 /obj/machinery/holopad,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -11112,7 +11109,7 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/structure/sign/poster/contraband/communist_state/directional/north,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -11152,7 +11149,7 @@
 /obj/effect/mapping_helpers/apc/no_charge,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/apc/unlocked,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -11287,7 +11284,7 @@
 "foE" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -11770,7 +11767,7 @@
 	})
 "fyW" = (
 /obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -12000,7 +11997,7 @@
 "fDT" = (
 /obj/item/stack/rods,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -12054,7 +12051,7 @@
 "fGc" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -12280,7 +12277,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -12731,7 +12728,7 @@
 	})
 "fVL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -13228,7 +13225,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_machine,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -13310,7 +13307,7 @@
 "glz" = (
 /obj/structure/sign/flag/ussp/directional/north,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -13378,7 +13375,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -13500,13 +13497,6 @@
 /area/station/security/prison/safe{
 	ambience_index = "ruins";
 	name = "\improper K13 Prison Wing Cells"
-	})
-"gqv" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
-/area/station/engineering/supermatter/waste{
-	ambience_index = "ruins";
-	name = "\improper K13 Supermatter Waste Chamber"
 	})
 "gqM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13727,12 +13717,11 @@
 	name = "\improper K13 Security Office"
 	})
 "gwO" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ruin/space/meateor{
-	requires_power = 0;
-	name = "\improper K13 Organic Asteroid"
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/plating/airless,
+/area/station/medical/abandoned{
+	ambience_index = "ruins";
+	name = "\improper K13 Abandoned Medbay"
 	})
 "gwX" = (
 /obj/structure/grille/broken,
@@ -14309,7 +14298,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -14527,7 +14516,7 @@
 /obj/item/shard/plasma,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron/dark,
+/turf/open/floor/iron/dark/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -14720,7 +14709,7 @@
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/glass/plasma,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -15451,7 +15440,7 @@
 "hhD" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/airalarm/directional/north,
-/turf/open/floor/iron/dark/textured,
+/turf/open/floor/iron/dark/textured/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -16343,7 +16332,7 @@
 "hEF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname/directional/west,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -17079,7 +17068,7 @@
 "hYI" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/structure/sign/poster/contraband/communist_state/directional/west,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -17325,9 +17314,14 @@
 	name = "\improper K13 Engineering Lobby"
 	})
 "ihm" = (
-/obj/structure/lattice,
-/turf/open/misc/asteroid/basalt,
-/area/station/asteroid)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured/airless,
+/area/station/medical/abandoned{
+	ambience_index = "ruins";
+	name = "\improper K13 Abandoned Medbay"
+	})
 "ihp" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -17402,7 +17396,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -17952,7 +17946,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -18318,7 +18312,7 @@
 /area/station/hallway/secondary/dock)
 "iCJ" = (
 /obj/structure/girder/reinforced,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -18772,7 +18766,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/communist_state/directional/north,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -19086,7 +19080,7 @@
 "iTK" = (
 /obj/machinery/camera/directional/north,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron/dark/textured,
+/turf/open/floor/plating/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -19297,7 +19291,7 @@
 	})
 "iXs" = (
 /obj/machinery/camera/autoname/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -19386,7 +19380,7 @@
 	},
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -19690,12 +19684,14 @@
 	name = "\improper K13 Security Locker Room"
 	})
 "jhq" = (
-/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/turf/open/space/basic,
-/area/ruin/space/meateor{
-	requires_power = 0;
-	name = "\improper K13 Organic Asteroid"
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/iron/dark/textured/airless,
+/area/station/medical/abandoned{
+	ambience_index = "ruins";
+	name = "\improper K13 Abandoned Medbay"
 	})
 "jhs" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20173,7 +20169,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -21384,7 +21380,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -21519,7 +21515,7 @@
 "jWz" = (
 /obj/structure/sign/warning/secure_area/directional/west,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -21527,7 +21523,7 @@
 "jWO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -23026,7 +23022,7 @@
 "kEm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -25051,7 +25047,7 @@
 "lAc" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/spawner/random/trash/cigbutt,
-/turf/open/floor/iron/dark/textured,
+/turf/open/floor/iron/dark/textured/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -25065,7 +25061,7 @@
 "lAt" = (
 /obj/item/chair,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -25558,7 +25554,7 @@
 "lMc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/space_heater,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -26393,7 +26389,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/vomit/old/black_bile,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -26796,7 +26792,7 @@
 	})
 "mpP" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -27252,7 +27248,7 @@
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_machine,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -27389,7 +27385,7 @@
 	pixel_x = 1;
 	pixel_y = 6
 	},
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -27747,7 +27743,7 @@
 	})
 "mMJ" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -27851,7 +27847,7 @@
 	})
 "mPG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -28523,7 +28519,7 @@
 "nkz" = (
 /obj/structure/sign/warning/secure_area/directional/east,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -28720,7 +28716,7 @@
 "noK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -28897,7 +28893,7 @@
 	})
 "nsx" = (
 /obj/machinery/pdapainter/engineering,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -28909,7 +28905,7 @@
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -29023,7 +29019,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
 /obj/effect/baseturf_helper/space,
-/turf/open/space/basic,
+/turf/open/floor/plating/airless,
 /area/ruin/space/meateor{
 	requires_power = 0;
 	name = "\improper K13 Organic Asteroid"
@@ -29040,7 +29036,7 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/asteroid)
 "nwK" = (
 /obj/machinery/door/airlock/security,
@@ -29065,7 +29061,7 @@
 	})
 "nwN" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -30125,7 +30121,7 @@
 "nXC" = (
 /obj/effect/gibspawner/human/bodypartless,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -30280,7 +30276,7 @@
 	})
 "ocP" = (
 /obj/structure/girder/reinforced,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -31420,7 +31416,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -31716,13 +31712,6 @@
 /area/station/medical/surgery/aft{
 	ambience_index = "ruins";
 	name = "\improper K13 Aft Operating Room"
-	})
-"oMR" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
-/area/station/engineering/supermatter/room{
-	ambience_index = "ruins";
-	name = "\improper K13 Supermatter Engine Room"
 	})
 "oNk" = (
 /obj/effect/decal/cleanable/dirt,
@@ -32318,10 +32307,11 @@
 	default_gravity = 1
 	})
 "pdA" = (
-/obj/effect/gibspawner/human/bodypartless,
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/misc/asteroid/basalt,
-/area/station/asteroid)
+/turf/open/floor/iron/dark/textured/airless,
+/area/station/medical/abandoned{
+	ambience_index = "ruins";
+	name = "\improper K13 Abandoned Medbay"
+	})
 "pdH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/stairs{
@@ -33527,7 +33517,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -33659,7 +33649,7 @@
 /obj/item/stack/rods,
 /obj/item/stack/rods,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -33685,7 +33675,7 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -33734,7 +33724,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -33799,7 +33789,7 @@
 	name = "\improper K13 Security Break Room"
 	})
 "pIi" = (
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -34666,7 +34656,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_machine,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -34995,7 +34985,7 @@
 	dir = 9
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -35155,7 +35145,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/book/manual/wiki/engineering_construction,
 /obj/item/clothing/gloves/chief_engineer,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -36109,7 +36099,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -36921,7 +36911,7 @@
 "reR" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/spawner/random/engineering/tool,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -37126,7 +37116,7 @@
 /obj/structure/closet/emcloset/anchored,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tank/internals/oxygen/empty,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -37217,7 +37207,7 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/item/stack/rods,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -37780,7 +37770,7 @@
 	})
 "rAC" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -38026,7 +38016,7 @@
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -38046,7 +38036,7 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -38422,7 +38412,7 @@
 	dir = 10
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -39057,7 +39047,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
-/turf/open/floor/engine,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -39121,14 +39111,6 @@
 /area/station/security/prison/safe{
 	ambience_index = "ruins";
 	name = "\improper K13 Prison Wing Cells"
-	})
-"shU" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/spawner/random/engineering/tool,
-/turf/open/floor/iron/dark/textured,
-/area/station/medical/abandoned{
-	ambience_index = "ruins";
-	name = "\improper K13 Abandoned Medbay"
 	})
 "sif" = (
 /obj/effect/decal/cleanable/dirt,
@@ -39562,7 +39544,7 @@
 "ssS" = (
 /obj/structure/grille,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -40197,7 +40179,7 @@
 	})
 "sLm" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -40264,11 +40246,6 @@
 /area/station/engineering/break_room{
 	ambience_index = "ruins";
 	name = "\improper K13 Engineering Foyer"
-	})
-"sMk" = (
-/turf/open/lava/smooth/airless,
-/area/centcom/heretic_sacrifice{
-	name = "K13 Mansus"
 	})
 "sMu" = (
 /obj/structure/cable,
@@ -40717,7 +40694,7 @@
 	})
 "sWK" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -40757,10 +40734,6 @@
 	ambience_index = "ruins";
 	name = "\improper K13 Cargo Lobby"
 	})
-"sXG" = (
-/obj/structure/closet/crate/grave/fresh,
-/turf/open/misc/asteroid/basalt,
-/area/station/asteroid)
 "sYa" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -41157,7 +41130,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -41448,7 +41421,7 @@
 "tpc" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron/dark/textured,
+/turf/open/floor/iron/dark/textured/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -41809,7 +41782,7 @@
 "twv" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -41880,7 +41853,7 @@
 /obj/structure/door_assembly/door_assembly_eng{
 	anchored = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -42077,7 +42050,7 @@
 	pixel_x = 7;
 	pixel_y = 8
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -42223,7 +42196,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/glass/plasma,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter{
 	name = "\improper K13 Supermatter Engine";
 	ambience_index = "ruins"
@@ -42269,7 +42242,7 @@
 "tIY" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -43005,7 +42978,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter3"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -43373,7 +43346,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron/dark/textured,
+/turf/open/floor/iron/dark/textured/airless,
 /area/station/medical/abandoned{
 	ambience_index = "ruins";
 	name = "\improper K13 Abandoned Medbay"
@@ -43825,7 +43798,7 @@
 	name = "Atmospherics"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -44375,7 +44348,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/ce,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -44470,7 +44443,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -44817,7 +44790,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -45021,7 +44994,7 @@
 "vcN" = (
 /obj/structure/girder/reinforced,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/room{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Engine Room"
@@ -45718,7 +45691,7 @@
 	})
 "vuR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -46008,7 +45981,7 @@
 "vBH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken/directional/south,
-/turf/open/floor/wood,
+/turf/open/floor/wood/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -46440,7 +46413,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -46602,7 +46575,7 @@
 	})
 "vOr" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -46641,10 +46614,10 @@
 	})
 "vOI" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron/dark,
-/area/station/engineering/supermatter/waste{
+/turf/open/floor/iron/dark/textured/airless,
+/area/station/medical/abandoned{
 	ambience_index = "ruins";
-	name = "\improper K13 Supermatter Waste Chamber"
+	name = "\improper K13 Abandoned Medbay"
 	})
 "vOL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -46913,7 +46886,7 @@
 /obj/machinery/modular_computer/preset/engineering,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_machine,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -47007,7 +46980,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -47234,6 +47207,10 @@
 /obj/effect/turf_decal/stripes,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/puzzle/keycard/syndicate_bomb{
+	name = "Начальник тюрьмы";
+	icon = 'icons/obj/doors/puzzledoor/danger.dmi'
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/brig{
 	ambience_index = "ruins";
@@ -47347,7 +47324,7 @@
 "wfQ" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/misc/asteroid/basalt,
+/turf/open/misc/asteroid/basalt/airless,
 /area/station/asteroid)
 "wfZ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -47560,7 +47537,7 @@
 	})
 "wlh" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/red/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -47616,7 +47593,7 @@
 	dir = 9
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron/dark,
+/turf/open/floor/iron/dark/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -47720,7 +47697,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -48046,7 +48023,7 @@
 "wvU" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/item/shard/plasma,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -49003,7 +48980,7 @@
 "wSj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -49056,7 +49033,7 @@
 	})
 "wSV" = (
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -49088,7 +49065,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -49325,7 +49302,7 @@
 "xcq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -49503,7 +49480,7 @@
 "xhh" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -49957,7 +49934,7 @@
 "xun" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -50586,7 +50563,7 @@
 "xJS" = (
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty,
-/turf/open/floor/iron/dark,
+/turf/open/floor/iron/dark/airless,
 /area/station/engineering/supermatter/waste{
 	ambience_index = "ruins";
 	name = "\improper K13 Supermatter Waste Chamber"
@@ -51301,7 +51278,7 @@
 "xYv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/engineering/atmos/upper{
 	ambience_index = "ruins";
 	name = "K13 Upper Atmospherics"
@@ -51520,7 +51497,7 @@
 	req_access = list("atmospherics");
 	pixel_x = -25
 	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/airless,
 /area/station/command/heads_quarters/ce{
 	ambience_index = "ruins";
 	name = "\improper K13 Chief Engineer's Office"
@@ -62595,7 +62572,7 @@ wXc
 leV
 leV
 fZJ
-goj
+vzd
 fZJ
 fZJ
 fqx
@@ -62605,7 +62582,7 @@ leV
 fZJ
 leV
 leV
-goj
+vzd
 leV
 leV
 leV
@@ -62851,8 +62828,8 @@ seE
 leV
 fZJ
 fZJ
-goj
-goj
+vzd
+vzd
 fZJ
 leV
 rOz
@@ -62860,8 +62837,8 @@ rOz
 rOz
 leV
 fZJ
-goj
-goj
+vzd
+vzd
 leV
 leV
 leV
@@ -63106,9 +63083,9 @@ leV
 seE
 seE
 seE
-goj
-goj
-goj
+vzd
+vzd
+vzd
 leV
 fZJ
 leV
@@ -63116,9 +63093,9 @@ seE
 wMw
 seE
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 leV
 leV
 leV
@@ -63363,8 +63340,8 @@ leV
 seE
 fZJ
 seE
-goj
-goj
+vzd
+vzd
 leV
 fZJ
 leV
@@ -63373,8 +63350,8 @@ leV
 seE
 wXc
 leV
-goj
-goj
+vzd
+vzd
 fZJ
 fZJ
 leV
@@ -63620,7 +63597,7 @@ seE
 seE
 fZJ
 seE
-goj
+vzd
 leV
 leV
 leV
@@ -63630,7 +63607,7 @@ leV
 seE
 wuT
 seE
-goj
+vzd
 rOz
 leV
 fZJ
@@ -64124,7 +64101,7 @@ leV
 seE
 seE
 seE
-hRN
+seE
 fZJ
 fZJ
 seE
@@ -64635,7 +64612,7 @@ hRN
 leV
 leV
 leV
-hRN
+seE
 seE
 fZJ
 fZJ
@@ -64892,7 +64869,7 @@ hRN
 leV
 leV
 leV
-hRN
+seE
 seE
 fZJ
 seE
@@ -64906,13 +64883,13 @@ seE
 seE
 leV
 leV
-hRN
-hRN
-hRN
-bJz
-hRN
-hRN
-hRN
+seE
+seE
+seE
+fqx
+seE
+seE
+seE
 leV
 leV
 leV
@@ -65163,11 +65140,11 @@ seE
 seE
 leV
 leV
-hRN
-hRN
-hRN
-pOE
-hRN
+seE
+seE
+seE
+crQ
+seE
 hRN
 leV
 leV
@@ -65423,8 +65400,8 @@ vIB
 vIB
 hRN
 wfQ
-dsk
-hRN
+rOz
+seE
 leV
 leV
 seE
@@ -65679,9 +65656,9 @@ vIB
 vIB
 vIB
 hRN
-pdA
-hRN
-hRN
+mBp
+seE
+seE
 leV
 seE
 seE
@@ -65921,8 +65898,8 @@ hRN
 leV
 dFh
 seE
-goj
-goj
+vzd
+vzd
 hRN
 leV
 leV
@@ -66174,13 +66151,13 @@ leV
 leV
 leV
 leV
-hRN
-hRN
+seE
+seE
 dFh
 seE
 seE
-goj
-goj
+vzd
+vzd
 hRN
 leV
 leV
@@ -66204,7 +66181,7 @@ seE
 seE
 leV
 leV
-hRN
+seE
 leV
 leV
 leV
@@ -66431,14 +66408,14 @@ leV
 fZJ
 leV
 seE
-hRN
-hRN
-hRN
 seE
 seE
 seE
-goj
-goj
+seE
+seE
+seE
+vzd
+vzd
 seE
 seE
 seE
@@ -66461,7 +66438,7 @@ seE
 seE
 leV
 leV
-hRN
+seE
 leV
 leV
 leV
@@ -66688,9 +66665,9 @@ leV
 fZJ
 leV
 afT
-sXG
-hRN
-hRN
+afT
+seE
+seE
 leV
 seE
 seE
@@ -66718,7 +66695,7 @@ seE
 seE
 leV
 leV
-hRN
+seE
 hRN
 leV
 leV
@@ -66945,9 +66922,9 @@ fZJ
 fZJ
 leV
 afT
-sXG
-hRN
-hRN
+afT
+seE
+seE
 leV
 wXc
 seE
@@ -66975,7 +66952,7 @@ leV
 hRN
 leV
 leV
-hRN
+seE
 hRN
 hRN
 hRN
@@ -67202,8 +67179,8 @@ fZJ
 fZJ
 seE
 afT
-sXG
-hRN
+afT
+seE
 fZJ
 fZJ
 seE
@@ -68482,7 +68459,7 @@ leV
 leV
 fZJ
 fZJ
-goj
+vzd
 fZJ
 seE
 seE
@@ -68737,9 +68714,9 @@ leV
 leV
 leV
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 seE
 fqx
@@ -68993,10 +68970,10 @@ leV
 leV
 leV
 leV
-goj
-goj
-goj
-goj
+vzd
+vzd
+vzd
+vzd
 seE
 fqx
 seE
@@ -69250,9 +69227,9 @@ leV
 leV
 leV
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 seE
 seE
@@ -69507,9 +69484,9 @@ leV
 leV
 leV
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 ceN
 seE
 seE
@@ -70029,7 +70006,7 @@ fZJ
 leV
 leV
 mtK
-hRN
+seE
 seE
 seE
 seE
@@ -70301,7 +70278,7 @@ seE
 fZJ
 leV
 seE
-aCa
+mXk
 mXk
 seE
 seE
@@ -70566,9 +70543,9 @@ wuT
 seE
 seE
 seE
-aCa
-aCa
-hRN
+mXk
+mXk
+seE
 leV
 leV
 hRN
@@ -70799,7 +70776,7 @@ leV
 fZJ
 leV
 leV
-dsk
+rOz
 ceN
 seE
 seE
@@ -70816,16 +70793,16 @@ fZJ
 seE
 seE
 seE
-hRN
-hRN
-hRN
+seE
+seE
+seE
 seE
 seE
 wuT
 seE
-hRN
-hRN
-hRN
+seE
+seE
+seE
 leV
 hRN
 hRN
@@ -71062,8 +71039,14 @@ seE
 seE
 seE
 seE
-hRN
-hRN
+seE
+seE
+seE
+dFh
+seE
+seE
+seE
+seE
 seE
 dFh
 seE
@@ -71071,18 +71054,12 @@ seE
 seE
 seE
 seE
-dFh
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
 seE
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
 hRN
 hRN
 bJz
@@ -71092,7 +71069,7 @@ leV
 hRN
 hRN
 hRN
-hRN
+seE
 seE
 seE
 seE
@@ -71318,11 +71295,11 @@ leV
 seE
 seE
 seE
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
 seE
 seE
 seE
@@ -71332,7 +71309,7 @@ dFh
 hnM
 gPt
 hnM
-hRN
+seE
 qZa
 gPt
 hnM
@@ -71575,13 +71552,13 @@ fZJ
 seE
 seE
 seE
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
+seE
+seE
 seE
 seE
 seE
@@ -71828,18 +71805,18 @@ leV
 leV
 leV
 leV
-goj
+vzd
 seE
 wuT
 seE
 fZJ
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
+seE
+seE
 wuT
 seE
 seE
@@ -72085,19 +72062,19 @@ xdX
 leV
 leV
 leV
-goj
+vzd
 seE
 seE
 seE
 fZJ
 fZJ
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
+seE
+seE
 seE
 seE
 gmV
@@ -72342,19 +72319,19 @@ xdX
 xdX
 leV
 leV
-goj
-goj
+vzd
+vzd
 fqx
 rOz
 fZJ
 fZJ
 fZJ
-hRN
 seE
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
 seE
 seE
 wKS
@@ -72600,7 +72577,7 @@ xdX
 leV
 leV
 fZJ
-goj
+vzd
 seE
 rOz
 seE
@@ -72857,7 +72834,7 @@ eva
 leV
 leV
 fZJ
-goj
+vzd
 leV
 seE
 seE
@@ -76850,89 +76827,89 @@ gqU
 gqU
 hyo
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
 hyo
 hyo
@@ -77106,7 +77083,7 @@ hyo
 gqU
 gqU
 gqU
-gwO
+ccu
 hyo
 hyo
 gqU
@@ -77190,7 +77167,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -77363,7 +77340,7 @@ hyo
 gqU
 gqU
 gqU
-gwO
+ccu
 hyo
 hyo
 hyo
@@ -77447,7 +77424,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -77620,7 +77597,7 @@ hyo
 gqU
 gqU
 gqU
-gwO
+ccu
 hyo
 hyo
 hyo
@@ -77704,7 +77681,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -77877,7 +77854,7 @@ hyo
 gqU
 gqU
 gqU
-gwO
+ccu
 seE
 gqU
 hyo
@@ -77961,7 +77938,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -78134,7 +78111,7 @@ hyo
 gqU
 gqU
 gqU
-gwO
+ccu
 seE
 seE
 seE
@@ -78218,7 +78195,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -78475,7 +78452,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -78989,7 +78966,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -79246,7 +79223,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -79503,7 +79480,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -79760,7 +79737,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -80004,7 +79981,7 @@ leV
 hRN
 hyo
 pCL
-ihm
+pCL
 pCL
 seE
 gqU
@@ -80017,7 +79994,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -80274,7 +80251,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -80788,7 +80765,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -80977,7 +80954,7 @@ uek
 nmV
 qqz
 eco
-sMk
+eco
 eco
 qqz
 qqz
@@ -81045,7 +81022,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -81302,7 +81279,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -81559,7 +81536,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -81816,7 +81793,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -82323,13 +82300,13 @@ leV
 leV
 leV
 leV
-gwO
-jhq
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
 hyo
 hyo
@@ -82580,7 +82557,7 @@ leV
 leV
 leV
 seE
-jhq
+ccu
 hyo
 hyo
 hyo
@@ -84122,7 +84099,7 @@ leV
 leV
 leV
 seE
-jhq
+ccu
 hyo
 hyo
 hyo
@@ -84379,13 +84356,13 @@ leV
 leV
 leV
 leV
-jhq
-jhq
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
 hyo
 hyo
@@ -84900,7 +84877,7 @@ hyo
 hyo
 hyo
 hyo
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -84947,9 +84924,9 @@ glg
 vSw
 wsw
 qxi
-paL
-jNt
-vBi
+vOI
+jhq
+pdA
 qxi
 leV
 leV
@@ -85157,7 +85134,7 @@ hyo
 hyo
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -85414,7 +85391,7 @@ hyo
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -85461,9 +85438,9 @@ awY
 vSw
 wsw
 qxi
-paL
-jNt
-paL
+vOI
+jhq
+vOI
 goG
 leV
 leV
@@ -85671,7 +85648,7 @@ hyo
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -85719,8 +85696,8 @@ vSw
 wsw
 goG
 hhD
-qXx
-vBi
+ihm
+gwO
 goG
 leV
 leV
@@ -85928,7 +85905,7 @@ hyo
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -85975,9 +85952,9 @@ wsw
 wsw
 ugw
 goG
-paL
-jNt
-paL
+vOI
+jhq
+vOI
 qxi
 leV
 leV
@@ -86232,9 +86209,9 @@ cFo
 cFo
 fmr
 goG
-paL
-qXx
-paL
+vOI
+ihm
+gwO
 goG
 leV
 leV
@@ -86442,7 +86419,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -86490,12 +86467,12 @@ gyp
 gyp
 qxi
 iTK
-jNt
-paL
+jhq
+vOI
 qxi
 leV
 seE
-goj
+vzd
 seE
 seE
 leV
@@ -86506,8 +86483,8 @@ leV
 leV
 leV
 leV
-hRN
-hRN
+seE
+seE
 leV
 leV
 leV
@@ -86699,7 +86676,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -86741,19 +86718,19 @@ vKH
 muR
 leV
 leV
-goj
-goj
+vzd
+vzd
 seE
 leV
 qxi
-paL
-jNt
-paL
+vOI
+cJL
+vOI
 qxi
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 leV
@@ -86763,9 +86740,9 @@ leV
 leV
 leV
 leV
-hRN
-goj
-hRN
+seE
+vzd
+seE
 leV
 leV
 leV
@@ -86956,7 +86933,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -86997,20 +86974,20 @@ nSQ
 tmx
 muR
 leV
-goj
-goj
-goj
-goj
+vzd
+vzd
+vzd
+vzd
 seE
 luX
-shU
-jNt
-paL
+reR
+cJL
+vOI
 crd
 seE
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 leV
@@ -87020,9 +86997,9 @@ leV
 leV
 leV
 leV
-hRN
-goj
-hRN
+seE
+vzd
+seE
 leV
 leV
 leV
@@ -87213,7 +87190,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -87254,20 +87231,20 @@ nSQ
 vsH
 muR
 leV
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
 seE
 leV
 leV
@@ -87277,9 +87254,9 @@ leV
 leV
 leV
 leV
-hRN
-goj
-hRN
+seE
+vzd
+seE
 leV
 leV
 leV
@@ -87470,7 +87447,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -87511,20 +87488,20 @@ jzH
 ecA
 muR
 leV
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
 seE
 leV
 leV
@@ -87535,8 +87512,8 @@ leV
 leV
 leV
 leV
-goj
-goj
+vzd
+vzd
 leV
 leV
 leV
@@ -87768,21 +87745,21 @@ wam
 kkW
 muR
 leV
-goj
-goj
-goj
-goj
-goj
-goj
-soy
-jNt
-paL
-goj
-goj
-goj
-goj
-goj
-goj
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+gwO
+jhq
+vOI
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
 seE
 leV
 leV
@@ -87792,9 +87769,9 @@ leV
 leV
 leV
 leV
-goj
-goj
-hRN
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -87899,7 +87876,7 @@ gqU
 hyo
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -87984,7 +87961,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -88025,35 +88002,35 @@ muR
 muR
 muR
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 seE
 luX
-soy
-jNt
-soy
+gwO
+jhq
+gwO
 luX
 seE
 seE
 seE
-goj
-goj
+vzd
+vzd
 seE
 leV
 leV
 leV
 leV
 leV
-hRN
+seE
 leV
 leV
-goj
-goj
+vzd
+vzd
 leV
-hRN
-hRN
+seE
+seE
 leV
 gZR
 cqL
@@ -88156,7 +88133,7 @@ gqU
 hyo
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 pCL
@@ -88241,7 +88218,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -88282,35 +88259,35 @@ pne
 uxT
 dmS
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 seE
 luX
-soy
-qXx
-paL
+gwO
+ihm
+gwO
 crd
 seE
 seE
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 leV
 leV
 leV
 leV
-hRN
+seE
 leV
 leV
-goj
-goj
+vzd
+vzd
 leV
-hRN
-hRN
+seE
+seE
 leV
 gZR
 rKG
@@ -88413,7 +88390,7 @@ gqU
 hyo
 gqU
 gqU
-jhq
+ccu
 gqU
 hyo
 hyo
@@ -88498,7 +88475,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -88539,9 +88516,9 @@ qrt
 uLw
 dmS
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 goj
 leV
 qxi
@@ -88551,24 +88528,24 @@ reR
 qxi
 seE
 seE
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 leV
 leV
 leV
 leV
-hRN
-hRN
-hRN
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 gZR
 krO
 hPj
@@ -88670,7 +88647,7 @@ hyo
 hyo
 gqU
 gqU
-jhq
+ccu
 hyo
 hyo
 hyo
@@ -88755,7 +88732,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -88796,36 +88773,36 @@ nUq
 hSk
 dmS
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 qxi
-paL
+vOI
 cJL
-paL
+vOI
 goG
 leV
 seE
 seE
-goj
-goj
+vzd
+vzd
 seE
 leV
 leV
 leV
 leV
 leV
-hRN
-hRN
-goj
-goj
-goj
-hRN
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+seE
+vzd
+vzd
+seE
 gZR
 krO
 kxA
@@ -88927,7 +88904,7 @@ wlF
 hyo
 gqU
 gqU
-jhq
+ccu
 hyo
 hyo
 gqU
@@ -89012,7 +88989,7 @@ gqU
 gqU
 gqU
 gqU
-jhq
+ccu
 gqU
 gqU
 gqU
@@ -89053,9 +89030,9 @@ gdN
 exn
 dmS
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 leV
 goG
@@ -89066,21 +89043,21 @@ goG
 leV
 leV
 seE
-goj
-goj
+vzd
+vzd
 seE
 leV
 leV
 leV
-hRN
-hRN
-hRN
-goj
-goj
+seE
+seE
+seE
+vzd
+vzd
 leV
 leV
-goj
-goj
+vzd
+vzd
 leV
 leV
 gZR
@@ -89185,90 +89162,90 @@ gqU
 gqU
 hyo
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
-jhq
-jhq
-jhq
-jhq
-jhq
+ccu
+ccu
+ccu
+ccu
+ccu
 obO
 hyo
 hyo
@@ -89311,9 +89288,9 @@ jaE
 dmS
 leV
 leV
-goj
-goj
-goj
+vzd
+vzd
+vzd
 seE
 qxi
 paL
@@ -89323,21 +89300,21 @@ qxi
 leV
 leV
 seE
-goj
-goj
+vzd
+vzd
 seE
 leV
 leV
 leV
-hRN
-hRN
-goj
-goj
-goj
+seE
+seE
+vzd
+vzd
+vzd
 leV
-hRN
-goj
-hRN
+seE
+vzd
+seE
 leV
 leV
 gZR
@@ -89569,8 +89546,8 @@ dmS
 leV
 leV
 seE
-goj
-goj
+vzd
+vzd
 seE
 qxi
 hVK
@@ -89579,21 +89556,21 @@ azj
 qxi
 leV
 seE
-goj
-goj
+vzd
+vzd
 seE
 seE
 leV
 leV
 leV
-hRN
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
 leV
 leV
 leV
@@ -89826,7 +89803,7 @@ hwX
 leV
 leV
 seE
-goj
+vzd
 seE
 crd
 goG
@@ -89843,14 +89820,14 @@ leV
 leV
 leV
 leV
-hRN
-hRN
-goj
-goj
-goj
-goj
-hRN
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+seE
+seE
 leV
 leV
 leV
@@ -90100,13 +90077,13 @@ leV
 leV
 leV
 leV
-hRN
-hRN
-goj
-goj
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -91625,7 +91602,7 @@ oaQ
 vlB
 vlB
 vlB
-hRN
+seE
 crd
 crd
 vBi
@@ -91635,19 +91612,19 @@ qCg
 vBi
 luX
 jGI
-hRN
+seE
 leV
 leV
 leV
-hRN
-hRN
-hRN
-hRN
-goj
-goj
-goj
-goj
-hRN
+seE
+seE
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -91669,10 +91646,10 @@ leV
 leV
 leV
 leV
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
 leV
 leV
 leV
@@ -91880,10 +91857,10 @@ oaQ
 oaQ
 oaQ
 vlB
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
 crd
 goG
 atY
@@ -91891,21 +91868,21 @@ nXg
 qCg
 goG
 luX
-hRN
-hRN
+seE
+seE
 leV
 leV
 leV
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goj
-goj
-goj
-goj
-goj
-hRN
-hRN
+vzd
+vzd
+vzd
+vzd
+seE
+seE
 leV
 leV
 leV
@@ -91926,10 +91903,10 @@ leV
 leV
 leV
 leV
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
 leV
 leV
 leV
@@ -92139,30 +92116,30 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goG
 dSD
 uKp
 dSD
 goG
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
 leV
 leV
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goj
-goj
-goj
-goj
-goj
-hRN
-hRN
+vzd
+vzd
+vzd
+vzd
+seE
+seE
 leV
 leV
 leV
@@ -92180,19 +92157,19 @@ leV
 leV
 leV
 leV
-hRN
+seE
 leV
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-goj
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+vzd
 vlB
 lPq
 eBz
@@ -92396,30 +92373,30 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goG
 jMz
 gAR
 jMz
 goG
-goj
-goj
-goj
+vzd
+vzd
+vzd
+seE
+seE
+seE
 hRN
 hRN
 hRN
-hRN
-hRN
-hRN
 goj
-goj
-goj
-goj
-goj
-goj
-hRN
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -92437,19 +92414,19 @@ leV
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-goj
-goj
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+seE
+vzd
+vzd
 vlB
 lPq
 lPq
@@ -92652,31 +92629,31 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-goj
-goj
+seE
+seE
+vzd
+vzd
 goG
 bgJ
 pDb
 bBH
 goG
-goj
-goj
-goj
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+vzd
+vzd
+vzd
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -92695,18 +92672,18 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-hRN
-hRN
-hRN
-hRN
-hRN
-goj
-goj
-goj
-goj
+seE
+vzd
+vzd
+seE
+seE
+seE
+seE
+seE
+vzd
+vzd
+vzd
+vzd
 vlB
 lPq
 sll
@@ -92909,31 +92886,31 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-goj
-goj
+seE
+seE
+vzd
+vzd
 crd
 qCg
 ibD
 qCg
 crd
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
-hRN
-hRN
-goj
-goj
-goj
-goj
-goj
-hRN
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -92952,19 +92929,19 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-goj
-hRN
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 bkx
 vUC
 iyI
@@ -93165,32 +93142,32 @@ xTY
 vlB
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-goj
+seE
+seE
+vzd
+vzd
+vzd
 crd
 qCg
 whR
 qCg
 luX
-goj
-goj
-goj
-goj
-goj
-hRN
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 hRN
 hRN
 leV
 leV
-hRN
-goj
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -93210,18 +93187,18 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 bkx
 vUC
 iyI
@@ -93421,33 +93398,33 @@ rxb
 xTY
 vlB
 vlB
-hRN
-hRN
-hRN
-goj
-goj
-goj
+seE
+seE
+seE
+vzd
+vzd
+vzd
 crd
 tgT
 lLx
 qCg
 crd
-goj
-hRN
-hRN
-goj
-goj
-hRN
+vzd
+seE
+seE
+vzd
+vzd
+seE
 leV
 leV
 leV
-hRN
-hRN
-hRN
-goj
-goj
-goj
-hRN
+seE
+seE
+seE
+vzd
+vzd
+vzd
+seE
 leV
 leV
 leV
@@ -93468,17 +93445,17 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 lPq
 maR
 iyI
@@ -93678,12 +93655,12 @@ pFo
 xTY
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+seE
 crd
 qCg
 qCg
@@ -93691,20 +93668,20 @@ qCg
 goG
 vlB
 vlB
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
 leV
 leV
 leV
 leV
-hRN
-hRN
-goj
-hRN
-hRN
+seE
+seE
+vzd
+seE
+seE
 leV
 vlB
 vlB
@@ -93725,17 +93702,17 @@ gqU
 seE
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 bkx
 vUC
 iyI
@@ -93935,12 +93912,12 @@ xTY
 xTY
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-hRN
-hRN
+seE
+seE
+vzd
+vzd
+seE
+seE
 yki
 qCg
 gMB
@@ -93949,9 +93926,9 @@ goG
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
+seE
+seE
+seE
 vlB
 vlB
 vlB
@@ -93959,8 +93936,8 @@ vlB
 leV
 leV
 leV
-hRN
-hRN
+seE
+seE
 leV
 leV
 vlB
@@ -93983,16 +93960,16 @@ seE
 vlB
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 bkx
 vUC
 iyI
@@ -94190,14 +94167,14 @@ xTY
 uzD
 rsk
 kKw
-hRN
+seE
 vlB
-hRN
-hRN
-goj
-goj
-hRN
-hRN
+seE
+seE
+vzd
+vzd
+seE
+seE
 yki
 gMB
 qCg
@@ -94206,8 +94183,8 @@ goG
 vlB
 vlB
 vlB
-hRN
-hRN
+seE
+seE
 vlB
 vlB
 vlB
@@ -94241,15 +94218,15 @@ seE
 vlB
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-goj
-goj
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+vzd
+vzd
+vzd
+seE
 lPq
 dAE
 iyI
@@ -94447,14 +94424,14 @@ ueU
 hCc
 xQX
 kKw
-hRN
-hRN
-hRN
-hRN
-goj
-goj
-hRN
-hRN
+seE
+seE
+seE
+seE
+vzd
+vzd
+seE
+seE
 goG
 fJy
 qCg
@@ -94500,13 +94477,13 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-hRN
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+seE
+seE
 bkx
 vUC
 iyI
@@ -94704,14 +94681,14 @@ xTY
 fXa
 rsk
 kKw
-hRN
-hRN
-hRN
-hRN
-goj
-goj
-hRN
-hRN
+seE
+seE
+seE
+seE
+vzd
+vzd
+seE
+seE
 goG
 mpx
 nkU
@@ -94757,13 +94734,13 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-goj
-hRN
-hRN
+seE
+vzd
+vzd
+vzd
+vzd
+seE
+seE
 bkx
 vUC
 iyI
@@ -94965,10 +94942,10 @@ vlB
 vlB
 hRN
 hRN
-goj
-hRN
-hRN
-hRN
+vzd
+seE
+seE
+seE
 goG
 mpx
 nkU
@@ -95015,12 +94992,12 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-hRN
-hRN
+seE
+vzd
+vzd
+vzd
+seE
+seE
 lPq
 pVQ
 iyI
@@ -95219,13 +95196,13 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goj
-hRN
-hRN
-hRN
+seE
+seE
+seE
 goG
 qvh
 leR
@@ -95273,11 +95250,11 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-hRN
-hRN
-hRN
+seE
+vzd
+seE
+seE
+seE
 bkx
 vUC
 kSt
@@ -95476,12 +95453,12 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
+seE
 vlB
 goG
 goG
@@ -95531,10 +95508,10 @@ seE
 vlB
 vlB
 vlB
-goj
-hRN
-hRN
-hRN
+vzd
+seE
+seE
+seE
 bkx
 vUC
 mQj
@@ -95732,13 +95709,13 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
-hRN
+seE
+seE
+seE
+seE
+seE
+seE
+seE
 vlB
 vlB
 vlB
@@ -95788,7 +95765,7 @@ seE
 vlB
 vlB
 vlB
-goj
+vzd
 vlB
 vlB
 vlB
@@ -95991,9 +95968,9 @@ vlB
 vlB
 vlB
 vlB
-hRN
-hRN
-hRN
+seE
+seE
+seE
 vlB
 vlB
 vlB
@@ -96045,8 +96022,8 @@ seE
 vlB
 vlB
 vlB
-goj
-hRN
+vzd
+seE
 eXo
 eXo
 eXo
@@ -96302,8 +96279,8 @@ seE
 vlB
 vlB
 vlB
-goj
-hRN
+vzd
+seE
 eXo
 eXo
 fVc
@@ -96558,9 +96535,9 @@ vlB
 vlB
 vlB
 vlB
-hRN
-goj
-hRN
+seE
+vzd
+seE
 xtn
 gTM
 jUm
@@ -96814,10 +96791,10 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-hRN
+seE
+vzd
+vzd
+seE
 jun
 jon
 fTh
@@ -97070,11 +97047,11 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-goj
-hRN
+seE
+vzd
+vzd
+vzd
+seE
 jun
 nNY
 uzJ
@@ -97326,12 +97303,12 @@ seE
 seE
 vlB
 vlB
-hRN
-hRN
-goj
-goj
-goj
-hRN
+seE
+seE
+vzd
+vzd
+vzd
+seE
 jun
 doR
 lXP
@@ -97583,12 +97560,12 @@ seE
 seE
 vlB
 vlB
-hRN
-goj
-goj
-goj
-hRN
-hRN
+seE
+vzd
+vzd
+vzd
+seE
+seE
 eXo
 bwm
 fTh
@@ -97840,11 +97817,11 @@ seE
 vlB
 vlB
 vlB
-hRN
-goj
-goj
-hRN
-hRN
+seE
+vzd
+vzd
+seE
+seE
 vlB
 eXo
 eXo
@@ -98098,9 +98075,9 @@ pwN
 pwN
 pwN
 pwN
-hRN
-hRN
-hRN
+seE
+seE
+seE
 vlB
 vlB
 eXo
@@ -98355,7 +98332,7 @@ rtC
 qWc
 yhR
 pwN
-hRN
+seE
 vlB
 vlB
 vlB
@@ -101214,10 +101191,10 @@ qlM
 cks
 ayv
 lVw
-gqv
-vOI
+lVw
+pfl
 gQY
-vOI
+pfl
 vdh
 hyo
 hyo
@@ -101466,7 +101443,7 @@ ocP
 vkS
 dBg
 vkS
-oMR
+scb
 iZN
 qBe
 vRT
@@ -147642,7 +147619,7 @@ vvv
 qpd
 rib
 aIL
-wen
+hLo
 gax
 gax
 gax
@@ -148156,7 +148133,7 @@ oFv
 aIL
 qDy
 aIL
-wen
+hLo
 qDw
 uLf
 gax
@@ -153269,7 +153246,7 @@ seE
 seE
 seE
 seE
-hRN
+seE
 seE
 seE
 seE
