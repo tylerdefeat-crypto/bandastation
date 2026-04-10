@@ -251,7 +251,7 @@
 	owner.whisper("Спи...", forced = "banshee_whisper")
 
 	. = ..()
-	victim.Sleeping(200)
+	victim.Sleeping(2000)
 	to_chat(victim, span_danger("Спи... вечным сном..."))
 	to_chat(owner, span_notice("Вы погружаете [victim] в сон."))
 
