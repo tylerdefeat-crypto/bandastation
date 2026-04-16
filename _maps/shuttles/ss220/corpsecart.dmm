@@ -1,0 +1,431 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
+/area/shuttle/corpsecart)
+"b" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"c" = (
+/obj/machinery/sleeper/syndie{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"d" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/surgery_tray/full/advanced,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -9;
+	pixel_y = 16
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"f" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/plating,
+/area/shuttle/corpsecart)
+"g" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"i" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"j" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 9
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"k" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"l" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"m" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/ballistic/automatic/pistol/aps,
+/obj/item/ammo_box/magazine/m9mm_aps,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"n" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"o" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/end{
+	dir = 4
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"p" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 10
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"q" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/o2{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"r" = (
+/obj/machinery/power/shuttle_engine/heater,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/corpsecart)
+"s" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/docking_port/mobile/corpsecart,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"t" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"v" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"w" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"x" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"y" = (
+/obj/machinery/computer/shuttle/syndicate/corpsecart,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"z" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"C" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"D" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/fire{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"E" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/end{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"G" = (
+/obj/structure/closet/crate/freezer/blood,
+/obj/machinery/iv_drip,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"H" = (
+/turf/template_noop,
+/area/template_noop)
+"I" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/storage/box/donkpockets,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"J" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"K" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/multitool,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"L" = (
+/turf/closed/wall/r_wall/plastitanium/syndicate,
+/area/shuttle/corpsecart)
+"N" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "prisoner transfer chair"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"O" = (
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"P" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"Q" = (
+/turf/open/floor/plating,
+/area/shuttle/corpsecart)
+"R" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"S" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/reagent_containers/cup/glass/bottle/tequila{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = 9;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"T" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 6
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"U" = (
+/obj/structure/table/optable,
+/obj/item/tank/internals/anesthetic{
+	pixel_x = -3
+	},
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/surgical_drapes,
+/obj/item/clothing/mask/breath/muzzle,
+/obj/machinery/defibrillator_mount/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"V" = (
+/obj/structure/statue/gold/galactic_map,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"W" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+"X" = (
+/obj/machinery/power/shuttle_engine/large,
+/turf/open/floor/plating,
+/area/shuttle/corpsecart)
+"Y" = (
+/obj/machinery/computer/communications/syndicate,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/corpsecart)
+"Z" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/corpsecart)
+
+(1,1,1) = {"
+H
+L
+f
+a
+s
+a
+a
+f
+f
+a
+a
+l
+a
+f
+L
+L
+H
+"}
+(2,1,1) = {"
+L
+a
+I
+a
+z
+P
+P
+P
+P
+K
+a
+z
+c
+D
+r
+Q
+X
+"}
+(3,1,1) = {"
+f
+Y
+E
+a
+z
+j
+J
+J
+p
+N
+a
+j
+p
+d
+r
+Q
+Q
+"}
+(4,1,1) = {"
+f
+m
+g
+W
+k
+C
+V
+O
+i
+v
+w
+C
+x
+U
+a
+a
+H
+"}
+(5,1,1) = {"
+f
+y
+o
+a
+z
+Z
+R
+R
+T
+N
+a
+Z
+T
+b
+r
+Q
+X
+"}
+(6,1,1) = {"
+L
+L
+S
+a
+z
+t
+t
+t
+t
+n
+a
+z
+G
+q
+r
+Q
+Q
+"}
+(7,1,1) = {"
+H
+L
+f
+a
+l
+a
+a
+f
+f
+a
+a
+l
+a
+f
+L
+L
+H
+"}

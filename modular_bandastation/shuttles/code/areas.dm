@@ -15,3 +15,9 @@
 
 /area/shuttle/assault_pod/nanotrasen
 	name = "Nanotrasen Assault Pod"
+
+/area/shuttle/corpsecart
+	name = "\"Corpsecart\" Syndicate Shuttle"
+
+/area/shuttle/sparrow
+	name = "\"Sparrow\" Nanotrasen Shuttle"
