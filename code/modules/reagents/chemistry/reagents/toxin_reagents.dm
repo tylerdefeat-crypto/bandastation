@@ -333,7 +333,9 @@
 
 /datum/reagent/toxin/zombiepowder/on_mob_end_metabolize(mob/living/affected_mob)
 	. = ..()
-	affected_mob.remove_status_effect(/datum/status_effect/reagent_effect/fakedeath)
+	// BANDASTATION EDIT - START
+	affected_mob.cure_fakedeath(type)
+	// BANDASTATION EDIT - END
 
 /datum/reagent/toxin/zombiepowder/on_mob_life(mob/living/affected_mob, seconds_per_tick, metabolization_ratio)
 	. = ..()
@@ -349,7 +351,7 @@
 			need_mob_update = affected_mob.adjust_stamina_loss(20 * metabolization_ratio * seconds_per_tick, updating_stamina = FALSE)
 		if(10 to INFINITY)
 			if(affected_mob.stat != DEAD)
-				affected_mob.fakedeath(type)
+				affected_mob.apply_status_effect(/datum/status_effect/reagent_effect/fakedeath, type)
 	if(need_mob_update)
 		return UPDATE_MOB_HEALTH
 
