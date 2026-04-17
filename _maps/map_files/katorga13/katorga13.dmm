@@ -709,7 +709,9 @@
 /turf/open/floor/engine/airless,
 /area/awaymission/katorga/engineering/supermatter)
 "ayS" = (
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/hos)
 "azj" = (
@@ -833,7 +835,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/cmo)
 "aCw" = (
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /obj/machinery/status_display/ai/directional/south,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/dinner)
@@ -1638,7 +1642,9 @@
 /area/awaymission/katorga/engineering/lobby)
 "bky" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
@@ -1802,6 +1808,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter6"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/storage)
 "bpN" = (
@@ -2176,7 +2183,9 @@
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay)
 "bBL" = (
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
@@ -2303,7 +2312,9 @@
 /obj/structure/closet/emcloset,
 /obj/structure/sign/warning/vacuum/external/directional/east,
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/misc/arrivals)
@@ -2505,7 +2516,9 @@
 /area/awaymission/katorga/ai/interior)
 "bQG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/machinery/light/small/directional/west,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/control)
@@ -3248,6 +3261,7 @@
 "cqy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/bombcloset/security,
+/obj/item/storage/box/flares,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "cqE" = (
@@ -3994,6 +4008,7 @@
 /area/awaymission/katorga/security/hos)
 "cQY" = (
 /obj/machinery/airalarm/directional/north,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/storage)
 "cRb" = (
@@ -5576,7 +5591,9 @@
 /area/awaymission/katorga/ai/inside)
 "dSq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/arrivals)
 "dSr" = (
@@ -6116,7 +6133,9 @@
 /area/awaymission/katorga/security/cargo)
 "ejK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
 "ejP" = (
@@ -6218,6 +6237,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
+"eng" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/storage/box/flares,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "enp" = (
 /obj/structure/closet/body_bag/lost_crew/with_body,
 /obj/effect/decal/cleanable/blood/old,
@@ -6942,7 +6967,9 @@
 /area/awaymission/katorga/security)
 "eNV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "eOn" = (
@@ -7613,6 +7640,7 @@
 /area/awaymission/katorga/security)
 "fip" = (
 /obj/machinery/door/window/left/directional/west,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "fiA" = (
@@ -8154,7 +8182,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/entrance)
 "fzg" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/button/door/directional/north{
 	id = "First Floor Corridor"
@@ -8398,7 +8428,9 @@
 /area/awaymission/katorga/misc/arrivals)
 "fIr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "fID" = (
@@ -8626,7 +8658,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "fPm" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/white,
@@ -9793,6 +9827,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/arrivals)
+"gEZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/gimmick/tacticool,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/box/flares,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "gFf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
@@ -9933,7 +9974,9 @@
 /area/awaymission/katorga/misc/arrivals/hallway)
 "gKy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
@@ -10004,6 +10047,7 @@
 /obj/machinery/lift_indicator/directional/north{
 	linked_elevator_id = "sec_elev"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/eva)
 "gLR" = (
@@ -10374,6 +10418,7 @@
 "gXi" = (
 /obj/machinery/door/window/left/directional/west,
 /obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "gXx" = (
@@ -10580,6 +10625,7 @@
 "heg" = (
 /obj/structure/sign/flag/ussp/directional/north,
 /obj/structure/closet/firecloset,
+/obj/item/storage/box/flares,
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/hallway)
 "heB" = (
@@ -10657,7 +10703,9 @@
 /area/awaymission/katorga/ai/telecomms)
 "hhw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/structure/sign/flag/ussp/directional/north,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
@@ -10753,7 +10801,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
 "hli" = (
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay)
 "hlx" = (
@@ -11873,7 +11923,9 @@
 /area/awaymission/katorga/prison/mining)
 "idL" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
@@ -11923,7 +11975,9 @@
 /area/awaymission/katorga/security/maints/fore)
 "ifC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
 "igf" = (
@@ -13032,7 +13086,9 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/prison/mining)
 "iPm" = (
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/structure/sign/flag/ussp/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured,
@@ -13163,7 +13219,9 @@
 /area/awaymission/katorga/security/post)
 "iTE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
@@ -13177,7 +13235,9 @@
 /turf/open/floor/iron/dark/textured_half,
 /area/awaymission/katorga/security/hos)
 "iTK" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/medbay)
@@ -13603,7 +13663,9 @@
 /area/awaymission/katorga/security/control)
 "jhH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/indestructible/dark,
@@ -13666,7 +13728,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "jkE" = (
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay)
 "jkK" = (
@@ -14025,7 +14089,9 @@
 /area/awaymission/katorga/ai/interior)
 "jxV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15680,7 +15746,9 @@
 /area/awaymission/katorga/misc/mansus)
 "kze" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white,
@@ -15923,7 +15991,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/durka)
 "kGg" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "kGu" = (
@@ -16085,7 +16155,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/control)
 "kMX" = (
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/item/clothing/suit/jacket/straight_jacket,
 /obj/item/clothing/mask/muzzle,
@@ -16481,7 +16553,9 @@
 /area/awaymission/katorga/security/entrance)
 "laH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/podbay)
 "laT" = (
@@ -16594,7 +16668,9 @@
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/katorga/security/hos)
 "lek" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/effect/gibspawner/human/bodypartless,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
@@ -17277,7 +17353,9 @@
 "lAH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/directional/north,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/entrance)
 "lAT" = (
@@ -17381,7 +17459,9 @@
 /turf/open/floor/cult,
 /area/awaymission/katorga/misc/mansus)
 "lFk" = (
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/dinner)
@@ -18198,7 +18278,9 @@
 	},
 /area/awaymission/katorga/cargo/bay)
 "mhx" = (
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
 "mhP" = (
@@ -18465,6 +18547,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter6"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/storage)
 "mro" = (
@@ -18647,7 +18730,9 @@
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/eva)
 "myc" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/brig)
 "mys" = (
@@ -18796,6 +18881,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/radio,
+/obj/item/storage/box/flares{
+	pixel_x = 6;
+	pixel_y = 10
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/arrivals)
 "mCv" = (
@@ -19156,7 +19245,9 @@
 /area/awaymission/katorga/security/hos)
 "mOB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/entrance)
 "mOO" = (
@@ -19511,7 +19602,8 @@
 "ngr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/camera_advanced{
-	dir = 4
+	dir = 4;
+	networks = list("k13")
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
@@ -19872,6 +19964,7 @@
 	pixel_y = 6
 	},
 /obj/item/stack/sheet/iron/fifty,
+/obj/item/storage/box/flares,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "nss" = (
@@ -19893,6 +19986,7 @@
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
+/obj/item/storage/box/flares,
 /turf/open/floor/iron/airless,
 /area/awaymission/katorga/engineering/atmos/upper)
 "nsV" = (
@@ -20009,7 +20103,9 @@
 "nwZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/mess,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
@@ -20174,7 +20270,9 @@
 /area/awaymission/katorga/engineering)
 "nDc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "nDq" = (
@@ -20288,7 +20386,9 @@
 	name = "Chief Medical Officer's Requests Console";
 	department = "Chief Medical Officer's Desk"
 	},
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/cmo)
@@ -20309,7 +20409,9 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/upper)
 "nJJ" = (
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/status_display/ai/directional/south,
 /turf/open/floor/iron/white,
@@ -20688,7 +20790,9 @@
 "nWW" = (
 /obj/structure/sign/warning/vacuum/external/directional/east,
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/arrivals)
@@ -20956,7 +21060,9 @@
 "ohm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/locker)
@@ -21127,7 +21233,9 @@
 "onK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/shower)
@@ -21285,7 +21393,9 @@
 /area/awaymission/katorga/prison/maints)
 "oux" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
@@ -21306,7 +21416,9 @@
 /area/awaymission/katorga/security)
 "ovs" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/prison/dinner)
 "ovG" = (
@@ -21779,8 +21891,11 @@
 /obj/structure/closet/emcloset,
 /obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/flares,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/misc/arrivals)
 "oLv" = (
@@ -22216,7 +22331,9 @@
 	mask_type = /obj/item/clothing/mask/breath/red_gas
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/katorga/security/hos)
 "pdA" = (
@@ -22460,6 +22577,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/mapping_helpers/broken_machine,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "pkD" = (
@@ -22482,9 +22600,10 @@
 /area/awaymission/katorga/cargo/bay)
 "pkW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/prison/dinner)
+/obj/structure/sign/flag/ussp/directional/north,
+/obj/item/storage/box/flares,
+/turf/open/floor/wood,
+/area/awaymission/katorga/security/conference)
 "pll" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -22946,6 +23065,10 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/table/reinforced,
 /obj/structure/chem_separator,
+/obj/item/storage/box/flares{
+	pixel_x = 9;
+	pixel_y = 0
+	},
 /turf/open/floor/plating/rust,
 /area/awaymission/katorga/misc/mansus)
 "pzF" = (
@@ -23791,7 +23914,9 @@
 /area/awaymission/katorga/prison/maints)
 "qcb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "qcs" = (
@@ -23821,6 +23946,7 @@
 /obj/item/storage/bag/ore,
 /obj/item/flashlight,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/flares,
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/security/post)
 "qdD" = (
@@ -24021,7 +24147,9 @@
 /area/awaymission/katorga/misc/maints/lesser)
 "qkX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/structure/chair/sofa/corp/right,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -24195,7 +24323,9 @@
 /area/awaymission/katorga/prison/podbay)
 "qqe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "splatter3"
 	},
@@ -24333,7 +24463,6 @@
 /area/awaymission/katorga/medbay/exam)
 "qwC" = (
 /obj/effect/decal/hammerandsickle,
-/obj/effect/landmark/observer_start,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -24695,7 +24824,9 @@
 /turf/open/misc/basalt,
 /area/awaymission/katorga/asteroid)
 "qGj" = (
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/awaymission/katorga/medbay/exam)
@@ -25272,7 +25403,9 @@
 /area/awaymission/katorga/misc/arrivals)
 "qYx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/brig)
 "qYD" = (
@@ -25387,7 +25520,9 @@
 /area/awaymission/katorga/medbay/durka)
 "rcO" = (
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/structure/chair/comfy/teal{
 	dir = 8
 	},
@@ -25673,7 +25808,9 @@
 /area/awaymission/katorga/engineering/supermatter/chamber)
 "rme" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/indestructible/dark,
@@ -26556,7 +26693,9 @@
 /area/awaymission/katorga/security/entrance)
 "rUE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -27710,6 +27849,7 @@
 /obj/structure/sign/warning/bodysposal/directional/north,
 /obj/machinery/door/window/left/directional/west,
 /obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "sLi" = (
@@ -27763,6 +27903,7 @@
 /obj/effect/turf_decal/trimline/red/corner{
 	dir = 8
 	},
+/obj/item/storage/box/flares,
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/foyer)
 "sMu" = (
@@ -28215,7 +28356,9 @@
 /area/awaymission/katorga/ai)
 "tbZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/arrivals)
 "tcC" = (
@@ -28244,7 +28387,9 @@
 "tdr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/podbay)
 "tdA" = (
@@ -28769,7 +28914,9 @@
 /area/awaymission/katorga/ai/telecomms)
 "tuh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
@@ -29308,7 +29455,9 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/prison/mining)
 "tNi" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -29489,7 +29638,9 @@
 "tWt" = (
 /obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/arrivals)
@@ -29724,8 +29875,12 @@
 /turf/open/floor/cult,
 /area/awaymission/katorga/misc/mansus)
 "ueH" = (
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/post)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed,
+/obj/structure/curtain/cloth,
+/obj/item/storage/box/flares,
+/turf/open/floor/wood,
+/area/awaymission/katorga/security/conference)
 "ueI" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/yellow/visible{
 	dir = 4
@@ -29847,7 +30002,9 @@
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/locker)
 "uif" = (
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/prison/dinner)
 "uih" = (
@@ -30267,7 +30424,9 @@
 /area/awaymission/katorga/engineering/atmos/upper)
 "uxm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /obj/machinery/light/small/directional/west,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/control)
@@ -30363,7 +30522,9 @@
 /area/awaymission/katorga/security/hos)
 "uDe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "uDr" = (
@@ -30592,7 +30753,9 @@
 /area/awaymission/katorga/engineering/foyer)
 "uLf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/textured_large,
 /area/awaymission/katorga/security/brig)
@@ -31166,6 +31329,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/eva)
 "vgV" = (
@@ -31579,7 +31743,9 @@
 /area/awaymission/katorga/security/conference)
 "vvv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/brig)
 "vwf" = (
@@ -31913,7 +32079,9 @@
 /area/awaymission/katorga/engineering/atmos)
 "vHo" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white,
@@ -32920,7 +33088,9 @@
 /area/awaymission/katorga/security/post)
 "wmW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
@@ -33685,7 +33855,9 @@
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "wNO" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/control)
 "wNQ" = (
@@ -34205,7 +34377,9 @@
 /area/awaymission/katorga/engineering)
 "xhA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/west,
+/obj/machinery/camera/directional/west{
+	network = list("k13")
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
 "xhM" = (
@@ -34393,7 +34567,9 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/locker)
 "xnK" = (
-/obj/machinery/camera/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /obj/item/kirbyplants/random/dead,
 /obj/machinery/firealarm/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -34484,6 +34660,7 @@
 "xue" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
+/obj/item/storage/box/flares,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/control)
 "xui" = (
@@ -34802,7 +34979,9 @@
 /area/awaymission/katorga/ai/vault)
 "xEy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/east,
+/obj/machinery/camera/directional/east{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "xEG" = (
@@ -35703,6 +35882,7 @@
 "yix" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/preopen,
+/obj/item/storage/box/flares,
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/security)
 "yiy" = (
@@ -66208,8 +66388,8 @@ gLp
 bBg
 cuS
 pNr
-qqz
-qqz
+hUp
+hUp
 qqz
 qqz
 qqz
@@ -66483,7 +66663,7 @@ eco
 eco
 aOF
 qqz
-eco
+qqz
 eco
 eco
 eco
@@ -66492,8 +66672,8 @@ eco
 eco
 qqz
 qqz
-eco
-eco
+qqz
+qqz
 jaX
 vKg
 vKg
@@ -66749,7 +66929,7 @@ oUe
 luP
 nFH
 qqz
-eco
+qqz
 leG
 dcT
 eGs
@@ -68025,7 +68205,7 @@ qqz
 qqz
 qqz
 qqz
-eco
+qqz
 eco
 eco
 eco
@@ -68886,7 +69066,7 @@ ivc
 vSw
 dgf
 nuG
-ueH
+lhJ
 lob
 nuG
 glg
@@ -69142,8 +69322,8 @@ mko
 dja
 vSw
 jio
-ueH
-ueH
+lhJ
+lhJ
 bdQ
 sNB
 vKo
@@ -69551,7 +69731,7 @@ qqz
 gNw
 fJb
 qqz
-eco
+qqz
 eco
 eco
 qqz
@@ -69808,7 +69988,7 @@ qqz
 qqz
 qqz
 qqz
-eco
+qqz
 eco
 qqz
 qqz
@@ -71445,7 +71625,7 @@ wKb
 leO
 aOk
 oaQ
-lxJ
+hla
 rpD
 uim
 qgJ
@@ -72216,7 +72396,7 @@ mRi
 txe
 ymg
 oaQ
-lxJ
+hla
 fVS
 dmS
 pXs
@@ -72472,8 +72652,8 @@ dIm
 mRi
 leO
 hla
-lxJ
-vst
+hla
+wKb
 fVS
 aSj
 fZf
@@ -72729,7 +72909,7 @@ oxm
 mRi
 xXS
 wKb
-vst
+wKb
 hla
 fVS
 anY
@@ -122583,9 +122763,9 @@ eNC
 fLA
 dFW
 sYO
-dvK
+sYO
 doX
-rQs
+pkW
 rUf
 mDk
 kia
@@ -123101,7 +123281,7 @@ leV
 doX
 qZe
 lLf
-krs
+ueH
 gHq
 hhZ
 bXO
@@ -124667,7 +124847,7 @@ pDy
 cVC
 opM
 cag
-ddS
+opM
 opM
 tcU
 tcU
@@ -124719,7 +124899,7 @@ fyr
 fyr
 hrA
 cXN
-aQA
+cXN
 aQA
 mrD
 fyr
@@ -125179,7 +125359,7 @@ sLU
 nNa
 opM
 cVC
-ddS
+opM
 nNa
 cag
 cag
@@ -126980,7 +127160,7 @@ pDy
 wKY
 opM
 cag
-pkW
+cag
 opM
 bsx
 tcU
@@ -141623,7 +141803,7 @@ mys
 xFg
 nKC
 nFL
-ovG
+eng
 mys
 xFg
 rCi
@@ -143672,7 +143852,7 @@ cqy
 rGC
 tPz
 tPz
-tPz
+gEZ
 irD
 mJQ
 uXH
