@@ -1,0 +1,411 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/sparrow)
+"c" = (
+/obj/machinery/power/shuttle_engine/heater,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"d" = (
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/flora/bush/fullgrass/style_2,
+/obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/floor/grass,
+/area/shuttle/sparrow)
+"e" = (
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/machinery/light/floor,
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"f" = (
+/obj/machinery/computer/shuttle/sparrow,
+/turf/open/floor/iron/dark/herringbone,
+/area/shuttle/sparrow)
+"g" = (
+/turf/template_noop,
+/area/template_noop)
+"i" = (
+/obj/structure/closet/crate/freezer/blood,
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"j" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"k" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/wall_healer/directional/west,
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"l" = (
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/o2{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"m" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "prisoner transfer chair"
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 9
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle/sparrow)
+"n" = (
+/obj/machinery/power/shuttle_engine/large,
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"o" = (
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"q" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
+/turf/open/floor/iron/dark,
+/area/shuttle/sparrow)
+"r" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"s" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"u" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/iron/dark,
+/area/shuttle/sparrow)
+"v" = (
+/obj/structure/table/optable,
+/obj/item/tank/internals/anesthetic{
+	pixel_x = -3
+	},
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/surgical_drapes,
+/obj/item/clothing/mask/breath/muzzle,
+/obj/machinery/defibrillator_mount/directional/south,
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"w" = (
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"x" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner,
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"y" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"A" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"B" = (
+/obj/machinery/door/airlock/external,
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"C" = (
+/obj/machinery/computer/communications,
+/turf/open/floor/iron/dark/herringbone,
+/area/shuttle/sparrow)
+"D" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 6
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"E" = (
+/obj/machinery/stasis{
+	dir = 1
+	},
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"F" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"G" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"H" = (
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/flora/bush/grassy/style_3,
+/obj/structure/flora/bush/flowers_yw/style_3,
+/turf/open/floor/grass,
+/area/shuttle/sparrow)
+"I" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"J" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/docking_port/mobile/sparrow{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"K" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/cup/glass/mug/nanotrasen,
+/turf/open/floor/iron/dark/herringbone,
+/area/shuttle/sparrow)
+"L" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"M" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"N" = (
+/obj/item/surgery_tray/full/advanced,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -9;
+	pixel_y = 16
+	},
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"O" = (
+/obj/effect/turf_decal/tile/yellow,
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"P" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"Q" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/shuttle/sparrow)
+"R" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "prisoner transfer chair"
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 5
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle/sparrow)
+"S" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/sparrow)
+"T" = (
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"U" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"V" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/herringbone,
+/area/shuttle/sparrow)
+"W" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/sparrow)
+"Y" = (
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/fire{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/iron/white/herringbone,
+/area/shuttle/sparrow)
+"Z" = (
+/obj/item/banner/command,
+/turf/open/floor/iron/dark/herringbone,
+/area/shuttle/sparrow)
+
+(1,1,1) = {"
+g
+a
+W
+a
+J
+a
+a
+W
+W
+a
+a
+y
+a
+W
+a
+a
+g
+"}
+(2,1,1) = {"
+a
+a
+Z
+a
+j
+k
+G
+G
+G
+G
+a
+o
+E
+Y
+c
+T
+n
+"}
+(3,1,1) = {"
+W
+C
+m
+a
+A
+s
+s
+s
+s
+s
+a
+F
+S
+N
+c
+T
+T
+"}
+(4,1,1) = {"
+W
+K
+u
+q
+L
+V
+d
+H
+I
+Q
+B
+w
+e
+v
+a
+a
+g
+"}
+(5,1,1) = {"
+W
+f
+R
+a
+O
+P
+P
+P
+P
+P
+a
+x
+D
+U
+c
+T
+n
+"}
+(6,1,1) = {"
+a
+a
+Z
+a
+j
+r
+M
+M
+M
+M
+a
+o
+i
+l
+c
+T
+T
+"}
+(7,1,1) = {"
+g
+a
+W
+a
+y
+a
+a
+W
+W
+a
+a
+y
+a
+W
+a
+a
+g
+"}

@@ -7206,6 +7206,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
+"eWu" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 4;
+	height = 7;
+	name = "Katorga 13 Public Docking Port";
+	shuttle_id = "katorga_public_dock";
+	width = 17
+	},
+/turf/open/space/basic,
+/area/space)
 "eWx" = (
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/atmos)
@@ -14519,6 +14530,7 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/arrivals)
 "jLv" = (
@@ -14952,6 +14964,7 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/arrivals)
 "jXT" = (
@@ -21820,6 +21833,7 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/arrivals)
 "oJF" = (
@@ -23075,6 +23089,7 @@
 	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/arrivals)
 "pAh" = (
@@ -29284,6 +29299,17 @@
 /obj/effect/decal/cleanable/glass/plasma,
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/engineering/supermatter)
+"tHj" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 4;
+	height = 7;
+	name = "Katorga 13 Secure Docking Port";
+	shuttle_id = "katorga_secure_dock";
+	width = 17
+	},
+/turf/open/space/basic,
+/area/space)
 "tHo" = (
 /obj/effect/decal/cleanable/blood/innards,
 /obj/machinery/airalarm/directional/north,
@@ -64250,7 +64276,7 @@ gqU
 gqU
 gqU
 gqU
-gqU
+eWu
 gqU
 gqU
 gqU
@@ -125404,23 +125430,23 @@ qJW
 szj
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+tHj
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -125661,23 +125687,23 @@ pOs
 rqu
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -125918,23 +125944,23 @@ pOs
 rqu
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -126175,23 +126201,23 @@ pOs
 lZA
 mTE
 nys
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -126432,23 +126458,23 @@ pOs
 rqu
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -126689,23 +126715,23 @@ pOs
 rqu
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW
@@ -126946,23 +126972,23 @@ qoT
 wZZ
 rqu
 vdE
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
-aXW
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
+gqU
 aXW
 aXW
 aXW

@@ -68,3 +68,15 @@
 	name = "Transport Specops"
 	greyscale_colors = CIRCUIT_COLOR_COMMAND
 	build_path = /obj/machinery/computer/shuttle/specops
+
+/obj/machinery/computer/shuttle/syndicate/corpsecart
+	name = "\"corpsecart\" syndicate shuttle terminal"
+	desc = "A console that controls the transport \"Corpsecart\""
+	shuttleId = "syndicate_corpsecart"
+	possible_destinations = "katorga_secure_dock"
+
+/obj/machinery/computer/shuttle/sparrow
+	name = "\"sparrow\" nanotrasen shuttle terminal"
+	desc = "A console that controls the transport \"Sparrow\""
+	shuttleId = "nanotrasen_sparrow"
+	possible_destinations = "katorga_public_dock"

@@ -131,3 +131,21 @@
 /obj/docking_port/mobile/gamma/register()
 	. = ..()
 	SSshuttle.gamma = src
+
+/obj/docking_port/mobile/corpsecart
+	name = "\"corpsecart\" syndicate shuttle"
+	shuttle_id = "syndicate_corpsecart"
+	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0)
+	hidden = TRUE
+	dir = WEST
+	port_direction = EAST
+	preferred_direction = NORTH
+
+/obj/docking_port/mobile/sparrow
+	name = "\"sparrow\" nanotrasen shuttle"
+	shuttle_id = "nanotrasen_sparrow"
+	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0)
+	hidden = TRUE
+	dir = WEST
+	port_direction = EAST
+	preferred_direction = NORTH
