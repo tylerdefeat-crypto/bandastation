@@ -68,7 +68,7 @@
 		return
 	if(H.client)
 		shake_camera(H, 4, 3)
-	H.add_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED, TRAIT_MUTE), "banshee_scream")
+	H.add_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED), "banshee_scream")
 	to_chat(H, span_userdanger("Леденящий душу крик пронзает ваш разум! Вы парализованы!"))
 
 // MARK: Banshee's Death Wail
@@ -340,7 +340,7 @@ ADMIN_VERB(banshee_unfreeze_radius_verb, R_ADMIN, "Banshee Un-Paralyze Radius", 
 
 	var/thawed_count = 0
 	for(var/mob/living/carbon/human/H in range(range, user.mob))
-		H.remove_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED, TRAIT_MUTE), "banshee_scream")
+		H.remove_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED), "banshee_scream")
 		to_chat(H, span_notice("Оцепенение проходит. Вы снова можете двигаться."))
 
 	message_admins("[key_name_admin(user)] разморозил [thawed_count] чел. в радиусе [range].")
