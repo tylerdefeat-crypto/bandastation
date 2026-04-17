@@ -1,7 +1,9 @@
 
 //BANSHEE ABILITY SUITE (FIXED FOR BANDASTATION - NO CLOTHES REQ)
 
+// На этом месте был banshee_frozen. Это ну прям очень костыльный способ реализации, у нас уже реализовано это через трейты.
 
+/*
 /mob/living/var/banshee_frozen = FALSE
 
 /mob/living/try_speak(message, ignore_spam, forced, filterproof)
@@ -14,10 +16,11 @@
 	H.banshee_frozen = FALSE
 	H.remove_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED), "banshee_scream")
 	to_chat(H, span_notice("Оцепенение проходит. Вы снова можете двигаться."))
+*/
 
 // --- AOE SPELLS ---
 
-// --- Banshee's Stasis Scream ---
+// MARK: Banshee Scream
 
 /datum/action/cooldown/spell/aoe/banshee_scream
 	name = "Banshee's Stasis Scream"
@@ -26,8 +29,8 @@
 	cooldown_time = 30 SECONDS
 	invocation_type = INVOCATION_SHOUT
 	invocation = "НА  КОЛЕНИ!!!"
+	garbled_invocation_prob = 0
 	spell_requirements = NONE
-	var/scream_range = 7
 
 /datum/action/cooldown/spell/aoe/banshee_scream/can_cast_spell(feedback = TRUE)
 	return TRUE
@@ -44,15 +47,31 @@
 		V.duration = 1 SECONDS
 	playsound(owner.loc, 'modular_bandastation/banshee_skills/sound/banshee_scream3.ogg', 100, TRUE)
 
-	for(var/mob/living/carbon/human/H in range(scream_range, owner))
-		if(H == owner || H.stat == DEAD || H.banshee_frozen) continue
-		if(H.client)
-			shake_camera(H, 4, 3)
-		H.banshee_frozen = TRUE
-		H.add_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED), "banshee_scream")
-		to_chat(H, span_userdanger("Леденящий душу крик пронзает ваш разум! Вы парализованы!"))
+// Нам нужно кастовать только на карбонов
+/datum/action/cooldown/spell/aoe/banshee_scream/get_things_to_cast_on(atom/center, radius_override)
+	var/list/valid = list()
+	var/list/o_range = orange(center, radius_override || aoe_radius) - list(owner, center)
+	for(var/mob/living/carbon/human/nearby_mob in o_range)
+		if(nearby_mob.stat == DEAD)
+			continue
+		if(issilicon(nearby_mob))
+			continue
+		valid += nearby_mob
+	return valid
 
-// --- Banshee's Death Wail ---
+// Вот этот кусок кода должен быть в cast_on_thing_in_aoe. В целом cast в данном случае лучше не трогать, но уже пофиг
+/datum/action/cooldown/spell/aoe/banshee_scream/cast_on_thing_in_aoe(atom/victim, atom/caster)
+	var/mob/living/carbon/human/H = victim
+	if(!istype(H))
+		return
+	if(H == owner || H.stat == DEAD)
+		return
+	if(H.client)
+		shake_camera(H, 4, 3)
+	H.add_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED, TRAIT_MUTE), "banshee_scream")
+	to_chat(H, span_userdanger("Леденящий душу крик пронзает ваш разум! Вы парализованы!"))
+
+// MARK: Banshee's Death Wail
 
 /datum/action/cooldown/spell/aoe/banshee_death_wail
 	name = "Death Wail (AOE GIB)"
@@ -62,17 +81,29 @@
 	invocation_type = INVOCATION_SHOUT
 	invocation = "УМРИТЕ!!!"
 	spell_requirements = NONE
+	aoe_radius = 3
 
 /datum/action/cooldown/spell/aoe/banshee_death_wail/can_cast_spell(feedback = TRUE)
 	return TRUE
 
+/datum/action/cooldown/spell/aoe/banshee_death_wail/get_things_to_cast_on(atom/center, radius_override)
+	var/list/valid = list()
+	var/list/o_range = orange(center, radius_override || aoe_radius) - list(owner, center)
+	for(var/mob/living/nearby_mob in o_range)
+		if(nearby_mob.stat == DEAD)
+			continue
+		valid += nearby_mob
+	return valid
+
 /datum/action/cooldown/spell/aoe/banshee_death_wail/cast(list/targets)
     . = ..()
     playsound(owner.loc, 'modular_bandastation/banshee_skills/sound/banshee_scream.ogg', 100, TRUE)
-    for(var/mob/living/L in range(3, owner))
-        if(L == owner || L.stat == DEAD) continue
-        // .gib() работает на всех mob/living (люди, животные, монстры)
-        L.gib(TRUE, TRUE, TRUE)
+
+/datum/action/cooldown/spell/aoe/banshee_death_wail/cast_on_thing_in_aoe(atom/victim, atom/caster)
+	var/mob/living/H = victim
+	if(!istype(H))
+		return
+	H.gib()
 
 // --- Banshee's Destructive Wail ---
 
@@ -90,18 +121,25 @@
 /datum/action/cooldown/spell/aoe/banshee_destructive_wail/cast(list/targets)
 	. = ..()
 	playsound(owner.loc, 'modular_bandastation/banshee_skills/sound/explosionfar.ogg', 100, TRUE)
-	for(var/atom/A in range(4, owner))
-		if(A == owner) continue
-		if(isliving(A))
-			var/mob/living/L = A
-			L.take_overall_damage(40, 0)
-			L.throw_at(get_edge_target_turf(L, get_dir(owner, L)), 3, 2)
-		else if(isobj(A))
-			var/obj/O = A
-			O.take_damage(60, BRUTE, "bomb", 0)
-		else if(isturf(A))
-			var/turf/closed/wall/W = A
-			if(istype(W) && prob(40)) W.dismantle_wall(TRUE)
+
+/datum/action/cooldown/spell/aoe/banshee_destructive_wail/cast_on_thing_in_aoe(atom/victim, atom/caster)
+	if(QDELETED(victim))
+		return
+	if(victim == owner)
+		return
+	if(isliving(victim))
+		var/mob/living/L = victim
+		L.take_overall_damage(40, 0)
+		L.throw_at(get_edge_target_turf(L, get_dir(owner, L)), 3, 2)
+	// Здесь были объекты. Их лучше не дамажить, т.к. ты дамажишь даже системные абстрактные объекты или органы. Структуры норм.
+	else if(isstructure(victim))
+		var/obj/structure/O = victim
+		O.take_damage(60, BRUTE, "bomb", 0)
+	// Не каждый турф - стена. Тут только со стенами работаем.
+	else if(iswallturf(victim))
+		var/turf/closed/wall/W = victim
+		if(prob(40))
+			W.dismantle_wall(TRUE)
 
 // --- POINTED SPELLS ---
 
@@ -302,8 +340,7 @@ ADMIN_VERB(banshee_unfreeze_radius_verb, R_ADMIN, "Banshee Un-Paralyze Radius", 
 
 	var/thawed_count = 0
 	for(var/mob/living/carbon/human/H in range(range, user.mob))
-		if(H.banshee_frozen)
-			banshee_thaw(H)
-			thawed_count++
+		H.remove_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED, TRAIT_MUTE), "banshee_scream")
+		to_chat(H, span_notice("Оцепенение проходит. Вы снова можете двигаться."))
 
 	message_admins("[key_name_admin(user)] разморозил [thawed_count] чел. в радиусе [range].")
