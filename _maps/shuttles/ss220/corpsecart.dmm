@@ -111,7 +111,9 @@
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/docking_port/mobile/corpsecart,
+/obj/docking_port/mobile/corpsecart{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/corpsecart)
 "t" = (

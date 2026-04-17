@@ -7180,26 +7180,16 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "eWu" = (
-/obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	space_dir = 4
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/effect/turf_decal/delivery/red,
-/obj/effect/decal/cleanable/dirt,
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 5;
+	dwidth = 4;
 	height = 7;
 	name = "Katorga 13 Public Docking Port";
 	shuttle_id = "katorga_public_dock";
 	width = 17
 	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plating,
-/area/awaymission/katorga/misc/arrivals)
+/turf/open/space/basic,
+/area/space)
 "eWx" = (
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/atmos)
@@ -29163,26 +29153,16 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/engineering/supermatter)
 "tHj" = (
-/obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	space_dir = 4
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/effect/turf_decal/delivery/red,
-/obj/effect/decal/cleanable/dirt,
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 5;
+	dwidth = 4;
 	height = 7;
 	name = "Katorga 13 Secure Docking Port";
 	shuttle_id = "katorga_secure_dock";
 	width = 17
 	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/arrivals)
+/turf/open/space/basic,
+/area/space)
 "tHo" = (
 /obj/effect/decal/cleanable/blood/innards,
 /obj/machinery/airalarm/directional/north,
@@ -63859,7 +63839,7 @@ gqU
 gqU
 gqU
 uMg
-eWu
+pzN
 uMg
 gqU
 gqU
@@ -64116,7 +64096,7 @@ gqU
 gqU
 gqU
 gqU
-gqU
+eWu
 gqU
 gqU
 gqU
@@ -125017,7 +124997,7 @@ aXW
 aXW
 aXW
 vdE
-tHj
+jLt
 vdE
 aXW
 aXW
@@ -125274,7 +125254,7 @@ gqU
 gqU
 gqU
 gqU
-gqU
+tHj
 gqU
 gqU
 gqU
