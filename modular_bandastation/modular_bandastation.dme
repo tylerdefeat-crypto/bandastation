@@ -91,6 +91,8 @@
 #include "contraband/_contraband.dme"
 #include "quirks/_quirks.dme"
 #include "banshee_skills/_banshee_skills.dme"
+#include "k13_holodisks/_k13_holodisks.dme"
+#include "madness_system/_madness.dme"
 // --- MODULES END --- //
 
 // --- PRIME --- //
