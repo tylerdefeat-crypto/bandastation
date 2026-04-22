@@ -127,3 +127,4 @@
 
 #include "code/items/puzzle_items.dm"
 #include "code/structures/custom_puzzles/altar_puzzle.dm"
+#include "code/items/storage/new_security_boxes.dm"
