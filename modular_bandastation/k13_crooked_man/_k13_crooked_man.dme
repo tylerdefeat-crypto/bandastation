@@ -1,0 +1,20 @@
+#include "_k13_crooked_man.dm"
+
+#include "code/k13_crooked_man.dm"
+#include "code/magic/ability_phase.dm"
+#include "code/magic/ability_stomp.dm"
+#include "code\magic\ability_vomit_split.dm"
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include "_k13_crooked_man.dm"
+#include "code\k13_crooked_man.dm"
+#include "code\magic\ability_phase.dm"
+#include "code\magic\ability_stomp.dm"
+#include "code\magic\ability_vomit_split.dm"
+// END_INCLUDE
