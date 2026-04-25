@@ -1,10 +1,3 @@
-/obj/effect/decal/cleanable/blood/crooked
-	name = "черная слизь"
-	desc = "Густая, неестественно черная субстанция. Она кажется... неправильной."
-	icon = 'icons/effects/blood.dmi'
-	color = "#1a1a1a"
-	bloodiness = 0
-
 /mob/living/basic/boss/crooked_man
 	name = "Скрюченный человек"
 	desc = "Его движения неестественны, а каждый сустав будто вывернут наизнанку."
@@ -21,6 +14,7 @@
 	melee_attack_cooldown = 1 SECONDS
 
 	speed = 2
+	attack_sound = 'modular_bandastation/k13_crooked_man/sounds/impact_1.ogg'
 
 	pixel_x = -32
 	base_pixel_x = -32
@@ -50,6 +44,10 @@
 
 	INVOKE_ASYNC(src, PROC_REF(radio_static_loop))
 	INVOKE_ASYNC(src, PROC_REF(breathing_loop))
+	AddComponent(/datum/component/blood_walk, \
+		blood_type = /obj/effect/decal/cleanable/blood)
+	AddElement(/datum/element/footstep, FOOTSTEP_MOB_HEAVY)
+	RemoveElement(/datum/element/simple_flying)
 
 	// ИСПОЛЬЗУЕМ РАЗНЫЕ ПЕРЕМЕННЫЕ ДЛЯ СПОСОБНОСТЕЙ
 	var/datum/action/cooldown/spell/crooked_phase/phase_ability = new(src)
@@ -75,25 +73,10 @@
 			M.playsound_local(src, 'modular_bandastation/k13_crooked_man/sounds/static.ogg', 20, FALSE, 7, 0.2, falloff_distance = 1)
 		sleep(10)
 
-/mob/living/basic/boss/crooked_man/Moved(atom/old_loc, movement_dir)
+/*
+// Absolute crutch. Never do it like this, I beg you.
+/datum/element/footstep/Attach(datum/target, footstep_type, volume, e_range, sound_vary)
 	. = ..()
-	if(loc != old_loc && isturf(loc))
-		if(!istype(loc, /obj/effect/dummy/phased_mob))
-			var/obj/effect/decal/cleanable/blood/crooked/B = new(loc)
-			B.icon_state = "floor[pick(1,2,3,4,5,6,7)]"
-
-		var/static/list/crooked_steps = list(
-			'modular_bandastation/k13_crooked_man/sounds/Step_1.ogg',
-			'modular_bandastation/k13_crooked_man/sounds/Step_2.ogg',
-			'modular_bandastation/k13_crooked_man/sounds/Step_3.ogg'
-		)
-		playsound(src, pick(crooked_steps), 100, TRUE, 7)
-
-/mob/living/basic/boss/crooked_man/melee_attack(atom/target, list/modifiers)
-	var/static/list/crooked_hits = list(
-		'modular_bandastation/k13_crooked_man/sounds/impact_1.ogg',
-		'modular_bandastation/k13_crooked_man/sounds/impact_2.ogg',
-		'modular_bandastation/k13_crooked_man/sounds/impact_3.ogg'
-	)
-	playsound(src, pick(crooked_hits), 80, TRUE, 7)
-	return ..()
+	if(footstep_type == "crooked_man")
+		footstep_sounds = 'modular_bandastation/k13_crooked_man/sounds/Step_1.ogg'
+*/
