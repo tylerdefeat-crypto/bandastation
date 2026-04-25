@@ -7,6 +7,7 @@
 #include "_signals220/_signals220.dme"
 #include "_singletons/_singletons.dme"
 #include "~components/_components.dme"
+#include "skills/_skills.dme"
 #include "admin/_admin.dme"
 #include "aesthetics/_aesthetics.dme"
 #include "aesthetics_sounds/_aesthetics_sounds.dme"
@@ -91,6 +92,9 @@
 #include "contraband/_contraband.dme"
 #include "quirks/_quirks.dme"
 #include "banshee_skills/_banshee_skills.dme"
+#include "k13_holodisks/_k13_holodisks.dme"
+#include "k13ambience/_k13ambience.dme"
+#include "k13_crooked_man/_k13_crooked_man.dme"
 // --- MODULES END --- //
 
 // --- PRIME --- //
