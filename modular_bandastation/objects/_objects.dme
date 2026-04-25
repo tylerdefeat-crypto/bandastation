@@ -125,3 +125,4 @@
 
 #include "code/items/puzzle_items.dm"
 #include "code/structures/custom_puzzles/altar_puzzle.dm"
+#include "code/structures/quest_doors.dm"
