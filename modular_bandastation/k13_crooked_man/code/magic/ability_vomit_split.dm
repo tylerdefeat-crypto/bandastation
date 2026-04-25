@@ -27,8 +27,7 @@
 		return
 
 	// Явное создание именно твоего типа кислоты
-	var/obj/effect/decal/cleanable/blood/crooked/acid/A = new /obj/effect/decal/cleanable/blood/crooked/acid(target_turf)
-	A.icon_state = "vomittox_[pick(1,2,3,4)]"
+	new /obj/effect/decal/cleanable/vomit/toxic/crooked(target_turf)
 
 /datum/action/cooldown/spell/cone/staggered/crooked_vomit_cone/do_mob_cone_effect(mob/living/victim, atom/caster, level)
 	if(victim == caster)
@@ -40,16 +39,32 @@
 	to_chat(victim, span_danger("Вас окатило зловонной желудочной кислотой!"))
 
 // Сама лужа (остается без изменений, используется из Crossed для урона под ногами)
-/obj/effect/decal/cleanable/blood/crooked/acid
+/obj/effect/decal/cleanable/vomit/toxic/crooked
 	name = "желудочный сок"
 	desc = "Шипящая и вонючая лужа. Она разъедает даже металл."
-	icon = 'icons/effects/blood.dmi'
 	color = "#4cff00"
 
-/obj/effect/decal/cleanable/blood/crooked/acid/Crossed(atom/movable/AM)
-	..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		L.apply_damage(10, BURN)
-		if(prob(10))
+/obj/effect/decal/cleanable/vomit/toxic/crooked/proc/on_entered(datum/source, atom/movable/AM)
+	SIGNAL_HANDLER
+	if(ishuman(AM))
+		var/mob/living/carbon/human/L = AM
+		if(prob(50))
+			var/picked_def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+			var/obj/item/bodypart/leg = L.get_bodypart(picked_def_zone)
+			if(leg)
+				L.apply_damage(10, BURN, leg)
+			else
+				L.apply_damage(10, BURN)
 			to_chat(L, span_danger("Кислота обжигает ваши ноги!"))
+
+/obj/effect/decal/cleanable/vomit/toxic/crooked/proc/delete_vomit()
+	Destroy()
+
+/obj/effect/decal/cleanable/vomit/toxic/crooked/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+	addtimer(CALLBACK(src, PROC_REF(delete_vomit)), 15 SECONDS)
+/obj/item/shard

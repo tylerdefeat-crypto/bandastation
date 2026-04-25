@@ -9,6 +9,7 @@
 
 /datum/action/cooldown/spell/crooked_phase/cast(mob/living/cast_on)
 	// Проверяем: либо мы внутри кокона, либо на нас висит трейт фазы
+	. = ..()
 	var/obj/effect/dummy/phased_mob/spell_jaunt/k13/holder
 	if(istype(cast_on.loc, /obj/effect/dummy/phased_mob/spell_jaunt/k13))
 		holder = cast_on.loc
@@ -37,6 +38,9 @@
 
 	cast_on.update_mob_action_buttons()
 	return TRUE
+
+/datum/action/cooldown/spell/crooked_phase/get_caster_from_target(atom/target)
+	return target
 
 /obj/effect/dummy/phased_mob/spell_jaunt/k13
 	name = "искажение"
