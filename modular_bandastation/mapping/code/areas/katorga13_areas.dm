@@ -1,4 +1,5 @@
 /area/awaymission/katorga
+	requires_power = FALSE
 
 //MARK: Asteroid
 
