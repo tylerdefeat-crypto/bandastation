@@ -6,7 +6,6 @@
 	lefthand_file = 'modular_bandastation/weapon/icons/ranged/inhands/energy/lefthand.dmi'
 	righthand_file = 'modular_bandastation/weapon/icons/ranged/inhands/energy/righthand.dmi'
 	inhand_icon_state = "laser_gate"
-	pin = /obj/item/firing_pin/explorer
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/awaymission_aeg)
 	ammo_x_offset = 0
 	charge_delay = 10

@@ -46,9 +46,7 @@
 	INVOKE_ASYNC(src, PROC_REF(breathing_loop))
 	AddComponent(/datum/component/blood_walk, \
 		blood_type = /obj/effect/decal/cleanable/blood)
-	AddElement(/datum/element/footstep, FOOTSTEP_MOB_HEAVY)
-	RemoveElement(/datum/element/simple_flying)
-
+	RegisterSignal(src, COMSIG_MOVABLE_MOVED, PROC_REF(play_footstep_sound))
 	// ИСПОЛЬЗУЕМ РАЗНЫЕ ПЕРЕМЕННЫЕ ДЛЯ СПОСОБНОСТЕЙ
 	var/datum/action/cooldown/spell/crooked_phase/phase_ability = new(src)
 	phase_ability.Grant(src)
@@ -73,10 +71,11 @@
 			M.playsound_local(src, 'modular_bandastation/k13_crooked_man/sounds/static.ogg', 20, FALSE, 7, 0.2, falloff_distance = 1)
 		sleep(10)
 
-/*
-// Absolute crutch. Never do it like this, I beg you.
-/datum/element/footstep/Attach(datum/target, footstep_type, volume, e_range, sound_vary)
-	. = ..()
-	if(footstep_type == "crooked_man")
-		footstep_sounds = 'modular_bandastation/k13_crooked_man/sounds/Step_1.ogg'
-*/
+/mob/living/basic/boss/crooked_man/proc/play_footstep_sound()
+	SIGNAL_HANDLER
+	var/static/list/crooked_steps = list(
+		'modular_bandastation/k13_crooked_man/sounds/Step_1.ogg',
+		'modular_bandastation/k13_crooked_man/sounds/Step_2.ogg',
+		'modular_bandastation/k13_crooked_man/sounds/Step_3.ogg'
+	)
+	playsound(src, pick(crooked_steps), 100, TRUE, 7)
