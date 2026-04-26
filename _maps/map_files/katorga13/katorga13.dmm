@@ -20426,7 +20426,7 @@
 "nYe" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/keycard/yellow,
+/obj/item/disk/holodisk/k13event/terminal_level1,
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/security/customs)
 "nYE" = (
@@ -22830,15 +22830,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/prison/kitchen/back)
-"pFo" = (
-/obj/effect/decal/cleanable/blood/gibs/old,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/disk/holodisk/k13event/medic_survivor{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/medbay/durka)
 "pFv" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
@@ -77176,7 +77167,7 @@ dWt
 lhX
 xTY
 rcC
-pFo
+kGa
 xTY
 vlB
 vlB
