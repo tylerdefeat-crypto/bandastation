@@ -25,6 +25,12 @@
 	damage_coeff = list(BRUTE = 0.1, BURN = 0.1, TOX = 0, STAMINA = 0, OXY = 0)
 	ai_controller = null
 
+	// Ночное зрение
+	see_in_dark = 8
+	lighting_cutoff_red = 30
+	lighting_cutoff_green = 5
+	lighting_cutoff_blue = 20
+
 /mob/living/basic/boss/crooked_man/Initialize(mapload)
 	. = ..()
 
@@ -37,8 +43,12 @@
 		TRAIT_NEVER_WOUNDED,
 		TRAIT_NOBREATH,
 		TRAIT_STUNIMMUNE,
-		TRAIT_SLEEPIMMUNE
+		TRAIT_SLEEPIMMUNE,
+		TRAIT_THERMAL_VISION
 	), "crooked_man_innate")
+
+	// Обновляем зрение после добавления трейтов
+	update_sight()
 
 	AddElement(/datum/element/wall_tearer, tear_time = 0.5 SECONDS)
 
@@ -57,6 +67,9 @@
 
 	var/datum/action/cooldown/spell/cone/staggered/crooked_vomit_cone/vomit_ability = new(src)
 	vomit_ability.Grant(src)
+
+	var/datum/action/cooldown/spell/crooked_devour/devour_ability = new(src)
+	devour_ability.Grant(src)
 
 /mob/living/basic/boss/crooked_man/proc/breathing_loop()
 	while(src && !QDELETED(src) && stat != DEAD)

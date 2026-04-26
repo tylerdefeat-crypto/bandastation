@@ -15,12 +15,12 @@
 	var/turf/spawn_turf = get_step(owner, owner.dir)
 	if(spawn_turf)
 		var/obj/effect/temp_visual/dir_setting/bloodsplatter/S = new(spawn_turf)
-		S.icon = 'icons/effects/blood.dmi'
-		S.icon_state = "hitsplatter3"
+		S.icon = 'icons/effects/160x160.dmi'
+		S.icon_state = "enthropic_plume"
 		S.color = "#4cff00"
 		S.setDir(owner.dir)
 
-	playsound(owner, 'sound/effects/refill.ogg', 80, TRUE)
+	playsound(owner, 'modular_bandastation/k13_crooked_man/sounds/vomit.ogg', 80, TRUE)
 	return ..()
 
 /datum/action/cooldown/spell/cone/staggered/crooked_vomit_cone/do_turf_cone_effect(turf/target_turf, mob/living/caster, level)

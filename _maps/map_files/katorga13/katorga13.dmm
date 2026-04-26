@@ -2058,14 +2058,11 @@
 /turf/open/floor/cult,
 /area/awaymission/katorga/misc/mansus)
 "bzM" = (
-/obj/item/paper/fluff/ruins/thederelict/equipment{
-	default_raw_text = "Всвязи с участившимися попытками краж со стороны персонала кухни - пароль выдается строго офицерам 3 ранга и выше. Петров.";
-	name = "Записка начальника охраны";
-	color = "#FF8887";
-	pixel_x = 7;
-	pixel_y = 5
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
 	},
-/turf/open/floor/iron/white,
+/turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "bzV" = (
 /obj/effect/turf_decal/stripes{
@@ -2626,10 +2623,9 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/misc/arrivals)
 "bVX" = (
-/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/security/locker)
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/security)
 "bWf" = (
 /obj/structure/cable,
 /obj/machinery/power/terminal{
@@ -4759,12 +4755,9 @@
 /area/awaymission/katorga/misc/mansus)
 "dtV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/disk/holodisk/k13event/molot_password{
-	pixel_x = 10;
-	pixel_y = 10
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "dtZ" = (
 /obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/circuit/red{
@@ -4926,6 +4919,8 @@
 	network = list("aicore")
 	},
 /obj/machinery/status_display/ai/directional/west,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/aicard,
 /turf/open/floor/circuit/red{
 	explosive_resistance = 1;
 	inherent_explosive_resistance = 1
@@ -6368,13 +6363,9 @@
 /area/awaymission/katorga/security/eva)
 "eum" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north{
-	network = list("k13")
-	},
-/obj/machinery/computer/terminal/katorga/gamma,
-/obj/effect/mapping_helpers/broken_machine,
+/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
 /turf/open/floor/iron/white,
-/area/awaymission/katorga/security)
+/area/awaymission/katorga/prison/dinner)
 "euv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/maint,
@@ -8664,6 +8655,10 @@
 	},
 /obj/structure/table,
 /obj/machinery/cell_charger,
+/obj/effect/spawner/random/food_or_drink/any_snack_or_beverage{
+	pixel_x = 2;
+	pixel_y = 8
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/locker)
 "fVG" = (
@@ -9713,12 +9708,15 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/first_floor)
 "gIT" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints/fore)
+/obj/structure/cable,
+/obj/machinery/door/window/left/directional/south,
+/turf/open/floor/circuit/red{
+	explosive_resistance = 1;
+	inherent_explosive_resistance = 1
+	},
+/area/awaymission/katorga/ai/inside)
 "gJm" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Showers"
@@ -9975,12 +9973,13 @@
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/security/post)
 "gOl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north{
-	network = list("k13")
+/obj/structure/cable,
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/circuit/red{
+	explosive_resistance = 1;
+	inherent_explosive_resistance = 1
 	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
+/area/awaymission/katorga/ai/inside)
 "gOv" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/circuit/red{
@@ -12108,15 +12107,8 @@
 /area/awaymission/katorga/security/post)
 "isf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
-/obj/item/paper/fluff/ruins/thederelict/equipment{
-	default_raw_text = "Блядь! Она сломана! Живым оперативникам: дополнительная консоль находится в основной оружейной. Срочно туда.\";
-	name = "Записка офицера группы \"Серп\".";
-	color = "#FF8887";
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/turf/open/floor/iron/white,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security)
 "ish" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -15957,11 +15949,15 @@
 /area/awaymission/katorga/engineering/atmos)
 "kRw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south{
-	network = list("k13")
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/gun/ballistic/automatic/miecz/no_mag{
+	pixel_x = -8;
+	pixel_y = -8
 	},
-/turf/open/indestructible/dark,
-/area/awaymission/katorga/security)
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "kRQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
@@ -16022,15 +16018,9 @@
 /area/awaymission/katorga/security/post)
 "kTW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/item/gun/ballistic/automatic/miecz/no_mag{
-	pixel_x = -8;
-	pixel_y = -8
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security/locker)
 "kUd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -16990,6 +16980,7 @@
 	network = list("aicore")
 	},
 /obj/machinery/status_display/ai/directional/east,
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/circuit/red{
 	explosive_resistance = 1;
 	inherent_explosive_resistance = 1
@@ -18179,6 +18170,18 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/vault)
+"mqB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Блядь! Она сломана! Живым оперативникам: дополнительная консоль находится в основной оружейной. Срочно туда.\";
+	name = "Записка офицера группы \"Серп\".";
+	color = "#FF8887";
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "mqJ" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/random/structure/table,
@@ -18258,10 +18261,11 @@
 /area/awaymission/katorga/security/control)
 "muu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/engineering/tank,
-/obj/effect/spawner/random/food_or_drink/any_snack_or_beverage,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/security/locker)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "muv" = (
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
@@ -18573,10 +18577,6 @@
 /turf/open/floor/iron,
 /area/awaymission/katorga/security/post)
 "mEl" = (
-/obj/machinery/camera/motion/directional/north{
-	network = list("aicore");
-	c_tag = "Secure - AI Core North"
-	},
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/turretid{
 	name = "AI Hallway turret control";
@@ -18584,9 +18584,8 @@
 	pixel_y = 44;
 	dir = 1
 	},
-/turf/open/floor/circuit/red{
-	explosive_resistance = 1;
-	inherent_explosive_resistance = 1
+/turf/closed/indestructible/riveted{
+	color = "#FF8887"
 	},
 /area/awaymission/katorga/ai/inside)
 "mEM" = (
@@ -20787,10 +20786,12 @@
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/entrance)
 "omX" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
-/area/awaymission/katorga/security/maints/fore)
+/area/awaymission/katorga/security/maints)
 "onC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/stairs{
@@ -21243,12 +21244,12 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "oDG" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "oDO" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
@@ -21688,6 +21689,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/execution)
+"oUR" = (
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Всвязи с участившимися попытками краж со стороны персонала кухни - пароль выдается строго офицерам 3 ранга и выше. Петров.";
+	name = "Записка начальника охраны";
+	color = "#FF8887";
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "oVd" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /obj/effect/decal/cleanable/dirt,
@@ -22193,6 +22204,14 @@
 	},
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/awaymission/katorga/prison/kitchen/coldroom)
+"pmB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/disk/holodisk/k13event/molot_password{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "pmN" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/blood/old{
@@ -25204,9 +25223,6 @@
 "riN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/box,
-/obj/vehicle/sealed/mecha/ripley/paddy/preset{
-	dir = 4
-	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "riW" = (
@@ -26567,6 +26583,15 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/engineering/supermatter/chamber)
+"sgD" = (
+/obj/structure/cable,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/aicard/syndie,
+/turf/open/floor/circuit/red{
+	explosive_resistance = 1;
+	inherent_explosive_resistance = 1
+	},
+/area/awaymission/katorga/ai/inside)
 "sgW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -28331,6 +28356,13 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/freezer,
 /area/awaymission/katorga/security/conference)
+"tts" = (
+/obj/machinery/camera/motion/directional/north{
+	network = list("aicore");
+	c_tag = "Secure - AI Core North"
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/ai/inside)
 "ttu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -28449,6 +28481,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/airless,
 /area/awaymission/katorga/engineering/ce)
+"twA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
+/obj/machinery/computer/terminal/katorga/gamma,
+/obj/effect/mapping_helpers/broken_machine,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "twL" = (
 /obj/effect/spawner/random/structure/steam_vent,
 /turf/open/floor/plating,
@@ -28612,12 +28653,10 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore/lower)
 "tDC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints/fore)
+/obj/structure/cable,
+/obj/machinery/computer/modular_shield,
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/ai/inside)
 "tDO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -29672,9 +29711,8 @@
 	charging = 1
 	},
 /obj/structure/cable,
-/turf/open/floor/circuit/red{
-	explosive_resistance = 1;
-	inherent_explosive_resistance = 1
+/turf/closed/indestructible/riveted{
+	color = "#FF8887"
 	},
 /area/awaymission/katorga/ai/inside)
 "usU" = (
@@ -29936,8 +29974,8 @@
 /turf/open/floor/engine/airless,
 /area/awaymission/katorga/engineering/supermatter)
 "uDt" = (
-/obj/machinery/power/solar_control,
 /obj/structure/cable,
+/obj/machinery/computer/communications,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/inside)
 "uDH" = (
@@ -32734,9 +32772,11 @@
 /area/awaymission/katorga/prison/dinner)
 "wxj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/prison/dinner)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "wxB" = (
 /obj/machinery/computer/terminal/katorga/zeta,
 /turf/open/floor/carpet/royalblack,
@@ -114107,7 +114147,7 @@ aXW
 leV
 ych
 cGI
-muu
+cGI
 ohm
 cYj
 kPR
@@ -114366,7 +114406,7 @@ ych
 jbY
 cyp
 xLc
-bVX
+kTW
 vcb
 cyp
 yan
@@ -115135,9 +115175,9 @@ leV
 leV
 ych
 vDU
-bVX
+kTW
 vcb
-bVX
+kTW
 iiF
 ipD
 ych
@@ -122373,7 +122413,7 @@ epB
 cMJ
 xbL
 xbL
-oDG
+omX
 xbL
 xbL
 xbL
@@ -124912,7 +124952,7 @@ pOh
 sVA
 hLo
 tcU
-gOl
+oDG
 wxC
 wxC
 tcU
@@ -125952,7 +125992,7 @@ pDy
 ktT
 wxC
 twm
-dtV
+pmB
 swG
 jRI
 boM
@@ -126208,7 +126248,7 @@ cag
 eba
 opM
 opM
-kTW
+kRw
 opM
 opM
 cag
@@ -126462,13 +126502,13 @@ tcU
 tcU
 nNa
 opM
-wxj
+eum
 eba
 pDy
 wKY
 opM
 cag
-wxj
+eum
 opM
 bsx
 tcU
@@ -126713,7 +126753,7 @@ hLo
 leV
 kdk
 cfz
-omX
+dtV
 peK
 tcU
 tcU
@@ -128513,7 +128553,7 @@ hLo
 hLo
 leV
 kdk
-tDC
+wxj
 tcU
 xGA
 oSB
@@ -130826,7 +130866,7 @@ trM
 hLo
 leV
 kdk
-gIT
+muu
 tcU
 nwa
 fTs
@@ -132625,7 +132665,7 @@ nIp
 leV
 leV
 kdk
-gIT
+muu
 tcU
 qoD
 oIm
@@ -135701,7 +135741,7 @@ kkV
 nIp
 uaa
 qtT
-kRw
+bzM
 nIp
 nIp
 nIp
@@ -138014,7 +138054,7 @@ hKV
 hKV
 jFu
 jxV
-bso
+bVX
 hby
 ujv
 pGo
@@ -139556,7 +139596,7 @@ hKV
 hKV
 jFu
 eOH
-hby
+isf
 hby
 hzS
 uZc
@@ -141368,7 +141408,7 @@ fic
 njT
 mSl
 lIa
-isf
+mqB
 mys
 ssJ
 rCi
@@ -141879,7 +141919,7 @@ adi
 nIp
 nIp
 nIp
-eum
+twA
 xNF
 xEy
 xFg
@@ -144193,7 +144233,7 @@ uaa
 uUV
 uaa
 nIp
-bzM
+oUR
 hby
 xop
 nIp
@@ -196012,9 +196052,9 @@ bjo
 bjo
 bjo
 bjo
-gCq
+sgD
 dAg
-gCq
+gOl
 bjo
 bjo
 bjo
@@ -197549,7 +197589,7 @@ ixt
 bjo
 bjo
 kZQ
-gCq
+jTh
 lgd
 lgd
 lgd
@@ -197806,7 +197846,7 @@ fNf
 sYa
 hDv
 dSj
-dSj
+gIT
 tGB
 cHT
 cHT
@@ -198063,7 +198103,7 @@ ixt
 bjo
 bjo
 wVE
-hLP
+bjo
 lgd
 lgd
 lgd
@@ -198321,7 +198361,7 @@ bjo
 bjo
 bjo
 mEl
-lgd
+tts
 lgd
 lgd
 lgd
@@ -198838,7 +198878,7 @@ bjo
 cfH
 gCq
 cSx
-uDt
+tDC
 kuO
 hLP
 lgd
@@ -199610,9 +199650,9 @@ bjo
 bjo
 bjo
 bjo
-gCq
+gOl
 lzG
-gCq
+gOl
 bjo
 bjo
 bjo
