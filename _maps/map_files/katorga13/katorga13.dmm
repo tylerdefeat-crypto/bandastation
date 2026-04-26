@@ -2058,12 +2058,15 @@
 /turf/open/floor/cult,
 /area/awaymission/katorga/misc/mansus)
 "bzM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints/fore)
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Всвязи с участившимися попытками краж со стороны персонала кухни - пароль выдается строго офицерам 3 ранга и выше. Петров.";
+	name = "Записка начальника охраны";
+	color = "#FF8887";
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "bzV" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -4756,8 +4759,11 @@
 /area/awaymission/katorga/misc/mansus)
 "dtV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
-/turf/open/floor/iron/white,
+/obj/item/disk/holodisk/k13event/molot_password{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/prison/dinner)
 "dtZ" = (
 /obj/machinery/status_display/ai/directional/north,
@@ -6362,14 +6368,11 @@
 /area/awaymission/katorga/security/eva)
 "eum" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
-/obj/item/paper/fluff/ruins/thederelict/equipment{
-	default_raw_text = "Блядь! Она сломана! Живым оперативникам: дополнительная консоль находится в основной оружейной. Срочно туда.\";
-	name = "Записка офицера группы \"Серп\".";
-	color = "#FF8887";
-	pixel_x = 7;
-	pixel_y = 5
+/obj/machinery/camera/directional/north{
+	network = list("k13")
 	},
+/obj/machinery/computer/terminal/katorga/gamma,
+/obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "euv" = (
@@ -9711,11 +9714,11 @@
 /area/awaymission/katorga/security/maints/first_floor)
 "gIT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/south{
-	network = list("k13")
-	},
-/turf/open/indestructible/dark,
-/area/awaymission/katorga/security)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "gJm" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Showers"
@@ -9973,9 +9976,8 @@
 /area/awaymission/katorga/security/post)
 "gOl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/disk/holodisk/k13event/molot_password{
-	pixel_x = 10;
-	pixel_y = 10
+/obj/machinery/camera/directional/north{
+	network = list("k13")
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/prison/dinner)
@@ -10100,7 +10102,6 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/prison/dinner)
 "gTM" = (
@@ -12105,6 +12106,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/awaymission/katorga/security/post)
+"isf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Блядь! Она сломана! Живым оперативникам: дополнительная консоль находится в основной оружейной. Срочно туда.\";
+	name = "Записка офицера группы \"Серп\".";
+	color = "#FF8887";
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "ish" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/bonfire/dense/prelit,
@@ -15943,12 +15956,12 @@
 /turf/open/floor/engine/o2,
 /area/awaymission/katorga/engineering/atmos)
 "kRw" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/directional/south{
+	network = list("k13")
+	},
+/turf/open/indestructible/dark,
+/area/awaymission/katorga/security)
 "kRQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
@@ -16009,13 +16022,15 @@
 /area/awaymission/katorga/security/post)
 "kTW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north{
-	network = list("k13")
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/gun/ballistic/automatic/miecz/no_mag{
+	pixel_x = -8;
+	pixel_y = -8
 	},
-/obj/machinery/computer/terminal/katorga/gamma,
-/obj/effect/mapping_helpers/broken_machine,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/security)
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "kUd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -20701,9 +20716,6 @@
 /obj/machinery/door/password{
 	password = "Страж"
 	},
-/obj/effect/mapping_helpers/airlock_note_placer{
-	note_info = "Приказ: Оперативной группе получить гамма-доступ на консоли КПП у ответсвенного офицера."
-	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "okj" = (
@@ -20776,8 +20788,6 @@
 /area/awaymission/katorga/security/entrance)
 "omX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore)
@@ -21233,16 +21243,12 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "oDG" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/item/gun/ballistic/automatic/miecz/no_mag{
-	pixel_x = -8;
-	pixel_y = -8
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints)
 "oDO" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
@@ -21929,7 +21935,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/structure/barricade/wooden,
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plating,
 /area/awaymission/katorga/cargo/bay)
@@ -26562,13 +26567,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/engineering/supermatter/chamber)
-"sgD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera/directional/north{
-	network = list("k13")
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
 "sgW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -28613,6 +28611,13 @@
 "tDB" = (
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore/lower)
+"tDC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "tDO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -32729,9 +32734,9 @@
 /area/awaymission/katorga/prison/dinner)
 "wxj" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/plating,
-/area/awaymission/katorga/security/maints/fore)
+/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/prison/dinner)
 "wxB" = (
 /obj/machinery/computer/terminal/katorga/zeta,
 /turf/open/floor/carpet/royalblack,
@@ -35245,7 +35250,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/vault/quest/gamma,
 /obj/effect/mapping_helpers/airlock_note_placer{
-	note_info = "Всвязи с участившимися попытками краж со стороны персонала кухни - пароль выдается строго офицерам 3 ранга и выше. Петров."
+	note_info = "Приказ: Оперативной группе получить гамма-доступ на консоли КПП у ответсвенного офицера."
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/security/hos)
@@ -122368,7 +122373,7 @@ epB
 cMJ
 xbL
 xbL
-kRw
+oDG
 xbL
 xbL
 xbL
@@ -124907,7 +124912,7 @@ pOh
 sVA
 hLo
 tcU
-sgD
+gOl
 wxC
 wxC
 tcU
@@ -125947,7 +125952,7 @@ pDy
 ktT
 wxC
 twm
-gOl
+dtV
 swG
 jRI
 boM
@@ -126203,7 +126208,7 @@ cag
 eba
 opM
 opM
-oDG
+kTW
 opM
 opM
 cag
@@ -126457,13 +126462,13 @@ tcU
 tcU
 nNa
 opM
-dtV
+wxj
 eba
 pDy
 wKY
 opM
 cag
-dtV
+wxj
 opM
 bsx
 tcU
@@ -126708,7 +126713,7 @@ hLo
 leV
 kdk
 cfz
-wxj
+omX
 peK
 tcU
 tcU
@@ -128508,7 +128513,7 @@ hLo
 hLo
 leV
 kdk
-omX
+tDC
 tcU
 xGA
 oSB
@@ -130821,7 +130826,7 @@ trM
 hLo
 leV
 kdk
-bzM
+gIT
 tcU
 nwa
 fTs
@@ -132620,7 +132625,7 @@ nIp
 leV
 leV
 kdk
-bzM
+gIT
 tcU
 qoD
 oIm
@@ -135696,7 +135701,7 @@ kkV
 nIp
 uaa
 qtT
-gIT
+kRw
 nIp
 nIp
 nIp
@@ -136484,7 +136489,7 @@ tcU
 tcU
 gSg
 gTA
-gSg
+vBn
 tcU
 tcU
 tcU
@@ -141363,7 +141368,7 @@ fic
 njT
 mSl
 lIa
-eum
+isf
 mys
 ssJ
 rCi
@@ -141874,7 +141879,7 @@ adi
 nIp
 nIp
 nIp
-kTW
+eum
 xNF
 xEy
 xFg
@@ -144188,7 +144193,7 @@ uaa
 uUV
 uaa
 nIp
-uXH
+bzM
 hby
 xop
 nIp
