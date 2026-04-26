@@ -24,7 +24,7 @@
 	preset_image_type = /datum/preset_holoimage/engineer/ce
 	preset_record_text = {"
 		NAME Сергей Воронин
-		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
+		PRESET /datum/preset_holoimage/engineer/ce
 		SAY Запись для архива СССП.
 		DELAY 35
 		SOUND 'sound/effects/warning-buzzer.ogg'
@@ -42,7 +42,7 @@
 		DELAY 50
 		SAY Да, чтобы не забыть - поменял пароль в отдел интенсивной терапии.
 		DELAY 61
-		SAY Забавно, что пароль "Разум", а не "ЕбанутаяСука".
+		SAY Забавно, что пароль \"Разум\", а не \"ЕбанутаяСука\".
 		DELAY 49
 		SAY Ха-ха-ха! Оно, может бы и подошло... Хах...
 		DELAY 46
@@ -57,7 +57,7 @@
 	desc = "Запись офицера охраны о новых мерах безопасности."
 	preset_image_type = /datum/preset_holoimage/nanotrasenprivatesecurity
 	preset_record_text = {"
-		NAME Офицер охраны Петров
+		NAME Михаил Петров
 		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
 		SAY Офицер Петров. Протокол безопасности.
 		DELAY 43
@@ -65,7 +65,7 @@
 		DELAY 52
 		SAY Бывший повар решил, что может спереть пистолет. Тупица.
 		DELAY 52
-		SAY Устанавливаю кодовый замок. Пароль: "Страж".
+		SAY Устанавливаю кодовый замок. Пароль: \"Страж\".
 		DELAY 47
 		SAY Доступ только у офицеров охраны третьего уровня и выше.
 		DELAY 52
@@ -75,39 +75,15 @@
 		SAY Связь прервана.
 	"}
 
-// Пароль "Молот" - критические инженерные системы
-// 3. Диск главного
-/obj/item/disk/holodisk/k13event/password_molot
-	name = "Голодиск: Доступ к реактору"
-	desc = "Техническая запись о защите критических систем."
-	preset_image_type = /datum/preset_holoimage/engineer/ce
-	preset_record_text = {"
-		NAME Главный инженер Воронин
-		PRESET /datum/preset_holoimage/engineer/ce
-		SAY Главный инженер Воронин. Технический отчет.
-		DELAY 46
-		SAY Устанавливаю дополнительную защиту на доступ к суперматерии и гравгену.
-		DELAY 63
-		SAY Кодовое слово: "Молот".
-		DELAY 35
-		SAY Символично - молот созидает, но может и разрушить.
-		DELAY 50
-		SAY Доступ строго ограничен. Только главный инженер и капитан.
-		DELAY 54
-		SAY Несанкционированное проникновение может привести к катастрофе.
-		DELAY 60
-		NAME Система
-		SAY Связь прервана.
-	"}
 
 // Пароль "Чаша" - вход в исследовательскую зону
 // Security HoS - Варнаков о туннеле
 /obj/item/disk/holodisk/k13event/nt_varnakov_tunnel
-	name = "Голодиск: Последняя запись капитана"
-	desc = "Запись капитана Варнакова. Голос дрожит."
+	name = "Голодиск: Последняя запись Варнакова"
+	desc = "Запись начальника Варнакова. Голос дрожит."
 	preset_image_type = /datum/preset_holoimage/nanotrasenprivatesecurity
 	preset_record_text = {"
-		NAME Капитан Виктор Варнаков
+		NAME Виктор Варнаков
 		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
 		SAY Капитан Виктор Варнаков, последняя запись.
 		DELAY 46
@@ -127,12 +103,37 @@
 		DELAY 35
 		SAY Если не вернусь - используйте туннель из моего кабинета.
 		DELAY 53
-		SAY Он ведет прямо к ядру ИИ. Пароль "Чаша".
+		SAY Он ведет прямо к ядру ИИ. Пароль - ее путь...
 		DELAY 45
 		SAY Уничтожьте М.А.Р.А. Уничтожьте все.
 		DELAY 42
 		SAY Это единственный способ остановить все это.
 		DELAY 46
+		NAME Система
+		SAY Связь прервана.
+	"}
+
+
+// Пароль "Молот - оружейная
+/obj/item/disk/holodisk/k13event/molot_password
+	name = "Голодиск: Последняя запись капитана"
+	desc = "Запись капитана Таранова."
+	preset_image_type = /datum/preset_holoimage/nanotrasenprivatesecurity
+	preset_record_text = {"
+		NAME Игорь Таранов
+		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
+		SAY Игорь Таранов. Капитан ударной группы "Серп".
+		DELAY 46
+		SAY Приказ: зачистка комплекса.
+		DELAY 35
+		SAY Основная цель - Мария Руткевич. Устранить.
+		DELAY 45
+		SAY Оперативникам открыт доступ уровня "Гамма".
+		DELAY 40
+		SAY Пароль к оружейной - "Молот".
+		DELAY 35
+		SAY В случае невозможности зачистки комплекса - запуск самоуничтожения и эвакуация.
+		DELAY 55
 		NAME Система
 		SAY Связь прервана.
 	"}
@@ -164,54 +165,6 @@
 		SAY Связь прервана.
 	"}
 
-// Терминал уровня 2 - тюремный блок
-/obj/item/disk/holodisk/k13event/terminal_level2
-	name = "Голодиск: Протокол охраны"
-	desc = "Инструкция для охранников тюремного блока."
-	preset_image_type = /datum/preset_holoimage/nanotrasenprivatesecurity
-	preset_record_text = {"
-		NAME Савелий Петров
-		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
-		SAY Протокол для охранников тюремного блока.
-		DELAY 45
-		SAY Доступ второго уровня открывает камеры заключенных и служебные помещения.
-		DELAY 64
-		SAY Терминал находится в столовой и на посту охраны.
-		DELAY 49
-		SAY Доступ выдается только сотрудникам охраны и обслуживающему персоналу.
-		DELAY 63
-		SAY Запрещено передавать свои ID-карты заключенным.
-		DELAY 48
-		SAY Нарушение карается расстрелом.
-		DELAY 40
-		NAME Система
-		SAY Связь прервана.
-	"}
-
-// Терминал уровня 3 - медицинский и инженерный
-/obj/item/disk/holodisk/k13event/terminal_level3
-	name = "Голодиск: Доступ специалистов"
-	desc = "Инструкция для медицинского и инженерного персонала."
-	preset_image_type = /datum/preset_holoimage/researcher
-	preset_record_text = {"
-		NAME Антон Паниковский
-		PRESET /datum/preset_holoimage/assistant
-		SAY Инструкция для специалистов третьего уровня.
-		DELAY 47
-		SAY Медицинский и инженерный персонал получает расширенный доступ.
-		DELAY 60
-		SAY Терминалы расположены в медблоке и инженерном фойе.
-		DELAY 50
-		SAY Доступ открывает медицинские помещения, инженерию и склады.
-		DELAY 54
-		SAY Для активации требуется подтверждение от главврача или главного инженера.
-		DELAY 64
-		SAY Злоупотребление доступом карается по всей строгости.
-		DELAY 51
-		NAME Система
-		SAY Связь прервана.
-	"}
-
 // ============================================
 // КАТЕГОРИЯ 3: ЗАПИСИ РУКОВОДСТВА (знают о проекте)
 // ============================================
@@ -236,7 +189,7 @@
 		DELAY 47
 		SAY М.А.Р.А. будет контролировать процесс.
 		DELAY 44
-		SAY Я надеюсь, мы не пожалеемоб этом.
+		SAY Я надеюсь, мы не пожалеем об этом.
 		DELAY 42
 		NAME Система
 		SAY Связь прервана.
@@ -248,9 +201,9 @@
 	desc = "Конфиденциальная медицинская запись."
 	preset_image_type = /datum/preset_holoimage/researcher
 	preset_record_text = {"
-		NAME Главврач Соколова
+		NAME Мария Соколова
 		PRESET /datum/preset_holoimage/researcher
-		SAY Главврач Соколова. Конфиденциальная запись.
+		SAY Мария Соколова. Конфиденциальная запись.
 		DELAY 46
 		SAY Это невозможно объяснить наукой.
 		DELAY 41
@@ -415,8 +368,8 @@
 		PRESET /datum/preset_holoimage/nanotrasenprivatesecurity
 		SAY Офицер Морозов. Запись для архива.
 		DELAY 43
-		SAY Год две тысячи пятьсот сорок шестой. Инцидент с заключенным номер двести сорок семь.
-		DELAY 68
+		SAY Инцидент с заключенным номер двести сорок семь.
+		DELAY 50
 		SAY Симон Христофорович Фарадов. Приговорен к заключению за государственную измену.
 		DELAY 66
 		SAY Смерть наступила по естественным причинам.
@@ -477,8 +430,6 @@
 		PRESET /datum/preset_holoimage/ai
 		SAY М.А.Р.А. Системный лог.
 		DELAY 35
-		SAY Дата: две тысячи пятьсот сорок восемь, март, пятнадцатое.
-		DELAY 53
 		SAY Начало работы на объекте "Каторга-13".
 		DELAY 44
 		SAY Задача: контроль исследовательских процессов.

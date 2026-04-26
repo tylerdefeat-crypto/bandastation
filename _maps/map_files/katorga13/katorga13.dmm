@@ -221,6 +221,7 @@
 /area/awaymission/katorga/engineering/atmos)
 "ajH" = (
 /obj/structure/table/glass,
+/obj/item/disk/holodisk/k13event/sokolova_maria,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/cmo)
 "ajL" = (
@@ -256,7 +257,6 @@
 /obj/effect/decal/cleanable/blood/trail_holder{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/blood/bubblegum,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/item/ritual_cup{
@@ -794,6 +794,10 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/disk/holodisk/k13event/nurse_patients{
+	pixel_x = -3;
+	pixel_y = 4
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/medbay/storage)
 "aCr" = (
@@ -983,7 +987,7 @@
 /area/awaymission/katorga/ai/foyer)
 "aKX" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/vault/quest/beta,
+/obj/machinery/door/airlock/vault/quest/delta,
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/cargo)
 "aMt" = (
@@ -1033,8 +1037,6 @@
 /area/awaymission/katorga/ai/foyer)
 "aOc" = (
 /obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/maintenance,
-/obj/effect/spawner/random/contraband,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
@@ -1364,7 +1366,7 @@
 /area/awaymission/katorga/security/maints/fore)
 "aYK" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/puzzle/keycard/blue_required,
+/obj/machinery/door/airlock/vault/quest/delta,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
 "aYV" = (
@@ -1486,10 +1488,11 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/prison/shower)
 "bgs" = (
-/obj/effect/mob_spawn/corpse/human/prisoner,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/dark,
-/area/awaymission/katorga/medbay/storage)
+/obj/structure/rack,
+/obj/item/disk/holodisk/k13event/janitor_stains,
+/turf/open/floor/plating,
+/area/awaymission/katorga/prison/maints)
 "bgJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/north,
@@ -1502,11 +1505,10 @@
 "bhs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/machinery/door/airlock/security,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/brig)
 "bhG" = (
@@ -2057,12 +2059,10 @@
 /area/awaymission/katorga/misc/mansus)
 "bzM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
-/obj/effect/spawner/random/engineering/tool{
-	pixel_x = 1;
-	pixel_y = 3
+/obj/machinery/camera/directional/south{
+	network = list("k13")
 	},
-/turf/open/floor/iron/white,
+/turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "bzV" = (
 /obj/effect/turf_decal/stripes{
@@ -2623,9 +2623,16 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/misc/arrivals)
 "bVX" = (
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/gun/ballistic/automatic/miecz/no_mag{
+	pixel_x = -8;
+	pixel_y = -8
+	},
 /turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/security)
+/area/awaymission/katorga/prison/dinner)
 "bWf" = (
 /obj/structure/cable,
 /obj/machinery/power/terminal{
@@ -3189,6 +3196,10 @@
 /obj/item/pen,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/disk/holodisk/k13event/electrician_malfunctions{
+	pixel_x = 8;
+	pixel_y = 5
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/engineering/foyer)
 "cqT" = (
@@ -4531,6 +4542,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/vault/quest/zeta,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/katorga/ai/foyer)
 "dmc" = (
@@ -4758,9 +4770,12 @@
 /turf/open/floor/plating/rust,
 /area/awaymission/katorga/misc/mansus)
 "dtV" = (
-/obj/machinery/computer/terminal/katorga/alpha,
-/turf/open/misc/asteroid/basalt/airless,
-/area/awaymission/katorga/asteroid)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "dtZ" = (
 /obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/circuit/red{
@@ -5316,13 +5331,11 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/security/hos)
 "dOL" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Access"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/door/airlock/vault/quest/zeta,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/katorga/ai/interior)
 "dOR" = (
@@ -6701,6 +6714,10 @@
 /area/awaymission/katorga/misc/arrivals)
 "eGG" = (
 /obj/structure/table/bronze,
+/obj/item/disk/holodisk/k13event/varnakov_project{
+	pixel_x = -4;
+	pixel_y = 4
+	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/katorga/security/hos)
 "eGH" = (
@@ -6786,14 +6803,10 @@
 /area/awaymission/katorga/prison/kitchen)
 "eNA" = (
 /obj/structure/cable,
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Chamber"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/command/ai_upload,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/airlock/vault/quest/zeta,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai)
 "eNC" = (
@@ -7102,10 +7115,6 @@
 "eXo" = (
 /turf/closed/indestructible/riveted,
 /area/awaymission/katorga/engineering/foyer)
-"eXy" = (
-/obj/machinery/door/airlock/vault/derelict,
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/ai/foyer)
 "eXz" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -7207,10 +7216,6 @@
 /turf/open/floor/iron,
 /area/awaymission/katorga/cargo/warehouse)
 "fay" = (
-/obj/item/storage/box/bodybags{
-	pixel_x = -6;
-	pixel_y = 2
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/spawner/random/entertainment/cigarette_pack{
@@ -7218,6 +7223,10 @@
 	pixel_y = 7
 	},
 /obj/structure/table/reinforced,
+/obj/item/disk/holodisk/k13event/prisoner_escape{
+	pixel_x = -4;
+	pixel_y = 4
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "faN" = (
@@ -7605,11 +7614,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/prison/mining)
-"flN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/vault/derelict,
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/misc/mansus)
 "flU" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/blood/old,
@@ -8474,8 +8478,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "tcomms-entrance"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
-/obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -8641,10 +8643,15 @@
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/prison/dinner)
 "fTH" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/glass_shards/mini,
-/turf/open/floor/plating,
-/area/awaymission/katorga/misc/maints/central)
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "splatter6"
+	},
+/obj/item/disk/holodisk/k13event/nt_varnakov_tunnel{
+	pixel_x = 12;
+	pixel_y = 12
+	},
+/turf/open/floor/cult,
+/area/awaymission/katorga/misc/mansus)
 "fUx" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/light/floor/broken,
@@ -8964,8 +8971,6 @@
 	name = "Control Room"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/mapping_helpers/airlock/access/any/command/general,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/telecomms)
 "ggy" = (
@@ -9503,10 +9508,6 @@
 /area/awaymission/katorga/security/control)
 "gBQ" = (
 /obj/structure/meateor_fluff/eyeball{
-	pixel_x = 1;
-	pixel_y = 39
-	},
-/obj/structure/meateor_fluff/eyeball{
 	pixel_x = 20;
 	pixel_y = 19
 	},
@@ -9721,9 +9722,11 @@
 /area/awaymission/katorga/security/maints/first_floor)
 "gIT" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/security)
+/turf/open/floor/plating,
+/area/awaymission/katorga/security/maints/fore)
 "gJm" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Showers"
@@ -9980,9 +9983,10 @@
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/security/post)
 "gOl" = (
-/obj/effect/decal/cleanable/blood/bubblegum,
-/turf/open/floor/wood/large/ebonite,
-/area/awaymission/katorga/security/hos)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/prison/dinner)
 "gOv" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/circuit/red{
@@ -10390,6 +10394,7 @@
 /area/awaymission/katorga/security/maints/fore/lower)
 "hcS" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/vault/quest/delta,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/control)
 "hdd" = (
@@ -10531,18 +10536,6 @@
 /obj/machinery/light/small/red/directional/south,
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/misc/arrivals)
-"hic" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "splatter6"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "AI Core Shutters";
-	id = "Sactifice Path";
-	layer = 3.3
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/security/eva)
 "hiK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -10829,9 +10822,8 @@
 "huc" = (
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/highsecurity,
-/obj/effect/spawner/random/structure/barricade,
-/turf/open/floor/iron/white,
+/obj/machinery/door/airlock/vault/quest/gamma,
+/turf/open/floor/iron/dark/textured_large/airless,
 /area/awaymission/katorga/security/locker)
 "hui" = (
 /obj/machinery/button/door/directional/north{
@@ -10865,11 +10857,6 @@
 /turf/closed/indestructible/riveted,
 /area/awaymission/katorga/engineering)
 "hvJ" = (
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "AI Core Shutters";
-	id = "AI Hailway Shuttlers";
-	layer = 3.3
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -10929,6 +10916,10 @@
 "hxL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
+/obj/item/disk/holodisk/k13event/guard_closed_block{
+	pixel_x = 6;
+	pixel_y = 2
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/control)
 "hxP" = (
@@ -11427,6 +11418,7 @@
 "hRt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore)
 "hRI" = (
@@ -12123,8 +12115,12 @@
 /area/awaymission/katorga/security/post)
 "isf" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/basic/heretic_summon/raw_prophet/ruins,
-/turf/open/indestructible/dark/smooth_large,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
+/obj/machinery/computer/terminal/katorga/gamma,
+/obj/effect/mapping_helpers/broken_machine,
+/turf/open/floor/iron/white,
 /area/awaymission/katorga/security)
 "ish" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -12823,7 +12819,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/puzzle/keycard/blue_required,
+/obj/machinery/door/airlock/vault/quest/delta,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
 "iPL" = (
@@ -13331,7 +13327,7 @@
 "jhe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/north,
-/obj/structure/table,
+/obj/machinery/computer/terminal/katorga/gamma,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "jhi" = (
@@ -15128,9 +15124,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/poddoor{
-	id = "Med Doors"
-	},
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay/exam)
 "koD" = (
@@ -15699,16 +15692,13 @@
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/engineering/storage)
 "kGM" = (
-/obj/machinery/door/airlock/mining/glass{
-	id_tag = "innercargo"
-	},
 /obj/machinery/door/firedoor,
-/obj/structure/barricade/wooden,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "cargobay_privacy";
 	name = "Privacy Shutters";
 	dir = 4
 	},
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/iron,
 /area/awaymission/katorga/cargo/bay)
 "kHq" = (
@@ -15741,14 +15731,6 @@
 /obj/machinery/telecomms/server/presets/science,
 /turf/open/floor/iron/dark/telecomms,
 /area/awaymission/katorga/ai/telecomms/servers)
-"kHT" = (
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "AI Core Shutters";
-	id = "AI Hailway Shuttlers";
-	layer = 3.3
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/ai/foyer)
 "kIk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
@@ -15768,10 +15750,13 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/post)
 "kIK" = (
-/obj/machinery/door/airlock/medical,
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/medbay/exam)
+/obj/structure/closet/chefcloset,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun/ballistic/automatic/pistol/contraband,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/turf/open/floor/iron/dark/small,
+/area/awaymission/katorga/prison/kitchen/back)
 "kJA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -15963,12 +15948,6 @@
 /turf/open/floor/engine/o2,
 /area/awaymission/katorga/engineering/atmos)
 "kRw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "AI Core Shutters";
-	id = "Sactifice Path";
-	layer = 3.3
-	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/eva)
 "kRQ" = (
@@ -16030,9 +16009,10 @@
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/security/post)
 "kTW" = (
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/iron/white,
-/area/awaymission/katorga/prison/dinner)
+/area/awaymission/katorga/security/locker)
 "kUd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -16162,7 +16142,7 @@
 "kYR" = (
 /obj/structure/cable,
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/computer/terminal/katorga/delta,
+/obj/machinery/computer/terminal/katorga/gamma,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/locker)
 "kZc" = (
@@ -16537,8 +16517,6 @@
 /area/awaymission/katorga/security/entrance)
 "ljd" = (
 /obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/structure/crate_loot,
-/obj/effect/spawner/random/maintenance/dumpster,
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/maints/central)
@@ -16680,7 +16658,6 @@
 	icon_state = "tracks"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/vault/derelict,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/indestructible/dark/smooth_large,
@@ -17597,7 +17574,6 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/surgery/second)
 "lVG" = (
-/obj/effect/spawner/random/structure/steam_vent,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red/directional/west,
@@ -17755,6 +17731,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore)
 "mcd" = (
@@ -17788,13 +17765,6 @@
 /obj/structure/closet/crate/freezer/food,
 /obj/item/food/meat_calzone,
 /obj/item/food/meat_calzone,
-/obj/item/paper/fluff/ruins/thederelict/equipment{
-	default_raw_text = "Миша! Если охрана запросит доставку, пароль на двери \"Страж\". И лучше не задерживайся, мне не нужна лишняя головная боль";
-	name = "Записка повара";
-	color = "#FF8887";
-	pixel_x = 9;
-	pixel_y = 7
-	},
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/awaymission/katorga/prison/kitchen/coldroom)
 "mdm" = (
@@ -17997,6 +17967,13 @@
 /area/awaymission/katorga/ai/foyer)
 "mjQ" = (
 /obj/machinery/griddle,
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Если кто-то это читает - я отправился на шахту. Здесь больше нет спасения. Все равно помирать. Петров.";
+	name = "Записка Петрова";
+	color = "#FF8887";
+	pixel_x = 9;
+	pixel_y = 7
+	},
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/katorga/prison/kitchen)
 "mjX" = (
@@ -18187,13 +18164,11 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/vault)
 "mqJ" = (
-/obj/effect/mob_spawn/corpse/human/prisoner,
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "splatter6"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-/area/awaymission/katorga/medbay/storage)
+/obj/structure/lattice/catwalk,
+/obj/effect/spawner/random/structure/table,
+/obj/item/disk/holodisk/k13event/tech_ventilation,
+/turf/open/floor/plating,
+/area/awaymission/katorga/misc/maints/central)
 "mro" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -18331,10 +18306,10 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "tracks"
 	},
-/obj/machinery/door/airlock/vault/derelict,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/floor/plating/rust,
 /area/awaymission/katorga/misc/mansus)
 "mwW" = (
@@ -18650,11 +18625,14 @@
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/security/post)
 "mGn" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Access"
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/maint,
+/obj/item/disk/holodisk/k13event/prisoner_diary{
+	pixel_x = 7;
+	pixel_y = -5
 	},
-/turf/open/floor/iron/dark/textured_large,
-/area/awaymission/katorga/ai/foyer)
+/turf/open/floor/iron/smooth,
+/area/awaymission/katorga/prison/dinner)
 "mGJ" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
@@ -18902,15 +18880,6 @@
 /obj/item/storage/box/flares,
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/security/post)
-"mPP" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Chamber"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/command/ai_upload,
-/obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/ai)
 "mQj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -18926,6 +18895,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/holopad,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security)
 "mSm" = (
@@ -19222,6 +19192,7 @@
 	dir = 4;
 	networks = list("k13")
 	},
+/obj/effect/mapping_helpers/broken_machine,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "nhm" = (
@@ -19293,10 +19264,9 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "njp" = (
-/obj/machinery/computer/records/security{
+/obj/machinery/computer/terminal/katorga/epsilon{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/security/post)
 "njB" = (
@@ -19362,6 +19332,10 @@
 	},
 /obj/item/tank/internals/emergency_oxygen/engi{
 	pixel_x = 5
+	},
+/obj/item/disk/holodisk/k13event/atmos_temperature{
+	pixel_x = -5;
+	pixel_y = 6
 	},
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/atmos)
@@ -19644,6 +19618,8 @@
 /area/awaymission/katorga/misc/mansus)
 "nuE" = (
 /obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/welded,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore)
 "nuG" = (
@@ -19890,23 +19866,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/gibspawner/human/bodypartless,
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/prison/dinner)
-"nDS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/keycard/syndicate_bomb{
-	pixel_x = -4;
-	pixel_y = -10;
-	puzzle_id = "gsb";
-	desc = "Ключ-карта с надписью \"кабинетначальникатюрьмы\"."
-	},
-/obj/item/paper/fluff/ruins/thederelict/equipment{
-	default_raw_text = "Приказ начальника комплекса: зачистить комплекс, уничтожить сбойный ИИ М.А.Р.А., уничтожить заключенного 04, Марию Рутевич. Немедленно направиться в хранилище. Пароль \"Молот\". В случае провала - разрешена активация устройства самоуничтожения.";
-	name = "Записка офицера";
-	color = "#FF8887";
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/prison/dinner)
 "nEn" = (
@@ -20605,11 +20564,6 @@
 "ogi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "Sactifice Path";
-	id = "Heart Of The Rock";
-	layer = 3.3
-	},
 /turf/open/floor/plating/rust,
 /area/awaymission/katorga/misc/mansus)
 "ogv" = (
@@ -20746,6 +20700,9 @@
 /obj/machinery/door/password{
 	password = "Страж"
 	},
+/obj/effect/mapping_helpers/airlock_note_placer{
+	note_info = "Приказ: Оперативной группе получить гамма-доступ на консоли КПП у ответсвенного офицера."
+	},
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security)
 "okj" = (
@@ -20818,9 +20775,11 @@
 /area/awaymission/katorga/security/entrance)
 "omX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/engineering/tool,
-/turf/open/indestructible/dark,
-/area/awaymission/katorga/security/brig)
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "onC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/stairs{
@@ -21141,12 +21100,11 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/katorga/engineering/supermatter)
 "ozu" = (
-/obj/machinery/door/airlock/maintenance_hatch,
-/obj/effect/mapping_helpers/airlock/abandoned,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
+/obj/machinery/door/airlock/vault/quest/delta,
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/maints/lesser)
 "ozD" = (
@@ -21242,9 +21200,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/security,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/brig)
 "oDj" = (
@@ -21274,9 +21232,13 @@
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/conference)
 "oDG" = (
-/obj/machinery/door/airlock/vault/quest/alpha,
-/turf/open/misc/asteroid/basalt/airless,
-/area/awaymission/katorga/asteroid)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/disk/holodisk/k13event/molot_password{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/prison/dinner)
 "oDO" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
@@ -21595,11 +21557,6 @@
 	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
-"oPQ" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/door/airlock/vault/derelict,
-/turf/open/floor/plating/rust,
-/area/awaymission/katorga/misc/mansus)
 "oQv" = (
 /obj/structure/sign/warning/pods/directional/north,
 /obj/effect/turf_decal/stripes/corner{
@@ -22159,11 +22116,13 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "pkD" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/highsecurity,
-/turf/open/floor/iron/dark/textured,
-/area/awaymission/katorga/medbay)
+/obj/item/disk/holodisk/k13event/password_strazh{
+	pixel_x = 16;
+	pixel_y = -18
+	},
+/obj/effect/mob_spawn/corpse/human/russian,
+/turf/open/misc/asteroid/basalt/airless,
+/area/awaymission/katorga/asteroid)
 "pkU" = (
 /obj/machinery/light/red/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -22366,10 +22325,9 @@
 /turf/open/indestructible/dark,
 /area/awaymission/katorga/security/execution)
 "pqN" = (
-/obj/machinery/door/airlock/medical,
-/obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
+/turf/open/floor/plating,
 /area/awaymission/katorga/medbay/exam)
 "pqT" = (
 /obj/structure/table,
@@ -22724,11 +22682,6 @@
 /area/awaymission/katorga/prison/toilet)
 "pCp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "Sactifice Path";
-	id = "Heart Of The Rock";
-	layer = 3.3
-	},
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/misc/mansus)
 "pCq" = (
@@ -23210,7 +23163,6 @@
 "pSL" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/random/structure/chair_maintenance,
-/obj/effect/spawner/random/armory/bulletproof_armor,
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/maints/central)
 "pSV" = (
@@ -23220,8 +23172,6 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/access/any/command/general,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -23901,11 +23851,16 @@
 /turf/closed/indestructible/riveted,
 /area/awaymission/katorga/security/entrance)
 "qsf" = (
-/obj/effect/spawner/random/maintenance,
-/obj/structure/lattice/catwalk,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/awaymission/katorga/misc/maints/central)
+/obj/item/flashlight/flare{
+	fuel = 1e+031;
+	randomize_fuel = 0;
+	icon_state = "flare-on";
+	start_on = 1
+	},
+/turf/open/indestructible/necropolis{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
+	},
+/area/awaymission/katorga/misc/mansus)
 "qsy" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 8
@@ -24244,15 +24199,15 @@
 "qDk" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/reagent_containers/cup/glass/bottle/vodka{
-	pixel_x = -12;
-	pixel_y = 18
-	},
 /obj/item/reagent_containers/cup/glass/coffee{
 	pixel_x = -8;
 	pixel_y = 5
 	},
 /obj/item/storage/box/flares,
+/obj/item/disk/holodisk/k13event/engineer_anomalies{
+	pixel_x = 9;
+	pixel_y = 11
+	},
 /turf/open/floor/wood,
 /area/awaymission/katorga/engineering)
 "qDt" = (
@@ -24326,12 +24281,9 @@
 	pixel_x = 10;
 	pixel_y = 15
 	},
-/obj/item/keycard/syndicate_fridge{
-	pixel_x = -10;
-	pixel_y = 7;
-	puzzle_id = "kitchen";
-	name = "Kitchen Access Card";
-	color = "#AFEEEE"
+/obj/item/disk/holodisk/k13event/cook_prisoners{
+	pixel_x = -5;
+	pixel_y = 2
 	},
 /turf/open/floor/iron/dark/small,
 /area/awaymission/katorga/prison/kitchen/back)
@@ -25094,9 +25046,15 @@
 /turf/open/floor/iron,
 /area/awaymission/katorga/engineering/atmos)
 "rdX" = (
-/obj/machinery/door/airlock/vault/derelict,
-/turf/open/floor/plating/rust,
-/area/awaymission/katorga/misc/mansus)
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "cargobay_privacy";
+	name = "Privacy Shutters";
+	dir = 4
+	},
+/obj/effect/spawner/structure/window/reinforced/indestructible,
+/turf/open/floor/plating,
+/area/awaymission/katorga/cargo/bay)
 "reo" = (
 /obj/effect/turf_decal/stripes{
 	dir = 1
@@ -26141,13 +26099,13 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/maints/ghetto_warehouse)
 "rSQ" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Access"
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor,
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/ai/foyer)
+/obj/item/disk/holodisk/k13event/psychiatrist_patients{
+	pixel_x = 11;
+	pixel_y = 11
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/medbay/durka)
 "rST" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -26443,6 +26401,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/vault/quest/zeta,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/katorga/ai/interior)
 "sbr" = (
@@ -26601,11 +26560,9 @@
 /area/awaymission/katorga/engineering/supermatter/chamber)
 "sgD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/light/small/directional/north,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
-/area/awaymission/katorga/security/maints)
+/area/awaymission/katorga/security/maints/fore)
 "sgW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -26642,7 +26599,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/inside)
 "shM" = (
-/obj/machinery/door/password,
+/obj/machinery/door/airlock/vault/quest/zeta,
 /turf/open/floor/circuit/red{
 	explosive_resistance = 1;
 	inherent_explosive_resistance = 1
@@ -26678,7 +26635,6 @@
 /area/awaymission/katorga/security/armory)
 "sjw" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/structure/cable,
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Access"
@@ -26704,12 +26660,10 @@
 /area/awaymission/katorga/prison/shower)
 "skB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Access"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "skN" = (
@@ -28043,6 +27997,7 @@
 	dir = 8
 	},
 /obj/structure/rack,
+/obj/item/disk/holodisk/k13event/quartermaster_supplies,
 /turf/open/floor/plating/reinforced,
 /area/awaymission/katorga/cargo/bay)
 "tib" = (
@@ -28557,11 +28512,6 @@
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "Sactifice Path";
-	id = "Heart Of The Rock";
-	layer = 3.3
-	},
 /turf/open/floor/plating/rust,
 /area/awaymission/katorga/misc/mansus)
 "tzq" = (
@@ -28595,13 +28545,11 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/brig)
 "tAX" = (
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "AI 1st floor";
-	id = "AI 1st floor";
-	layer = 3.3
-	},
-/turf/open/indestructible/dark/smooth_large,
-/area/awaymission/katorga/ai/foyer)
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/keycard/blue,
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/medbay/durka)
 "tBc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -28624,15 +28572,6 @@
 	inherent_explosive_resistance = 1
 	},
 /area/awaymission/katorga/ai/interior)
-"tBV" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "Sactifice Path";
-	id = "Heart Of The Rock";
-	layer = 3.3
-	},
-/turf/open/floor/plating/rust,
-/area/awaymission/katorga/misc/mansus)
 "tBY" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/iron/dark/telecomms,
@@ -28669,10 +28608,17 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints/fore/lower)
 "tDC" = (
-/obj/item/ammo_casing/c357,
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/wood/large/ebonite,
-/area/awaymission/katorga/security/hos)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff/ruins/thederelict/equipment{
+	default_raw_text = "Блядь! Она сломана! Живым оперативникам: дополнительная консоль находится в основной оружейной. Срочно туда.\";
+	name = "Записка офицера группы \"Серп\".";
+	color = "#FF8887";
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
+/area/awaymission/katorga/security)
 "tDO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -29494,7 +29440,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/blood/bubblegum,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/large/ebonite,
@@ -29606,6 +29551,18 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/prison/dinner)
+"unM" = (
+/obj/structure/table,
+/obj/item/disk/holodisk/k13event/mara_security{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/disk/holodisk/k13event/mara_observations{
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/turf/open/indestructible/dark/smooth_large,
+/area/awaymission/katorga/ai/interior)
 "unR" = (
 /obj/structure/railing{
 	dir = 8;
@@ -30002,13 +29959,11 @@
 /turf/open/floor/plating,
 /area/awaymission/katorga/misc/maints/ghetto_warehouse)
 "uDS" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "AI Access"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai/foyer)
 "uDU" = (
@@ -31036,7 +30991,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/highsecurity,
+/obj/machinery/door/airlock/vault/quest/alpha,
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay)
 "vst" = (
@@ -31353,8 +31308,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "tcomms-entrance"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
-/obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Access"
 	},
@@ -31522,7 +31475,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/structure/cable,
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Access"
@@ -32091,6 +32043,10 @@
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/disk/holodisk/k13event/guard_night_shift{
+	pixel_x = -4;
+	pixel_y = 7
+	},
 /turf/open/floor/wood,
 /area/awaymission/katorga/security/conference)
 "waY" = (
@@ -32170,7 +32126,7 @@
 /obj/effect/turf_decal/stripes,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/vault/quest/zeta,
+/obj/machinery/door/airlock/vault/quest/gamma,
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/security/brig)
 "wex" = (
@@ -32625,13 +32581,6 @@
 /obj/effect/spawner/random/engineering/material,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints)
-"wtN" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/glass_shards/mini,
-/obj/effect/decal/cleanable/blood/old,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/awaymission/katorga/misc/maints/ghetto_warehouse)
 "wuc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -32785,11 +32734,13 @@
 /area/awaymission/katorga/prison/dinner)
 "wxj" = (
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /mob/living/basic/heretic_summon/raw_prophet/ruins,
 /turf/open/floor/plating,
 /area/awaymission/katorga/security/maints)
 "wxB" = (
-/obj/structure/platform/gold,
+/obj/machinery/computer/terminal/katorga/zeta,
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/katorga/security/hos)
 "wxC" = (
@@ -32966,20 +32917,14 @@
 /turf/open/floor/iron/smooth,
 /area/awaymission/katorga/prison/dinner)
 "wFv" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "tracks"
+/obj/item/flashlight/flare{
+	fuel = 1e+031;
+	randomize_fuel = 0;
+	icon_state = "flare-on";
+	start_on = 1
 	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/poddoor/massdriver_chapel{
-	name = "Sactifice Path";
-	id = "Heart Of The Rock";
-	layer = 3.3
-	},
-/turf/open/floor/plating/rust,
-/area/awaymission/katorga/misc/mansus)
+/turf/open/misc/asteroid/basalt/airless,
+/area/awaymission/katorga/asteroid)
 "wGe" = (
 /obj/structure/rack,
 /obj/item/crowbar/large,
@@ -33402,6 +33347,9 @@
 "wSw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/status_display/ai/directional/north,
+/obj/machinery/camera/directional/north{
+	network = list("k13")
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/security/brig)
 "wSL" = (
@@ -33582,19 +33530,11 @@
 	},
 /area/awaymission/katorga/security)
 "xbZ" = (
-/obj/machinery/door/airlock/mining/glass{
-	id_tag = "innercargo"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
-/obj/structure/barricade/wooden,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "cargobay_privacy";
-	name = "Privacy Shutters";
-	dir = 4
-	},
+/obj/machinery/door/airlock/vault/quest/alpha,
 /turf/open/floor/iron,
 /area/awaymission/katorga/cargo/bay)
 "xcq" = (
@@ -33789,6 +33729,10 @@
 	c_tag = "Medbay - Aft Operating Room"
 	},
 /obj/item/storage/box/flares,
+/obj/item/keycard/blue{
+	pixel_x = 10;
+	pixel_y = -13
+	},
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/durka)
 "xiE" = (
@@ -33973,9 +33917,6 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/awaymission/katorga/ai)
 "xpT" = (
-/obj/machinery/door/poddoor{
-	id = "Med Doors"
-	},
 /turf/open/floor/iron/dark/textured,
 /area/awaymission/katorga/medbay/exam)
 "xqi" = (
@@ -34308,8 +34249,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/airlock/medical,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/vault/quest/beta,
 /turf/open/floor/iron/white,
 /area/awaymission/katorga/medbay/exam)
 "xCs" = (
@@ -35310,7 +35251,10 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/vault/quest/zeta,
+/obj/machinery/door/airlock/vault/quest/gamma,
+/obj/effect/mapping_helpers/airlock_note_placer{
+	note_info = "Всвязи с участившимися попытками краж со стороны персонала кухни - пароль выдается строго офицерам 3 ранга и выше. Петров."
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/katorga/security/hos)
 "yki" = (
@@ -47890,7 +47834,7 @@ leV
 leV
 seE
 seE
-seE
+fqx
 seE
 leV
 leV
@@ -48145,7 +48089,7 @@ leV
 leV
 leV
 leV
-fqx
+seE
 seE
 seE
 seE
@@ -48399,10 +48343,10 @@ seE
 seE
 leV
 leV
+pkD
 seE
 seE
 seE
-fqx
 seE
 seE
 seE
@@ -48657,7 +48601,7 @@ seE
 leV
 leV
 seE
-seE
+wFv
 seE
 crQ
 seE
@@ -48914,7 +48858,7 @@ seE
 vIB
 vIB
 vIB
-seE
+wXc
 wfQ
 rOz
 seE
@@ -49172,7 +49116,7 @@ vIB
 vIB
 vIB
 seE
-mBp
+rOz
 seE
 seE
 leV
@@ -57175,7 +57119,7 @@ vzd
 vzd
 vzd
 thk
-uvU
+mqJ
 iOU
 iOU
 rHq
@@ -57414,7 +57358,7 @@ sAk
 aOc
 bVF
 gvW
-wtN
+gvW
 bVF
 sAk
 leV
@@ -57434,7 +57378,7 @@ vzd
 uNr
 uvU
 pSL
-fTH
+iOU
 rHq
 ejj
 rHq
@@ -61531,7 +61475,7 @@ leV
 leV
 leV
 seE
-oDG
+seE
 gqU
 gqU
 gqU
@@ -61788,7 +61732,7 @@ leV
 leV
 seE
 seE
-dtV
+seE
 gqU
 gqU
 gqU
@@ -64727,7 +64671,7 @@ kzB
 aDs
 qos
 qqz
-fJb
+qqz
 qqz
 qqz
 eco
@@ -65502,7 +65446,7 @@ irt
 qqz
 qqz
 qqz
-fJb
+qqz
 eco
 eco
 eco
@@ -66258,7 +66202,7 @@ qNY
 qNY
 djU
 wiV
-aDs
+qsf
 atb
 hUp
 kpH
@@ -66515,7 +66459,7 @@ qNY
 xNZ
 stu
 faX
-xcy
+fTH
 mYF
 hUp
 gSm
@@ -66558,17 +66502,17 @@ qqz
 oyU
 stp
 leY
-oPQ
-tBV
+czY
+leY
 rGH
 vYN
 lUi
-rdX
+luP
 ogi
 nhR
 apR
 aKV
-fzz
+ibJ
 aKV
 aKV
 aNK
@@ -66577,12 +66521,12 @@ koL
 czr
 czr
 xPn
-eXy
-tAX
+uKX
+uKX
 uKX
 uKX
 aKV
-rSQ
+ibJ
 aKV
 eTx
 fzz
@@ -66620,7 +66564,7 @@ baz
 rYk
 rKj
 kNE
-hic
+kRw
 etQ
 etQ
 bNm
@@ -66816,7 +66760,7 @@ wXQ
 wXQ
 wXQ
 mwR
-wFv
+wXQ
 aTT
 jUw
 dPp
@@ -66834,8 +66778,8 @@ gLD
 lIk
 lIk
 uKX
-eXy
-tAX
+uKX
+uKX
 uKX
 mtI
 olF
@@ -67072,17 +67016,17 @@ ukN
 wlZ
 leY
 leY
-oPQ
-tBV
+czY
+leY
 wlZ
 wlZ
 luP
-flN
+pCp
 pCp
 aKV
 uVn
 aKV
-fzz
+ibJ
 aKV
 aKV
 xNT
@@ -67091,12 +67035,12 @@ kht
 upo
 upo
 uKX
-eXy
-tAX
+uKX
+uKX
 uKX
 olF
 aKV
-qZM
+ibJ
 uKX
 dEO
 fzz
@@ -67338,7 +67282,7 @@ fzz
 fzz
 ibJ
 xaz
-mGn
+ibJ
 fzz
 nUy
 aKV
@@ -67853,7 +67797,7 @@ woW
 aKV
 fah
 aKV
-ibJ
+qZM
 uKX
 aKV
 xNT
@@ -68418,7 +68362,7 @@ goP
 iHB
 xRe
 ukj
-mqJ
+bpz
 goP
 goP
 vCU
@@ -68930,7 +68874,7 @@ vlB
 vlB
 goP
 iQB
-bgs
+ijV
 hsE
 hlL
 goP
@@ -69236,10 +69180,10 @@ leV
 leV
 kVq
 kVq
-lKX
+kbL
 kGM
 xbZ
-kGM
+rdX
 lKX
 kVq
 kVq
@@ -71564,7 +71508,7 @@ rHq
 phD
 alm
 fCd
-qsf
+fCd
 fCd
 fCd
 rCO
@@ -72552,9 +72496,9 @@ vzd
 seE
 leV
 goG
-pkD
+goG
 vrW
-pkD
+goG
 goG
 leV
 leV
@@ -74089,7 +74033,7 @@ lxJ
 aXl
 cig
 vql
-kIK
+pgL
 xpT
 vBi
 imH
@@ -75619,7 +75563,7 @@ vlB
 vlB
 xTY
 uvk
-rsk
+rSQ
 xTY
 joI
 sSn
@@ -76653,7 +76597,7 @@ joI
 mfK
 xTY
 xiD
-kGa
+tAX
 xTY
 vlB
 vlB
@@ -111625,7 +111569,7 @@ peq
 rQG
 cvG
 plT
-rQG
+plT
 plT
 cdS
 leV
@@ -111883,7 +111827,7 @@ xlG
 xlG
 crl
 xlG
-sgD
+huV
 cdS
 leV
 leV
@@ -114204,7 +114148,7 @@ cdS
 vdf
 vdf
 vdf
-wxj
+gLm
 wId
 vdf
 leV
@@ -114425,7 +114369,7 @@ ych
 jbY
 cyp
 xLc
-cyp
+kTW
 vcb
 cyp
 yan
@@ -114945,7 +114889,7 @@ jBj
 mCv
 qpd
 rib
-omX
+qpd
 hLo
 fyE
 gPZ
@@ -115194,9 +115138,9 @@ leV
 leV
 ych
 vDU
-cyp
+kTW
 vcb
-cyp
+kTW
 iiF
 ipD
 ych
@@ -116520,7 +116464,7 @@ vdf
 leV
 vdf
 nbR
-rQG
+plT
 vdf
 leV
 leV
@@ -121158,9 +121102,9 @@ omD
 snH
 fgx
 otV
-jLv
+bgs
 adZ
-vnI
+adZ
 vnI
 lPL
 adZ
@@ -121417,7 +121361,7 @@ adZ
 adZ
 reK
 adZ
-vnI
+adZ
 vnI
 lPL
 oew
@@ -122432,7 +122376,7 @@ epB
 cMJ
 xbL
 xbL
-xbL
+wxj
 xbL
 xbL
 xbL
@@ -122921,7 +122865,7 @@ krn
 gPZ
 tcU
 kpn
-qKr
+mGn
 tcU
 sLU
 fCp
@@ -124971,7 +124915,7 @@ pOh
 sVA
 hLo
 tcU
-wxC
+omX
 wxC
 wxC
 tcU
@@ -126009,9 +125953,9 @@ hUk
 cag
 pDy
 ktT
-nDS
-twm
 wxC
+twm
+oDG
 swG
 jRI
 boM
@@ -126267,7 +126211,7 @@ cag
 eba
 opM
 opM
-cVC
+bVX
 opM
 opM
 cag
@@ -126521,13 +126465,13 @@ tcU
 tcU
 nNa
 opM
-cag
+gOl
 eba
 pDy
 wKY
 opM
 cag
-cag
+gOl
 opM
 bsx
 tcU
@@ -126772,7 +126716,7 @@ hLo
 leV
 kdk
 cfz
-pQo
+sgD
 peK
 tcU
 tcU
@@ -127037,10 +126981,10 @@ tcU
 tcU
 iCK
 opM
-opM
+ddS
 cVC
 opM
-opM
+ddS
 opM
 tcU
 tcU
@@ -128572,7 +128516,7 @@ hLo
 hLo
 leV
 kdk
-pyz
+gIT
 tcU
 xGA
 oSB
@@ -130885,7 +130829,7 @@ trM
 hLo
 leV
 kdk
-wvY
+dtV
 tcU
 nwa
 fTs
@@ -132180,7 +132124,7 @@ mGV
 opM
 cVC
 opM
-jdp
+cag
 cag
 tcU
 qKr
@@ -132684,7 +132628,7 @@ nIp
 leV
 leV
 kdk
-wvY
+dtV
 tcU
 qoD
 oIm
@@ -134142,7 +134086,7 @@ iDO
 iDO
 iDO
 iEq
-aKi
+unM
 iDO
 lmv
 mWf
@@ -134232,7 +134176,7 @@ sQX
 gEd
 tcU
 mGV
-kTW
+sLU
 nNa
 tYn
 opM
@@ -135760,7 +135704,7 @@ kkV
 nIp
 uaa
 qtT
-uaa
+bzM
 nIp
 nIp
 nIp
@@ -136280,7 +136224,7 @@ hby
 hby
 hby
 hby
-xFg
+fIr
 kdk
 fox
 aYr
@@ -137043,7 +136987,7 @@ jbk
 lSz
 aOm
 nIp
-xFg
+uDe
 rCi
 yix
 ujv
@@ -138073,7 +138017,7 @@ hKV
 hKV
 jFu
 jxV
-bVX
+bso
 hby
 ujv
 pGo
@@ -138642,7 +138586,7 @@ qni
 aQq
 trk
 nOc
-trk
+kIK
 oPx
 leV
 leV
@@ -139371,7 +139315,7 @@ uaa
 uaa
 uaa
 uaa
-xFg
+fIr
 nIp
 xFg
 eOH
@@ -139872,12 +139816,12 @@ leV
 nIp
 kyQ
 tWS
-gIT
+xFg
 hby
 hzS
 hzS
 hzS
-isf
+hby
 xFg
 wij
 urm
@@ -140397,7 +140341,7 @@ uaa
 xFg
 xFg
 oGX
-xFg
+xEy
 xFg
 xFg
 nIp
@@ -141427,7 +141371,7 @@ fic
 njT
 mSl
 lIa
-ovG
+tDC
 mys
 ssJ
 rCi
@@ -141938,9 +141882,9 @@ adi
 nIp
 nIp
 nIp
-uDe
+isf
 xNF
-xFg
+xEy
 xFg
 mys
 xFg
@@ -142187,7 +142131,7 @@ uaa
 fuE
 uaa
 nIp
-bzM
+ovG
 xFg
 xFg
 xFg
@@ -197630,8 +197574,8 @@ oBG
 hYC
 oBG
 oBG
-mPP
-kHT
+nTl
+uKX
 nLE
 kps
 xkm
@@ -198144,8 +198088,8 @@ oBG
 hYC
 oBG
 oBG
-mPP
-kHT
+nTl
+uKX
 qyN
 csj
 xkm
@@ -201791,9 +201735,9 @@ leV
 leV
 hKV
 dYX
-tDC
+fnW
 akA
-gOl
+fnW
 hKV
 leV
 leV
