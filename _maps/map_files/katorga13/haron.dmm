@@ -637,6 +637,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/iron,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1018,6 +1019,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
 /turf/open/floor/iron/dark,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1101,6 +1104,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/iron,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1299,6 +1303,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/iron,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1339,6 +1344,8 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
 /turf/open/floor/iron/dark,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1438,6 +1445,8 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/east,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
 /turf/open/floor/iron/dark,
 /area/station/haron/ship{
 	requires_power = 0
@@ -1701,6 +1710,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
 /turf/open/floor/iron/dark,
 /area/station/haron/ship{
 	requires_power = 0
