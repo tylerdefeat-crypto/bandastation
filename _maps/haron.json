@@ -1,0 +1,20 @@
+{
+	"version": 1,
+	"map_name": "haron",
+	"map_path": "map_files/katorga13",
+	"map_file": "haron.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"main_floor": 1,
+	"shuttles": {
+		"emergency": "emergency_kilo",
+		"ferry": "ferry_kilo",
+		"cargo": "cargo_kilo",
+		"whiteship": "whiteship_kilo"
+	},
+	"job_changes": {
+		"Explorer": {
+			"spawn_positions": 20
+		}
+	}
+}

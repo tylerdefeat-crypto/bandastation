@@ -58,6 +58,10 @@ endmap
 map katorga13
 	maxplayers 40
 
+map haron
+	maxplayers 40
+endmap
+
 map wawastation
     minplayers 50
 	votable

@@ -338,3 +338,13 @@
 /area/awaymission/katorga/misc/maints/central
 	name = "\improper K13 1st Floor Central Port Maint"
 	icon_state = "awaycontent5"
+
+// MARK: Haron
+
+/area/station/haron/ship
+	name = "Haron Ship"
+	icon_state = "starboardhall"
+	requires_power = FALSE
+	default_gravity = STANDARD_GRAVITY
+	ambience_index = AMBIENCE_AWAY
+	ambience_index = AMBIENCE_DANGER
