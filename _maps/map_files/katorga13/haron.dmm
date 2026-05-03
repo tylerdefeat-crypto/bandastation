@@ -217,8 +217,8 @@
 	dir = 4;
 	dwidth = 4;
 	height = 7;
-	name = "Katorga 13 Public Docking Port";
-	shuttle_id = "katorga_public_dock";
+	name = "Charon Main Dock";
+	shuttle_id = "charon_dock";
 	width = 17
 	},
 /turf/open/space/basic,

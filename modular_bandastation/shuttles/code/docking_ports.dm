@@ -137,8 +137,8 @@
 	shuttle_id = "syndicate_corpsecart"
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0)
 	hidden = TRUE
-	dir = WEST
-	port_direction = EAST
+	dir = EAST
+	port_direction = WEST
 	preferred_direction = NORTH
 
 /obj/docking_port/mobile/sparrow
@@ -146,6 +146,6 @@
 	shuttle_id = "nanotrasen_sparrow"
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0)
 	hidden = TRUE
-	dir = WEST
-	port_direction = EAST
+	dir = EAST
+	port_direction = WEST
 	preferred_direction = NORTH

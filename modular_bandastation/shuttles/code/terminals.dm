@@ -73,10 +73,10 @@
 	name = "\"corpsecart\" syndicate shuttle terminal"
 	desc = "A console that controls the transport \"Corpsecart\""
 	shuttleId = "syndicate_corpsecart"
-	possible_destinations = "katorga_secure_dock"
+	possible_destinations = "katorga_secure_dock;emergency_syndicate"
 
 /obj/machinery/computer/shuttle/sparrow
 	name = "\"sparrow\" nanotrasen shuttle terminal"
 	desc = "A console that controls the transport \"Sparrow\""
 	shuttleId = "nanotrasen_sparrow"
-	possible_destinations = "katorga_public_dock"
+	possible_destinations = "katorga_public_dock;charon_dock"
