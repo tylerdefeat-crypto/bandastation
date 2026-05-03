@@ -52,7 +52,6 @@
 
 	AddElement(/datum/element/wall_tearer, tear_time = 0.5 SECONDS)
 
-	INVOKE_ASYNC(src, PROC_REF(radio_static_loop))
 	INVOKE_ASYNC(src, PROC_REF(breathing_loop))
 	AddComponent(/datum/component/blood_walk, \
 		blood_type = /obj/effect/decal/cleanable/blood)
@@ -75,14 +74,6 @@
 	while(src && !QDELETED(src) && stat != DEAD)
 		playsound(src, 'modular_bandastation/k13_crooked_man/sounds/Breathing.ogg', 70, FALSE, 8, 0.7)
 		sleep(40)
-
-/mob/living/basic/boss/crooked_man/proc/radio_static_loop()
-	while(src && !QDELETED(src) && stat != DEAD)
-		for(var/mob/M in get_hearers_in_view(7, src))
-			if(M == src || !M.client)
-				continue
-			M.playsound_local(src, 'modular_bandastation/k13_crooked_man/sounds/static.ogg', 20, FALSE, 7, 0.2, falloff_distance = 1)
-		sleep(10)
 
 /mob/living/basic/boss/crooked_man/proc/play_footstep_sound()
 	SIGNAL_HANDLER
