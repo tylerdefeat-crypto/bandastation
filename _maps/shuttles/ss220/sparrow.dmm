@@ -7,14 +7,6 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/sparrow)
-"d" = (
-/obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/flora/bush/fullgrass/style_2,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/shuttle/sparrow)
 "e" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/light/floor,
@@ -166,12 +158,7 @@
 /turf/open/floor/iron/herringbone,
 /area/shuttle/sparrow)
 "H" = (
-/obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/flora/bush/grassy/style_3,
-/obj/structure/flora/bush/flowers_yw/style_3,
-/turf/open/floor/grass,
+/turf/open/floor/iron/herringbone,
 /area/shuttle/sparrow)
 "I" = (
 /obj/machinery/recharge_station,
@@ -180,9 +167,7 @@
 "J" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
-/obj/docking_port/mobile/sparrow{
-	dir = 4
-	},
+/obj/docking_port/mobile/sparrow,
 /turf/open/floor/plating,
 /area/shuttle/sparrow)
 "K" = (
@@ -251,12 +236,6 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/herringbone,
-/area/shuttle/sparrow)
-"V" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/turf/open/floor/iron/herringbone,
 /area/shuttle/sparrow)
 "W" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
@@ -339,10 +318,10 @@ K
 u
 q
 L
-V
-d
 H
-I
+H
+H
+H
 Q
 B
 w
@@ -381,7 +360,7 @@ r
 M
 M
 M
-M
+I
 a
 o
 i
