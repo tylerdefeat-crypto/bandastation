@@ -35,7 +35,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/effect/landmark/start/nukeop_overwatch,
+/obj/effect/landmark/start/nukeop_base/overwatch,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_base/control)
 "aT" = (
@@ -407,7 +407,7 @@
 /area/centcom/syndicate_base)
 "kl" = (
 /obj/structure/chair/stool,
-/obj/effect/landmark/start/nukeop,
+/obj/effect/landmark/start/nukeop_base,
 /turf/open/floor/carpet/black,
 /area/centcom/syndicate_base)
 "ko" = (
@@ -1575,7 +1575,7 @@
 /obj/structure/chair/comfy/red{
 	dir = 8
 	},
-/obj/effect/landmark/start/nukeop_leader,
+/obj/effect/landmark/start/nukeop_base/leader,
 /turf/open/floor/carpet/black,
 /area/centcom/syndicate_base)
 "Kz" = (
@@ -1979,7 +1979,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
-/obj/effect/landmark/start/nukeop_overwatch,
+/obj/effect/landmark/start/nukeop_base/overwatch,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_base/control)
 "SA" = (
@@ -2208,7 +2208,7 @@
 /obj/structure/chair/stool{
 	dir = 1
 	},
-/obj/effect/landmark/start/nukeop,
+/obj/effect/landmark/start/nukeop_base,
 /turf/open/floor/carpet/black,
 /area/centcom/syndicate_base)
 "Xc" = (
