@@ -122,6 +122,16 @@
 		/obj/item/sledgehammer/tactical = 1,
 	)
 
+/datum/supply_pack/security/holsters
+	name = "Holsters (uniform)"
+	crate_name = "holsters crate"
+	desc = "В этом ящике находятся две обычные кобуры для пистолетов, которые надеваются поверх униформы."
+	cost = CARGO_CRATE_VALUE * 10
+	access_view = ACCESS_SECURITY
+	contains = list(
+		/obj/item/clothing/accessory/holster = 2
+	)
+
 // MARK: GUNCASE
 /obj/item/storage/toolbox/guncase/soviet
 	desc = "Оружейный кейс. Символ СССП отпечатан на боковой стороне."
