@@ -231,8 +231,8 @@
 /datum/keybinding/living/view_pet_data
 	hotkey_keys = list("Shift")
 	name = "view_pet_commands"
-	full_name = "View Pet Commands"
-	description = "Hold down to see all the commands you can give your pets!"
+	full_name = "Просмотр команд питомцев"
+	description = "Удерживайте, чтобы увидеть все команды, которые вы можете дать своим питомцам!"
 	keybind_signal = COMSIG_KB_LIVING_VIEW_PET_COMMANDS
 
 /datum/keybinding/living/cancel_interactions
