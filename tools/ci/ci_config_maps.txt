@@ -4,8 +4,8 @@ endmap
 map icebox
 endmap
 
-map catwalkstation
-endmap
+#map catwalkstation
+#endmap
 
 map metastation
 endmap
@@ -29,4 +29,11 @@ map runtimestation
 endmap
 
 map runtimestation_minimal
+endmap
+
+# BANDASTATION MAPS
+map cyberiad
+endmap
+
+map kilostation
 endmap
