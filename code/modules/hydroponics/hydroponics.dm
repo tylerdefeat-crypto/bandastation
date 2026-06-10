@@ -474,9 +474,11 @@
 	if(GetComponent(/datum/component/rename))
 		return
 	name = current_soil ? "ботанический лоток" : initial(name)
-	ru_names_rename(ru_names_toml(initial(name), suffix = " ([myseed.plantname])"))
 	if(myseed)
+		ru_names_rename(ru_names_toml(initial(name), suffix = " ([myseed.plantname])")) // BANDASTATION EDIT
 		name += " ([myseed.plantname])"
+	else
+		ru_names_rename(ru_names_toml(initial(name))) // BANDASTATION EDIT
 
 /obj/machinery/hydroponics/update_desc(updates)
 	. = ..()
