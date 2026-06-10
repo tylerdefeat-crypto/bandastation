@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd modular_bandastation/mapping/icons/decals/new_dawn_logo.dmi)"
+    ]
+  }
+}
