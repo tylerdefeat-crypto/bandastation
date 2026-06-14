@@ -77848,7 +77848,7 @@
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
 "sWW" = (
-/mob/living/simple_animal/bot/mulebot,
+/mob/living/basic/bot/mulebot,
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	location = "QM #2"
