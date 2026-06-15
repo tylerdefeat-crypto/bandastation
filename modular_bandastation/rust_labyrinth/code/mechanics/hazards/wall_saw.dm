@@ -9,11 +9,18 @@
 /obj/structure/labyrinth_hazard/wall_saw
 	name = "wall saw"
 	desc = "A great toothed disc recessed into the wall, rimmed with dried gore. It hums faintly."
-	icon_state = "grille"           // placeholder — swap for saw sprite
+	icon = 'modular_bandastation/rust_labyrinth/icons/wall_saw.dmi'
+	icon_state = "idle"
 	density = FALSE                 // recessed; doesn't block until it strikes
+	contact_damage = WALLSAW_CONTACT_DAMAGE
 
 	/// How many tiles the saw sweeps out from the wall.
 	var/reach = 2
+
+/obj/structure/labyrinth_hazard/wall_saw/Initialize(mapload)
+	. = ..()
+	// Idle: only the exposed mouth (tile directly in front) grazes.
+	live_offsets = list(1)
 
 /obj/structure/labyrinth_hazard/wall_saw/run_cycle()
 	_warn()
@@ -34,12 +41,19 @@
 	var/list/offset = _reach_pixel_offset(reach)
 	animate(src, pixel_x = offset[1], pixel_y = offset[2], time = WALLSAW_OUT_TIME, easing = SINE_EASING)
 	playsound(src, 'sound/effects/meteorimpact.ogg', 90, TRUE, 12)
+	// Whole swept line is live while the disc is out.
+	var/list/live = list()
+	for(var/i in 1 to reach)
+		live += i
+	live_offsets = live
 
 /obj/structure/labyrinth_hazard/wall_saw/proc/_retract()
 	animate(src, pixel_x = 0, pixel_y = 0, time = WALLSAW_IN_TIME, easing = SINE_EASING)
 	playsound(src, 'sound/effects/clang.ogg', 60, TRUE, 10)
+	// Back to recessed: only the mouth grazes.
+	live_offsets = list(1)
 
-/// Shred every mob along the swept line.
+/// Shred every mob along the swept line (the heavy cycle strike).
 /obj/structure/labyrinth_hazard/wall_saw/proc/_slice()
 	if(QDELETED(src))
 		return
@@ -49,13 +63,13 @@
 		if(!current)
 			break
 		for(var/mob/living/victim in current)
+			if(victim.stat == DEAD)
+				continue
 			victim.visible_message(
 				span_danger("[src]'s blade rips into [victim]!"),
 				span_userdanger("The spinning blade tears across your flesh!"),
 			)
-			victim.apply_damage(WALLSAW_DAMAGE, BRUTE, pick(BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM), wound_bonus = 25, sharpness = SHARP_EDGED, attacking_item = src)
-			victim.add_splatter_floor(current)
-			log_combat(src, victim, "wall-saw-cut")
+			_bite(victim, WALLSAW_DAMAGE, wound_bonus = 25, zones = list(BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
 
 /// [pixel_x, pixel_y] offset for the saw fully extended in `dir`.
 /obj/structure/labyrinth_hazard/wall_saw/proc/_reach_pixel_offset(tiles)

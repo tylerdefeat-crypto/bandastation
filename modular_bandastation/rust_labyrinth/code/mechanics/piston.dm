@@ -14,13 +14,32 @@
 
 /obj/structure/labyrinth_hazard/piston
 	name = "industrial piston"
-	desc = "A massive rusted hydraulic ram. The air around it smells of iron and old blood."
-	icon_state = "grille"           // placeholder — swap for real piston sprite
+	desc = "A massive rusted slab of wall on hydraulic runners. The air around it smells of iron and old blood."
 
 	/// PISTON_RETRACTED or PISTON_EXTENDED
 	var/piston_state = PISTON_RETRACTED
 	/// How many tiles forward the piston travels
 	var/push_distance = 1
+	/// The wall TYPE the piston head wears. The piston needs no sprite of its
+	/// own — it copies this wall's icon/icon_state/name so it reads as that wall
+	/// sliding out. To change which wall "moves", set this in the DMM (or a
+	/// subtype) to any /turf/closed/wall path — nothing else needs touching.
+	var/turf/closed/wall/wall_appearance = /turf/closed/wall/r_wall
+
+/obj/structure/labyrinth_hazard/piston/Initialize(mapload)
+	. = ..()
+	_wear_wall_appearance()
+
+/// Copy the configured wall's look onto the piston head. Smoothing walls expose
+/// their isolated "<base>-0" state via initial(), which is exactly the single
+/// standalone block we want for a moving ram.
+/obj/structure/labyrinth_hazard/piston/proc/_wear_wall_appearance()
+	var/turf/closed/wall/W = wall_appearance
+	if(!ispath(W, /turf/closed/wall))
+		return
+	icon = initial(W.icon)
+	icon_state = initial(W.icon_state)
+	name = initial(W.name)
 
 // ------------------------------------------------------------------
 // Cycle: warn → extend → hold → retract
@@ -42,7 +61,11 @@
 /// Pre-extension groan — gives players a moment to react.
 /obj/structure/labyrinth_hazard/piston/proc/_warn()
 	playsound(src, 'sound/effects/clang.ogg', 80, TRUE, 12)
-	icon_state = "grille_catwalk"   // placeholder: tense/warning state
+	// Telegraph via a brief shudder rather than an icon swap, so the wall
+	// sprite stays intact. Small back-and-forth nudge along the push axis.
+	var/list/shake = _dir_to_pixel_offset(0.15)
+	animate(src, pixel_x = shake[1], pixel_y = shake[2], time = 1, flags = ANIMATION_PARALLEL)
+	animate(pixel_x = 0, pixel_y = 0, time = 1)
 
 /// Begin extension animation and deal damage at the right moment.
 /obj/structure/labyrinth_hazard/piston/proc/_extend()
@@ -54,7 +77,6 @@
 
 /obj/structure/labyrinth_hazard/piston/proc/_on_fully_extended()
 	piston_state = PISTON_EXTENDED
-	icon_state = "grille"           // placeholder: extended state
 
 /// Retract animation — faster than the extension.
 /obj/structure/labyrinth_hazard/piston/proc/_retract()

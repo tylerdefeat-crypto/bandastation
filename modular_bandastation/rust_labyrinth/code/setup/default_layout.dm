@@ -74,13 +74,45 @@ var/static/list/LABYRINTH_DEFAULT_LAYOUT = list(
 	list(5, 5, LABYRINTH_SECTOR_CORRIDOR,   'modular_bandastation/rust_labyrinth/maps/test_corridor.dmm',    0),
 )
 
-/// Регистрирует дефолтный лейаут и загружает все секторы процедурно.
-/// Вызывается из ADMIN_VERB "Labyrinth: Setup Default Layout".
+/// Пул DMM-кусков по типу сектора. Маппер кладёт свои карты сюда; на старте
+/// каждый слот берёт СЛУЧАЙНУЮ карту из пула своего типа — позиции типов
+/// (кольца) фиксированы, рандомится только геометрия внутри типа.
+/// Пустой/отсутствующий пул → mappath = null → процедурная геометрия (fallback).
+GLOBAL_LIST_INIT(labyrinth_sector_pools, list(
+	"[LABYRINTH_SECTOR_CORRIDOR]" = list(
+		'modular_bandastation/rust_labyrinth/maps/test_corridor.dmm',
+	),
+	"[LABYRINTH_SECTOR_TRAP]" = list(
+		'modular_bandastation/rust_labyrinth/maps/test_trap.dmm',
+		'modular_bandastation/rust_labyrinth/maps/test_puzzle.dmm',
+	),
+	"[LABYRINTH_SECTOR_FORGE]" = list(
+		'modular_bandastation/rust_labyrinth/maps/test_forge.dmm',
+	),
+	"[LABYRINTH_SECTOR_BOSS]" = list(
+		'modular_bandastation/rust_labyrinth/maps/test_boss.dmm',
+	),
+	"[LABYRINTH_SECTOR_EMPTY]" = list(
+		'modular_bandastation/rust_labyrinth/maps/test_transition.dmm',
+	),
+))
+
+/// Случайный DMM из пула для данного типа сектора, или null если пул пуст.
+/proc/labyrinth_pick_sector_map(sector_type)
+	var/list/pool = GLOB.labyrinth_sector_pools["[sector_type]"]
+	if(!length(pool))
+		return null
+	return pick(pool)
+
+/// Регистрирует дефолтный лейаут: типы фиксированы, карта на каждый слот —
+/// случайная из пула своего типа. Вызывается из round-start хука и
+/// ADMIN_VERB "Labyrinth: Setup Default Layout".
 /proc/register_default_labyrinth_layout()
 	var/datum/rust_grid_manager/mgr = GLOB.rust_grid_manager
 	for(var/list/cfg as anything in LABYRINTH_DEFAULT_LAYOUT)
-		// cfg = list(gx, gy, type, mappath, rust_level)
-		mgr.register_sector(cfg[1], cfg[2], cfg[3], cfg[4], cfg[5])
+		// cfg = list(gx, gy, type, mappath, rust_level) — cfg[4] игнорируется,
+		// карта выбирается случайно из пула типа cfg[3].
+		mgr.register_sector(cfg[1], cfg[2], cfg[3], labyrinth_pick_sector_map(cfg[3]), cfg[5])
 
 // ============================================================
 // Тестовый минимальный лейаут (5 секторов, центральная колонна)

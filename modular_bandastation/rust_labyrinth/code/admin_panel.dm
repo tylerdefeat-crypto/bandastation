@@ -55,7 +55,6 @@ ADMIN_VERB(labyrinth_panel, R_ADMIN, "Labyrinth: Control Panel", "Открыть
 			"has_sync"     = !isnull(S.sync_controller),
 			"has_corrosion" = !isnull(S.corrosion_controller),
 			"has_mappath"  = (S.mappath ? TRUE : FALSE),
-			"module_name"  = (S.applied_module ? S.applied_module.module_name : ""),
 			"hazard_count" = (S.sync_controller ? length(S.sync_controller.hazards) : 0),
 			"puzzle_name"  = (S.active_puzzle ? S.active_puzzle.puzzle_name : ""),
 			"channels"     = S.get_channels(),
@@ -177,39 +176,6 @@ ADMIN_VERB(labyrinth_panel, R_ADMIN, "Labyrinth: Control Panel", "Открыть
 			log_admin("[key_name(holder)] stopped trap loop in labyrinth sector ([S.grid_x],[S.grid_y]).")
 			return TRUE
 
-		if("attach_puzzle")
-			var/index = text2num(params["index"])
-			var/puzzle_type = params["puzzle_type"]
-			if(!isnum(index) || !puzzle_type)
-				return TRUE
-			var/datum/rust_sector/S = mgr.sectors[index]
-			if(!S || S.state == LABYRINTH_SECTOR_UNLOADED)
-				return TRUE
-			var/datum/labyrinth_puzzle/P
-			switch(puzzle_type)
-				if("sequence")
-					P = new /datum/labyrinth_puzzle/sequence()
-				if("sacrifice")
-					P = new /datum/labyrinth_puzzle/sacrifice()
-				if("gauntlet")
-					P = new /datum/labyrinth_puzzle/gauntlet()
-			if(!P)
-				return TRUE
-			S.attach_puzzle(P)
-			log_admin("[key_name(holder)] attached puzzle '[puzzle_type]' to labyrinth sector ([S.grid_x],[S.grid_y]).")
-			return TRUE
-
-		if("clear_puzzle")
-			var/index = text2num(params["index"])
-			if(!isnum(index))
-				return TRUE
-			var/datum/rust_sector/S = mgr.sectors[index]
-			if(!S)
-				return TRUE
-			S.clear_puzzle()
-			log_admin("[key_name(holder)] cleared puzzle from labyrinth sector ([S.grid_x],[S.grid_y]).")
-			return TRUE
-
 		if("select_sector")
 			var/index = text2num(params["index"])
 			selected_index = (isnum(index) ? index : null)
@@ -274,39 +240,6 @@ ADMIN_VERB(labyrinth_panel, R_ADMIN, "Labyrinth: Control Panel", "Открыть
 				return TRUE
 			S.corrosion_controller._sweep()
 			log_admin("[key_name(holder)] forced corrosion sweep in labyrinth sector ([S.grid_x],[S.grid_y]).")
-			return TRUE
-
-		if("apply_module")
-			var/index = text2num(params["index"])
-			var/module_type = params["module_type"]
-			if(!isnum(index) || !module_type)
-				return TRUE
-			var/datum/rust_sector/S = mgr.sectors[index]
-			if(!S || S.state == LABYRINTH_SECTOR_UNLOADED)
-				return TRUE
-			var/datum/labyrinth_content_module/M
-			switch(module_type)
-				if("piston_trap")
-					M = new /datum/labyrinth_content_module/piston_trap()
-				if("forge_decor")
-					M = new /datum/labyrinth_content_module/forge_decor()
-				if("horror_ambience")
-					M = new /datum/labyrinth_content_module/horror_ambience()
-			if(!M)
-				return TRUE
-			S.apply_content_module(M)
-			log_admin("[key_name(holder)] applied module '[module_type]' to labyrinth sector ([S.grid_x],[S.grid_y]).")
-			return TRUE
-
-		if("clear_module")
-			var/index = text2num(params["index"])
-			if(!isnum(index))
-				return TRUE
-			var/datum/rust_sector/S = mgr.sectors[index]
-			if(!S)
-				return TRUE
-			S.clear_content_module()
-			log_admin("[key_name(holder)] cleared module from labyrinth sector ([S.grid_x],[S.grid_y]).")
 			return TRUE
 
 		if("setup_layout")

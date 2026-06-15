@@ -110,11 +110,6 @@ GLOBAL_DATUM_INIT(rust_grid_manager, /datum/rust_grid_manager, new)
 		generate_sector_geometry(S)
 		log_game("rust_grid_manager: sector ([grid_x],[grid_y]) generated procedurally")
 
-	// Автоприменяем дефолтный content module после того, как геометрия готова.
-	var/datum/labyrinth_content_module/M = S._default_content_module()
-	if(M)
-		S.apply_content_module(M)
-
 	SEND_SIGNAL(src, COMSIG_LABYRINTH_SECTOR_LOADED, S)
 	return TRUE
 
@@ -182,8 +177,6 @@ GLOBAL_DATUM_INIT(rust_grid_manager, /datum/rust_grid_manager, new)
 	var/datum/corrosion_controller/corrosion_controller
 	/// The /area/awaymission/rust_labyrinth/* instance assigned to this sector's turfs after load.
 	var/area/awaymission/rust_labyrinth/zone_area
-	/// Текущий content module, применённый к сектору (null — пусто)
-	var/datum/labyrinth_content_module/applied_module
 	/// Wiring: assoc list channel(string) → list(responders). Links pressure
 	/// plates / terminals to hazards & puzzles. See code/wiring.dm.
 	var/list/wiring = list()
@@ -201,6 +194,21 @@ GLOBAL_DATUM_INIT(rust_grid_manager, /datum/rust_grid_manager, new)
 	zone_area = _make_zone_area()
 	if(zone_area)
 		set_turfs_to_area(get_turfs(), zone_area)
+	_register_mapped_hazards()
+
+/// Hazards placed in the DMM run Initialize() during tmpl.load(), which is
+/// BEFORE on_loaded() creates the sync_controller — so they never auto-register
+/// into it (they DO register into wiring, which already exists). Sweep the
+/// sector now and adopt any orphaned hazards so the console inspector and the
+/// sector-wide pulse/loop see map-placed traps too.
+/datum/rust_sector/proc/_register_mapped_hazards()
+	for(var/turf/T as anything in get_turfs())
+		for(var/obj/structure/labyrinth_hazard/H in T)
+			if(H.owner_sync)
+				continue
+			sync_controller.register_hazard(H)
+			H.owner_sync = sync_controller
+		CHECK_TICK
 
 /// Returns a fresh area instance of the correct subtype for this sector's sector_type.
 /datum/rust_sector/proc/_make_zone_area()
@@ -216,32 +224,6 @@ GLOBAL_DATUM_INIT(rust_grid_manager, /datum/rust_grid_manager, new)
 		if(LABYRINTH_SECTOR_EMPTY)
 			return new /area/awaymission/rust_labyrinth/transition()
 	return new /area/awaymission/rust_labyrinth()
-
-/// Возвращает дефолтный content module для типа сектора, или null.
-/datum/rust_sector/proc/_default_content_module()
-	switch(sector_type)
-		if(LABYRINTH_SECTOR_TRAP)
-			return new /datum/labyrinth_content_module/piston_trap()
-		if(LABYRINTH_SECTOR_FORGE)
-			return new /datum/labyrinth_content_module/forge_decor()
-		if(LABYRINTH_SECTOR_CORRIDOR, LABYRINTH_SECTOR_BOSS, LABYRINTH_SECTOR_EMPTY)
-			return new /datum/labyrinth_content_module/horror_ambience()
-	return null
-
-/// Применяет content module к сектору (заменяет предыдущий если есть).
-/datum/rust_sector/proc/apply_content_module(datum/labyrinth_content_module/M)
-	if(applied_module)
-		clear_content_module()
-	applied_module = M
-	M.apply(src)
-
-/// Очищает текущий content module — удаляет все spawned объекты.
-/datum/rust_sector/proc/clear_content_module()
-	if(!applied_module)
-		return
-	applied_module.clear()
-	qdel(applied_module)
-	applied_module = null
 
 /// Привязывает головоломку к сектору (заменяет предыдущую если есть).
 /datum/rust_sector/proc/attach_puzzle(datum/labyrinth_puzzle/P)
@@ -276,5 +258,11 @@ GLOBAL_DATUM_INIT(rust_grid_manager, /datum/rust_grid_manager, new)
 
 /datum/map_template/rust_sector_template
 	keep_cached_map = TRUE
-	should_place_on_top = TRUE
+	// FALSE so sectors load via the standard replace path. With place_on_top a
+	// mid-round reload (no_changeturf = FALSE, since SSatoms is past INSSATOMS)
+	// re-inits each wall through PlaceOnTop, double-firing register_context()
+	// and tripping an "add_context overridden" stack_trace. Replace re-ChangeTurfs
+	// cleanly (old turf destroyed, new one initialized once) at both round-start
+	// and reload.
+	should_place_on_top = FALSE
 	has_ceiling = FALSE

@@ -9,7 +9,8 @@
 /obj/structure/labyrinth_hazard/floor_spikes
 	name = "floor spikes"
 	desc = "A grille of rusted iron teeth set flush into the floor. Old blood crusts the seams."
-	icon_state = "grille"           // placeholder — swap for retracted-spikes sprite
+	icon = 'modular_bandastation/rust_labyrinth/icons/floor_spikes.dmi'
+	icon_state = "idle"
 	density = FALSE
 
 	/// TRUE while the spikes are raised.
@@ -33,7 +34,7 @@
 
 /obj/structure/labyrinth_hazard/floor_spikes/proc/_raise()
 	spikes_up = TRUE
-	icon_state = "grille_broken"     // placeholder: raised-spikes state
+	icon_state = "raised"
 	playsound(src, 'sound/effects/gravhit.ogg', 80, TRUE, 10)
 
 /// Damage whoever stands on this exact tile at the moment of the strike.
@@ -51,5 +52,5 @@
 
 /obj/structure/labyrinth_hazard/floor_spikes/proc/_lower()
 	spikes_up = FALSE
-	icon_state = "grille"            // placeholder: retracted state
+	icon_state = "idle"
 	playsound(src, 'sound/effects/clang.ogg', 50, TRUE, 8)

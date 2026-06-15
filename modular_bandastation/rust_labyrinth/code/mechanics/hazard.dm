@@ -38,13 +38,29 @@
 	/// Sector we belong to (cached for wiring unregister).
 	var/datum/rust_sector/owner_sector
 
+	// --- Contact damage (spinning-blade graze) ---
+	/// Brute per contact tick. 0 = no contact loop (pistons/spikes stay
+	/// purely telegraphed). >0 spins up a slow graze loop in Initialize.
+	var/contact_damage = 0
+	/// Sharpness used for contact grazes.
+	var/contact_sharpness = SHARP_EDGED
+	/// Tile distances along `dir` that are lethal to touch RIGHT NOW.
+	/// 0 = our own tile. Subtypes rewrite this as the blade extends.
+	var/list/live_offsets
+	/// TRUE while the contact loop is running.
+	var/contact_active = FALSE
+
 // ------------------------------------------------------------------
 // Registration
 // ------------------------------------------------------------------
 
 /obj/structure/labyrinth_hazard/Initialize(mapload)
 	. = ..()
-	if(!GLOB.rust_grid_manager.initialized)
+	// Contact graze runs regardless of sector registration — an
+	// admin-spawned saw on a bare turf must still bite.
+	if(contact_damage > 0)
+		start_contact_loop()
+	if(!GLOB.rust_grid_manager?.initialized)
 		return
 	var/datum/rust_sector/S = GLOB.rust_grid_manager.get_sector_at(get_turf(src))
 	if(!S)
@@ -58,6 +74,7 @@
 
 /obj/structure/labyrinth_hazard/Destroy()
 	stop_loop()
+	contact_active = FALSE
 	if(owner_sync)
 		owner_sync.unregister_hazard(src)
 		owner_sync = null
@@ -121,6 +138,62 @@
 				stop_loop()
 			else
 				start_loop()
+
+// ------------------------------------------------------------------
+// Damage
+// ------------------------------------------------------------------
+
+/// Land one hit of brute on a victim. Shared by cycle strikes and the
+/// contact loop so both deal damage identically. Skips the dead.
+/// Returns TRUE if a live victim was bitten.
+/obj/structure/labyrinth_hazard/proc/_bite(mob/living/victim, damage, wound_bonus = 0, list/zones)
+	if(QDELETED(victim) || victim.stat == DEAD)
+		return FALSE
+	victim.apply_damage(
+		damage,
+		BRUTE,
+		length(zones) ? pick(zones) : null,
+		wound_bonus = wound_bonus,
+		sharpness = contact_sharpness,
+		attacking_item = src,
+	)
+	victim.add_splatter_floor(get_turf(victim))
+	log_combat(src, victim, "[name]-hit")
+	return TRUE
+
+// ------------------------------------------------------------------
+// Contact graze — a slow, continuous bite for anyone touching a live
+// blade tile while it spins. Covers BOTH standing and walking-in, idle
+// and mid-cycle. Subtypes set `contact_damage` and rewrite `live_offsets`.
+// ------------------------------------------------------------------
+
+/// Driver: ticks every HAZARD_CONTACT_INTERVAL until the hazard is gone.
+/obj/structure/labyrinth_hazard/proc/start_contact_loop()
+	set waitfor = FALSE
+	if(contact_active)
+		return
+	contact_active = TRUE
+	while(contact_active && !QDELETED(src))
+		_contact_sweep()
+		SLEEP_NOT_DEL(HAZARD_CONTACT_INTERVAL)
+
+/// Damage every living mob standing on a currently-live blade tile.
+/obj/structure/labyrinth_hazard/proc/_contact_sweep()
+	if(!length(live_offsets))
+		return
+	var/turf/origin = get_turf(src)
+	if(!origin)
+		return
+	for(var/offset in live_offsets)
+		var/turf/live = origin
+		for(var/i in 1 to offset)
+			live = get_step(live, dir)
+			if(!live)
+				break
+		if(!live)
+			continue
+		for(var/mob/living/victim in live)
+			_bite(victim, contact_damage)
 
 // ============================================================
 // Sync_Controller — groups every hazard in one sector.

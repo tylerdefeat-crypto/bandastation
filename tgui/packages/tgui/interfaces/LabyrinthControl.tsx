@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
   Box,
   Button,
-  Dropdown,
   LabeledList,
   Section,
   Slider,
@@ -42,9 +41,6 @@ const SECTOR_TYPE_COLORS: Record<number, string> = {
   4: '#2a0a0a',
 };
 
-const MODULE_OPTIONS = ['piston_trap', 'forge_decor', 'horror_ambience'];
-const PUZZLE_OPTIONS = ['sequence', 'sacrifice', 'gauntlet'];
-
 type HazardEntry = {
   ref: string;
   name: string;
@@ -73,7 +69,6 @@ type Sector = {
   has_sync: boolean;
   has_corrosion: boolean;
   has_mappath: boolean;
-  module_name: string;
   hazard_count: number;
   puzzle_name: string;
   channels: string[];
@@ -95,8 +90,6 @@ export function LabyrinthControl() {
 
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [pendingRust, setPendingRust] = useState<number>(0);
-  const [pendingModule, setPendingModule] = useState<string>(MODULE_OPTIONS[0]);
-  const [pendingPuzzle, setPendingPuzzle] = useState<string>(PUZZLE_OPTIONS[0]);
 
   const selected = sectors.find((s) => s.index === selectedIndex) ?? null;
 
@@ -247,13 +240,6 @@ export function LabyrinthControl() {
                           {SECTOR_STATE_NAMES[selected.state]}
                         </Box>
                       </LabeledList.Item>
-                      <LabeledList.Item label="Module">
-                        {selected.module_name ? (
-                          <Box color="#fc8">{selected.module_name}</Box>
-                        ) : (
-                          <Box color="#888">None</Box>
-                        )}
-                      </LabeledList.Item>
                       <LabeledList.Item label="Puzzle">
                         {selected.puzzle_name ? (
                           <Box color="#8cf">{selected.puzzle_name}</Box>
@@ -270,7 +256,6 @@ export function LabyrinthControl() {
                           stepPixelSize={4}
                           format={(v) => `${v}%`}
                           onChange={(_e, value) => setPendingRust(value)}
-                          onDrag={(_e, value) => setPendingRust(value)}
                         />
                       </LabeledList.Item>
                     </LabeledList>
@@ -361,86 +346,6 @@ export function LabyrinthControl() {
                           </Button>
                         </Stack.Item>
                       </Stack>
-
-                      <Box mt={1}>
-                        <Stack align="center" wrap>
-                          <Stack.Item>
-                            <Dropdown
-                              width="110px"
-                              selected={pendingModule}
-                              options={MODULE_OPTIONS}
-                              onSelected={(val) => setPendingModule(val)}
-                            />
-                          </Stack.Item>
-                          <Stack.Item>
-                            <Button
-                              disabled={selected.state === 0}
-                              icon="cubes"
-                              color="caution"
-                              onClick={() =>
-                                act('apply_module', {
-                                  index: selected.index,
-                                  module_type: pendingModule,
-                                })
-                              }
-                            >
-                              Module
-                            </Button>
-                          </Stack.Item>
-                          <Stack.Item>
-                            <Button
-                              disabled={!selected.module_name}
-                              icon="trash"
-                              color="bad"
-                              onClick={() =>
-                                act('clear_module', { index: selected.index })
-                              }
-                            >
-                              Clear
-                            </Button>
-                          </Stack.Item>
-                        </Stack>
-                      </Box>
-
-                      <Box mt={1}>
-                        <Stack align="center" wrap>
-                          <Stack.Item>
-                            <Dropdown
-                              width="110px"
-                              selected={pendingPuzzle}
-                              options={PUZZLE_OPTIONS}
-                              onSelected={(val) => setPendingPuzzle(val)}
-                            />
-                          </Stack.Item>
-                          <Stack.Item>
-                            <Button
-                              disabled={selected.state === 0}
-                              icon="puzzle-piece"
-                              color="caution"
-                              onClick={() =>
-                                act('attach_puzzle', {
-                                  index: selected.index,
-                                  puzzle_type: pendingPuzzle,
-                                })
-                              }
-                            >
-                              Attach Puzzle
-                            </Button>
-                          </Stack.Item>
-                          <Stack.Item>
-                            <Button
-                              disabled={!selected.puzzle_name}
-                              icon="trash"
-                              color="bad"
-                              onClick={() =>
-                                act('clear_puzzle', { index: selected.index })
-                              }
-                            >
-                              Clear
-                            </Button>
-                          </Stack.Item>
-                        </Stack>
-                      </Box>
                     </Box>
                   </Section>
                 ) : (

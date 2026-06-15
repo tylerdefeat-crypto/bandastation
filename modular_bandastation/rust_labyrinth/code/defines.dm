@@ -91,12 +91,17 @@
 #define WALLSAW_OUT_TIME    16  // 1.6 s to slide out fully
 #define WALLSAW_HOLD_TIME    6  // 0.6 s at full reach
 #define WALLSAW_IN_TIME     12  // 1.2 s retract
-#define WALLSAW_DAMAGE      40  // brute per hit in path
+#define WALLSAW_DAMAGE      40  // brute per hit in path (cycle strike)
+#define WALLSAW_CONTACT_DAMAGE 10  // brute per graze tick while the disc spins
 
 // --- Floor saw timing (deciseconds) ---
 #define FLOORSAW_WARN_TIME  14  // 1.4 s before it starts rolling
 #define FLOORSAW_STEP_TIME   6  // 0.6 s per tile traversed
-#define FLOORSAW_DAMAGE     35  // brute per tile passed over
+#define FLOORSAW_DAMAGE     35  // brute per tile passed over (cycle strike)
+#define FLOORSAW_CONTACT_DAMAGE 12  // brute per graze tick while the wheel spins
+
+// --- Contact (spinning blade) graze ---
+#define HAZARD_CONTACT_INTERVAL 10  // 1.0 s between contact-damage ticks
 
 // ============================================================
 // Channels / wiring (mapper linking — Phase G)
